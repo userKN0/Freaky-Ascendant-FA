@@ -1,0 +1,34 @@
+saber_telder_legends
+{
+	name		"The Elder's Lightsabers"
+	saberType	SABER_SINGLE
+	saberLength 34
+	saberRadius	2.7
+	saberColor	random
+	saberStyleLearned dual
+	saberStyle dual
+	saberModel	"models/weapons2/saber_plasma/saber_nomi.glm"
+	soundOn		"sound/weapons/saber/saberon_v2.mp3"
+	soundLoop	"sound/weapons/saber/saberhum2.wav"
+	soundOff	"sound/weapons/saber/saberoff_v2.mp3"
+}
+	
+saber_telder2_legends
+{
+	name		"The Elder's Lightsabers"
+	saberType	SABER_SINGLE
+	saberLength 34
+	saberRadius	2.7
+	saberColor	random
+	saberStyleLearned dual
+	saberStyle dual
+	saberModel	"models/weapons2/saber_plasma/saber_nomi.glm"
+	soundOn		"sound/weapons/saber/saberon_v2.mp3"
+	soundLoop	"sound/weapons/saber/saberhum2.wav"
+	soundOff	"sound/weapons/saber/saberoff_v2.mp3"
+}
+	
+	
+	
+	
+	

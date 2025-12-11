@@ -1,0 +1,55 @@
+
+saber_trayaright_legends
+{
+	name		"Traya's Sabers"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_rooxon/saber_kotor.glm"
+	soundOn		"sound/weapons/saber/saberon.wav"
+	soundLoop	"sound/weapons/saber/saberhum4.wav"
+	soundOff	"sound/weapons/saber/saberoff.wav"
+	saberLength	40
+	saberLength2	40
+	saberColor	purple
+	saberColor2	purple
+	saber2Color	purple
+//	singleBladeStyle	dual
+	maxChain 		-1
+	disarmable		1
+	disarmBonus		10
+	lockBonus		4
+	notinopen		1
+	throwable		1
+	lungeAtkMove	LS_DUAL_SPIN_PROTECT
+//	readyanim	TRIPLE3_YELLOWSTANCE
+//	readyanim	BOTH_V6_B__S6
+	runForward BOTH_RAGERUN
+	readyAnim BOTH_RAGESTAND
+}
+
+saber_trayaleft_legends
+{
+	name		"Traya's Sabers"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/traya3_saber_l/traya3_saber_l.glm"
+	soundOn		"sound/weapons/saber/saberon.wav"
+	soundLoop	"sound/weapons/saber/saberhum4.wav"
+	soundOff	"sound/weapons/saber/saberoff.wav"
+	numBlades	2
+	saberLength	40
+	saberLength2	40
+	saberColor	purple
+	saberColor2	purple
+	saber2Color	purple
+//	singleBladeStyle	dual
+	maxChain 		-1
+	disarmable		1
+	disarmBonus		10
+	lockBonus		4
+	notinopen		1
+	throwable		1
+	lungeAtkMove	LS_DUAL_SPIN_PROTECT
+//	readyanim	TRIPLE3_YELLOWSTANCE
+//	readyanim	BOTH_V6_B__S6
+	runForward BOTH_RAGERUN
+	readyAnim BOTH_RAGESTAND
+}
