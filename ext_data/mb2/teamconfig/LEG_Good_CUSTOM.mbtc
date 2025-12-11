@@ -105,8 +105,8 @@ SubclassesForClass6
 {
 	Subclass1	"h10_Obi"
 	Subclass2	"h10_PloK"
-	Subclass3	"h10_JTradition"
-	Subclass4	"h10_JHeal"
+	Subclass3	"h10_JTraditionFreakyedit"
+	Subclass4	"h10_JHealFreakyedit"
 	Subclass5	"h10_LukeSky"
 	Subclass6	"h10_Starkiller"
 	Subclass7	"h10_JSavant"

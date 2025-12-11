@@ -1,0 +1,76 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name			"h10_JTradition"
+	weapons			WP_MELEE|WP_SABER
+	saberstyle		SS_MEDIUM|SS_STRONG|SS_TAVION
+	forcepowers		FP_SABER_OFFENSE,3|FP_LEVITATION,2|FP_PUSH,3|FP_PULL,2|FP_PROTECT,3|FP_SEE,3|FP_SABERTHROW,2
+	attributes		MB_ATT_FORCEBLOCK,1|MB_ATT_DEFLECT,3|MB_ATT_FORCEFOCUS,1|MB_ATT_GUN_DEFENSE,3|MB_ATT_FP_SABER_DEFENSE,2
+	
+	speed		0.985
+	
+	BPmultiplier	0.9
+	APmultiplier	0.7
+	ASmultiplier 	0.97
+	saberThrowDamage 40
+	forcepool	160
+	maxhealth	115
+	modelscale	1
+	MBClass		MB_CLASS_JEDI
+	classflags CFL_NOPICKUPS
+
+	//special1 EAS_FP_SABERTHROW
+	special2	EAS_MELEE
+	special3 EAS_FP_PROTECT
+	//special4	EAS_FP_SPEED
+	
+	classNumberLimit	1
+	
+	uioverlay "gfx/icons/support"
+	
+	forceregen       1.075
+	
+	saber1			saber_jocasta
+	sabercolor		4
+
+	saber1_1			depa
+	sabercolor_1		3
+	
+	saber1_2			saber_depa_tcw
+	sabercolor_2		3
+	
+	model    	 "JocastaNu"
+	skin		 	"default"
+	uishader  	"models/players/JocastaNu/mb2_icon_default"
+	
+	model_1		"sabe" 					
+	skin_1		"depabillaba"					
+	uishader_1	"models/players/sabe/mb2_icon_depabillaba"
+	
+	//respawncustomtime  50000	
+}
+
+description	"Jedi Traditionalist [Jedi]
+
+A High-to-Late Republic Jedi with strong Force powers and excellent defenses against blasters, but lacking in Lightsaber dueling skills. 
+
+^2Weaponry:
+- Melee
+- Lightsaber (Yellow/Red/Cyan)
+-- Saber Defense (2)
+-- Blaster Defense (3)
+-- Saber Deflect (3)
+-- EX Saber Throw (2) ^3[CS1]
+--- 33% more DMG
+-- Slap ^3[CS2]
+
+^5Force Powers:
+- Jump (2)
+- Push (3)
+- Pull (2)
+- Sense (3) 
+- Protect (3) ^3[CS3]
+
+^8Attributes:
+- Force Block/Focus (1)"
