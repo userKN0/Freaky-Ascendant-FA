@@ -1,6 +1,6 @@
 ClassInfo
 {
-	name "h10_JForce"
+	name "asg10_JForce"
 	MBClass MB_CLASS_JEDI
 	weapons WP_MELEE|WP_SABER
 	forcepowers FP_LEVITATION,3|FP_SEE,3|FP_PUSH,2|FP_PULL,3|FP_PROTECT,2|FP_ABSORB,1|FP_SPEED,3

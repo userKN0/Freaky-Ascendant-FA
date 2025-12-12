@@ -1,0 +1,81 @@
+//Siege class def file CREATED BY MARSHALL
+//possibly convert to rebel 'guardian of the force' class like chirrut & baze
+ClassInfo
+{
+	name		"ase3_SithTr"
+	MBClass	MB_CLASS_CLONETROOPER
+	classNumberLimit	4
+	
+	weapons		WP_T21|WP_MELEE|
+	
+	attributes	MB_ATT_T21,3|MB_ATT_AMMO,3|MB_ATT_RESPAWNS,2|MB_ATT_WOOKIEE_FURY,3|MB_ATT_ASSEMBLE,3|MB_ATT_FORCEBLOCK,3
+	forcepowers FP_RAGE,3|FP_HEAL,3
+	maxhealth 	400
+	starthealth 80
+	resource RESOURCE_RAGE
+	forcepool 250
+	forceregen 0.01
+	resourceRegenCap 30	
+	resourceRegenAmount 1
+	resourceRegenRate 800
+	classflags CFL_NOLOCATIONALDAMAGE|CFL_NOPICKUPS|CFL_DISMEMBERFRAGILE|CFL_SEEING_STEALTH
+	knockbackTaken 0.80
+	//re-add this if class too busted skilltimermod 20
+	modelscale   1.05
+	model		"trosguard"
+	skin		"default"
+	customred	0.120
+	customgreen	0.275
+	customblue	0.474
+	uishader	"models\players\trosguard\mb2_icon_default"
+	model_1		"stormie_tfa"
+	skin_1		"cardinal"
+	uishader_1	"models\players\stormie_tfa\mb2_icon_cardinal"
+	
+	uioverlay_c "gfx/icons/spec_infantry"
+	uioverlay_r "gfx/icons/infantry"
+	//respawncustomtime 30000
+}
+WeaponInfo0
+{
+	WeaponToReplace WP_T21 
+	WeaponBasedOff  WP_DC_CARBINE
+	NewWorldModel "models/weapons2/f11d_blaster/F11D_Phasma_W.glm"
+	NewViewModel  "models/weapons2/f11d_blaster/F11D_Phasma.md3"
+	Icon  		"gfx/hud/w_icon_f11_p"
+	WeaponName  	"F11-D Blaster Rifle"
+	AltMuzzleEffect  "Blaster/MuzzleFlash01R"
+	AltMissileEffect	 "Blaster/Shot01R"
+	AltFlashSound0	    "sound/weapons/f-11d/fire.mp3"
+	AltFlashSound1    "sound/weapons/f-11d/fire.mp3"
+	AltFlashSound2	    "sound/weapons/f-11d/fire.mp3"
+	AltFlashSound3	    "sound/weapons/f-11d/fire.mp3"
+	customAmmo 2000
+	ratemod 1.2
+	damageMod 1.1
+	FPMult 1.1
+	velocityMod 1.1
+}
+description	"Sith Trooper [Clone Trooper]
+
+Soldiers raised by a secret cult of Sith loyalists and followers of Emperor Palpatine. Slow, tanky, and able to heal their wounds with Sith magic. 
+
+^2Weaponry:
+- Melee
+- F11-D Blaster Rifle (T21 3)
+-- 20% slower ROF
+-- 10% more damage (HP & FP)
+-- 10% faster velocity
+
+^8Attributes:
+- Reinforcement (2)
+- 20% less KB taken
+- Assemble (3)
+- Non Locational Damage
+- No Weapon Pickups
+- Force Block (3) - Blocks Force powers if above 40 resource
+- Sense Immunity 
+
+^3Abilities:
+-Self Heal (3)
+-Dark Rage (3)"

@@ -1,6 +1,6 @@
 ClassInfo
 {
-name "v5_MaulMando"
+name "ase5_MaulMando"
 MBClass MB_CLASS_MANDALORIAN
 classNumberLimit 2
 weapons WP_MELEE|WP_SABER|WP_FIRE_NADE
