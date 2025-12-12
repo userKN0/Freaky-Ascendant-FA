@@ -1,0 +1,39 @@
+//Siege class def file.
+
+ClassInfo
+{
+	name				"hunt_hoth_heavy"
+	weapons				WP_PLX1|WP_BLASTER_PISTOL|WP_MELEE|WP_CONC_NADE
+	attributes			MB_ATT_PISTOL,1|MB_ATT_PLX1,3|MB_ATT_AMMO,3|MB_ATT_RESPAWNS,1|MB_ATT_HEALING,2|MB_ATT_MICRO_GRENADES,1|MB_ATT_ASSEMBLE,1|MB_ATT_TRIP_MINES,4|MB_ATT_BLAST_ARMOR,1
+	maxhealth			80
+	maxarmor			45
+	model				"rebel"
+	skin				"default"
+	uishader			"models/players/rebel/mb2_icon_default"
+	MBClass				MB_CLASS_ELITETROOPER
+	classNumberLimit	2
+	speed				.92
+	WP_BlasterPistolFlags	HELD_SPEED
+	WP_MELEEfLAGS		HELD_SPEED
+}
+
+description	"Hoth Rebel Rocket Trooper
+
+Weaponry:
+PLX-1 Rocket Launcher
+-- 3 Rockets
+DL-44 Pistol (1)
+-- Increased Speed
+V-59 Concussion Grenade
+4 Trip Mines
+Melee
+-- Increased Speed
+
+Attributes:
+Reinforcements (1)
+Heal (2)
+Assemble (1)
+Blast Armor
+
+The field commanders on Hoth. These high ranked soldier carry the deadly BlasTech A280, recieve Adv. Armor and can take a serious beaten, while giving it too. Due to their 'Heavy Ops' setting, they aren't that common on the battlefield.
+Be ware if you do face them."

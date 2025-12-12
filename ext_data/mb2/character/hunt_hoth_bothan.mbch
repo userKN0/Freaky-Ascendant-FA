@@ -1,0 +1,51 @@
+//Siege class def file.
+
+ClassInfo
+{
+	name				"hunt_hoth_bothan"
+	weapons				WP_MELEE|WP_SHOTGUN
+	attributes			MB_ATT_AMMO,3|MB_ATT_SHOTGUN,3|MB_ATT_STAMINA,3|MB_ATT_RESPAWNS,2
+	maxhealth			70
+	maxarmor			35
+	model				"bothan-spy"
+	skin				"default"
+	uishader			"models/players/bothan-spy/mb2_icon_default"
+	MBClass				MB_CLASS_HERO
+	classNumberLimit	1
+	holdables			HI_CLOAK
+	resource			resource_stamina
+	speed				0.94
+	modelscale			0.91
+	WP_ShotgunFlags		HELD_DISRUPTIFY|HELD_ALTRELOAD|HELD_LOWDAMAGE
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_SHOTGUN
+	WeaponBasedOff		WP_BOWCASTER
+	NewWorldModel		"models/weapons2/CR-1_cannon/rifle_w.glm"
+	NewViewModel		"models/weapons2/CR-1_cannon/rifle.md3"
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	MissileEffect		"Blaster/Shot02B"
+	FlashSound0			"sound/weapons/t-21/alt_fire.mp3"
+	Icon				"gfx/hud/w_icon_cr1_blastcannon"
+	WeaponName			"Disintergration Shotgun"
+	altFireEnabled		0
+	customammo			999
+}
+
+description	"Bothan Spy
+
+Weaponry:
+Disintergration Shotgun
+-- Manual Reload
+-- Low Damage
+-- Disintergrates Target on Kill
+
+Items:
+Cloaking Device
+
+Attributes:
+Stamina (3)
+
+The Bothans are renowned throughout the Galaxy as skilled Spies."

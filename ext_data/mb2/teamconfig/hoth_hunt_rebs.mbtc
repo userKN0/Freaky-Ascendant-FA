@@ -1,0 +1,15 @@
+name "hoth_hunt_rebs"
+
+ClassesAllowed 4
+TimePeriod 3
+EUAllowed 0
+
+Classes
+{
+	class1		"hoth_hunt_soldier"
+	class2		"hoth_hunt_heavy"
+	class3		"hoth_hunt_sniper"
+	class4		"hoth_hunt_engineer"
+	class5		"hoth_hunt_hothan"
+	class6		"hoth_hunt_wookiee"
+}
