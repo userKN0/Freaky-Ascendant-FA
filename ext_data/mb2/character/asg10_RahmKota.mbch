@@ -1,0 +1,89 @@
+//Ascended FA Mode character file - Created by KirKanos
+//Credit: Peneke for Skins and saber model in pack. 
+//Notes: Add UI Icons from Base Legends for profile
+
+ClassInfo
+{
+	name				"asg10_RahmKota"
+	weapons				WP_SABER|WP_MELEE
+	attributes			MB_ATT_FORCEFOCUS,1|MB_ATT_FORCEBLOCK,3|MB_ATT_FP_MIRALUKA,1|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_ANTI_MT,2|MB_ATT_RALLY,1|MB_ATT_DEFLECT,3
+	saberstyle			SS_MEDIUM|SS_STRONG
+	forcepowers			FP_LEVITATION,3|FP_PUSH,3|FP_PULL,2|FP_SABER_OFFENSE,3|FP_SEE,3|FP_SABERTHROW,3|FP_GRIP,2|FP_TEAM_FORCE,2
+	maxhealth			120
+    maxarmor            60
+	forcepool           125
+	forceregen   		1.25
+	speed				1.10
+	special1			EAS_FP_SABERTHROW
+	special2            EAS_MELEE
+	special3            EAS_FP_TEAM_FORCE
+	special4            EAS_FP_PULL
+	
+	BPmultiplier		1.00
+	APmultiplier     	1.15
+	ASmultiplier		1.15
+	CSmultiplier		1.05
+	modelscale      	1.00
+	MBClass			MB_CLASS_JEDI
+	classNumberLimit	1
+	
+	uioverlay "gfx/icons/support"
+	
+	classflags		CFL_SEEING_STEALTH|CFL_NOPICKUPS
+	
+	forceregen       1.1
+	
+	model	"kota"
+	skin		"default"
+	uishader	"models/players/kota/mb2_icon_default"
+	
+	model_1		"kota"
+	skin_1		"blind"
+	uishader_1	"models/players/kota/mb2_icon_blind"	
+	
+	model_2		"kota_drunk"
+	skin_2		"default"
+	uishader_2	"models/players/kota_drunk/mb2_icon_default"
+	
+	model_3		"kota_tfu2"
+	skin_3		"default"
+	uishader_3	"models/players/kota_tfu2/mb2_icon_default"
+		
+	saber1			kota_tfu1
+	sabercolor		3	
+		
+	saber1_1		kota_tfu2
+	sabercolor_1	3
+	
+
+    respawnCustomTime  50000	
+}
+
+description	"Rahm Kota
+
+Class: Jedi
+Brief Overview: 
+A Jedi General who led his private army instead of Clone Troopers. Inferior saber defense but stronger offense, a good mix of light and dark side Force powers, strong passive Force attributes, and a great support unit that can rally.
+
+^2Weaponry:
+- Melee
+- Lightsaber
+-- Yellow/Red styles
+-- Saber Defense (1)
+-- Blaster Defense (2)
+-- Enhanced Saber Throw (3) ^3[CS1]
+-- Slap ^3[CS2]
+
+^5Force Powers:
+- Jump (3)
+- Push (3)
+- Grip (2)
+- Team Energize (2) ^3[CS3]
+- Pull (2) ^3[CS4]
+
+^8Attributes:
+- Force Block (3)
+- Force Focus (1)
+- Force Sense Immunity
+- Mind Trick Immunity
+- Miraluka Vision (Passive Force Sense 1)"
