@@ -86,6 +86,7 @@ SubclassesForClass4
 	Subclass4	"v8_Galak"
 	Subclass5	"v8_Snoova"
 	Subclass6	"ase8_BlackK"
+	Subclass7	"ase8_RakatanInfantry"
 }
 
 SubclassesForClass5
@@ -123,5 +124,6 @@ SubclassesForClass6
 	Subclass12	"ase10_Nadd"
 	Subclass13	"ase10_SForce"
 }
+
 
 
