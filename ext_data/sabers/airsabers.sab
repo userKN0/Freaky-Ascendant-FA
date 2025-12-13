@@ -488,7 +488,7 @@ rakatan_forceblade_staff
 	noManualDeactivate	0
 	bounceOnWalls	1
  
-	animspeedscale	.90
+	animspeedscale	1
 
 	spinsound	"s/w/t/swing3.wav"
 	swingSound1	"s/w/v/swish1.mp3"
@@ -517,4 +517,5 @@ rakatan_forceblade_staff
 	hitPersonEffect "melee_weap/attack.efx"
 	hitOtherEffect	"melee_weap/other.efx"
 }
+
 
