@@ -107,6 +107,7 @@ SubclassesForClass5
 	Subclass13	"v9_Sion"
 	Subclass14	"ase9_TElder"
 	Subclass15	"ase9_Exarkun"
+	Subclass16	"ase9_Maw"
 }
 
 SubclassesForClass6
@@ -125,7 +126,6 @@ SubclassesForClass6
 	Subclass12	"ase10_Nadd"
 	Subclass13	"ase10_SForce"
 }
-
 
 
 
