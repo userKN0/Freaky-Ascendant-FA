@@ -29,6 +29,7 @@ SubclassesForClass1
 	Subclass11	"h2_Lando"
 	Subclass12	"h2_JanO"
 	Subclass13	"asg2_Carth"
+	Subclass14	"asg2_RebelSabo"
 }
 
 SubclassesForClass2
@@ -119,6 +120,7 @@ SubclassesForClass6
 	Subclass13	"asg10_RahmKota"
 	Subclass14	"asg10_JForce"
 }
+
 
 
 
