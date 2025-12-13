@@ -1,0 +1,182 @@
+// Legends Mode character file - Created by Matsu
+
+Classinfo   
+{           
+
+
+    name        	"ase10_Abeloth"      
+	weapons     	WP_SABER|WP_MELEE|WP_THROWER|WP_BLASTER_PISTOL	
+	attributes		MB_ATT_FORCEFOCUS,1|MB_ATT_FORCEBLOCK,1|MB_ATT_FP_REPULSE,1|MB_ATT_SPY_DISGUISE,3|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_DEFLECT,3|MB_ATT_GUN_DEFENSE,3|MB_ATT_FLAMETHROWER|MB_ATT_JETPACK,1|MB_ATT_WATER_BREATHING|MB_ATT_FLOAT_HOP|MB_ATT_ANTI_MT,2|MB_ATT_DASH,2|MB_ATT_ROSHTAUNT|MB_ATT_LIGHTS_BEACON|MB_ATT_PISTOL,1|MB_ATT_THROWER_ICE,3|MB_ATT_SABER_COMBO_NONE|MB_ATT_RECHARGE,3|
+	
+	bpmultiplier    1      
+    apmultiplier    1      
+    CSmultiplier	1
+	ASmultiplier	1
+	forcepowers     FP_SABER_OFFENSE,1|FP_LEVITATION,1|FP_PUSH,3|FP_PULL,3|FP_SEE,3|FP_LIGHTNING,3|FP_ABSORB,3|FP_BLIND,3|FP_DRAIN,3|FP_GRIP,3|FP_PROTECT,3|FP_RAGE,3|FP_TEAM_FORCE,3|FP_TELEPATHY,3 
+	
+	speed         1.00     
+	maxhealth       	60
+	
+	resource RESOURCE_BATTERY    
+    forcepool       	500
+	modelscale    		1
+	MBClass     MB_CLASS_JEDI   
+	classNumberLimit    1	
+    SPECIAL1	EAS_HI_DASH
+	SPECIAL2	EAS_HI_PLASMA
+	SPECIAL3	EAS_FP_REPULSE
+	SPECIAL4 	EAS_FP_TEAM_FORCE
+	
+	knockbackTaken 0
+	
+	classflags CFL_NOPICKUPS|CFL_STRONGAGAINSTPHYSICAL|CFL_SEEING_STEALTH|CFL_BLOODYMELEE|CFL_NOLOCATIONALDAMAGE|CFL_HEAVYMELEE|CFL_ACIDBLOOD|CFL_EXTRAFLAMEDAMAGE
+	
+	WP_SaberFlags HELD_KNOCKBACK
+	WP_BowcasterFlags HELD_SONIC
+	WP_MeleeFlags HELD_HEAL
+	
+    model         "abeloth"    
+    skin          "default"   
+    uishader      "models/players/abeloth/mb2_icon_default"   
+	uioverlay_l "gfx/icons/support"
+	uioverlay_r "gfx/icons/aerial"
+
+	saberMaxChain 1
+    saber1          force_deflection  
+	saberstyle    	SS_TAVION      
+	
+	jetpackThrustEffect	""
+	jetpackIdleEffect		""
+	
+	jetpackFinishSound 	"sound/effects/woosh4"
+	jetpackThrustSound  "sound/ambience/artus/artus_shaft"
+	jetpackStartSound 	"sound/effects/woosh22"
+	jetpackIdleSound	"sound/ambience/artus/artus_shaft"
+	
+	saberStanceAnim 	MELEE_BLOCK_BLASTER_R
+    
+	respawnCustomTime 50000
+	
+}
+	
+WeaponInfo0
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/noweap/noweap.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon			"models/weapons2/halo_melee/icon.png"
+	WeaponName		"Tutaminis"
+}
+WeaponInfo1
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/dummyblaster/dummyblaster.glm" 
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/menus/Alpha/Icon_Weap_ExpRadius" 			
+	WeaponName			"Force Scream"    			
+	MissileHitHumanEffect "effects/geo_sonic/hit"
+	MissileHitDroidEffect "effects/geo_sonic/hit"
+	MissileMissEffect 	"effects/sonic_pistol/wall_impact"
+	MissileEffect		"effects/sonic_pistol/projectile"  					
+	MuzzleEffect		"effects/sonic_pistol/muzzle_flash"   	
+	FlashSound0		"sound/weapons/force_scream/fire.mp3"
+	velocityMod 0.8
+	CustomAmmo 	40
+	ClipSize 		1
+	FPmult              1.25
+	altfireenabled 0
+	hasAnimOverrides 1
+	animStand BOTH_STAND1 //lower
+}
+WeaponInfo2
+{
+	WeaponToReplace	WP_THROWER
+	WeaponBasedOff	WP_THROWER
+	NewWorldModel	"models/weapons2/dummyblaster/model.glm"
+	NewViewModel	"models/weapons2/dummy/dummy.md3"
+	Icon	"gfx/menus/Alpha/Icon_Weap_Stun"
+	WeaponName	"Cryokinesis"
+	primFireEnabled	1
+	AltFireEnabled 	1
+	clipsize 150
+	customammo 450
+	ReloadTimeModifier	1.75
+	hasAnimOverrides 1
+	animReady BOTH_JET_FORWARD //upper
+	animReadyWalk BOTH_JET_FORWARD 
+	animReadyNoAmmo BOTH_JET_FORWARD
+	animAttack BOTH_BLASTER_ATTACK
+	animAttackWalk BOTH_BLASTER_ATTACK
+	animStand BOTH_STAND1 //lower
+}
+
+
+description	"Abeloth
+	
+Class: Sith
+Brief Overview:
+A delicate, but powerful Force entity capable of wreaking extreme havoc on the enemy.
+
+^2Weapons:
+- Heavy Melee
+-- Healing while in Melee
+- Tutaminis
+-- Based on Lightsaber
+-- Cyan style
+-- Saber Defense (1)
+-- Blaster Defense (3)
+-- 45% shorter reach
+-- 33% wider radius
+-- 50% more knockback
+-- No saber throw
+-- Chain limit: 1
+- Pyrokinesis ^3[CS2]
+-- Based on Wrist Flamethrower 
+-- 100% more damage
+- Cryokinesis
+-- Based on Icethrower
+- orce Scream
+-- Based on Pistol (1)
+-- Stuns Target 
+-- Clip size: 1
+
+^5Force Powers:
+- Jump (1)
+- Push (3)
+- Pull (3)
+- Sense (3) 
+- Lightning (3)
+- Grip (3)
+- Drain (3)
+- Speed (1)
+- Mind Trick (3)*
+- Protect (3)*
+- Absorb (3)*
+- Dark Rage (3)
+- Team Energize (3) ^3[CS4]
+- Force Blinding (3)
+- Repulse ^3[CS3, in melee]
+
+^8Attributes:
+- Saber Defense (1)
+- Blaster Defense (3)
+- Saber Deflect (3)
+- No Knockback
+- Dash (2) ^3[CS1]
+- 50% Melee Damage Resistance
+- Damage Taken is non-locational 
+- Taunts damage Jedi
+- Acid Blood (poisons enemies on death)
+- Slow Faller
+- "Breathes" underwater
+- Flight
+- Force Focus/Block (1)
+- Force Sense Immunity
+- Mind Trick Immunity
+- Light's Beacon*
+- Battery Recharge (3)
+
+^3Abilities:
+- Disguise (3) [Swap in Melee]"
