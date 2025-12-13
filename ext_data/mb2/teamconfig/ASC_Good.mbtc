@@ -91,7 +91,7 @@ SubclassesForClass4
 SubclassesForClass5
 {
 	Subclass1	"h9_JKnight"
-	Subclass2 	"h9_JediTG"
+	Subclass2 	"asg9_JediTG"
 	Subclass3	"h9_Anakin"
 	Subclass4	"h9_JCrusader"
 	Subclass5	"h9_Windu"
@@ -100,8 +100,7 @@ SubclassesForClass5
 	Subclass8	"h9_Yarael"
 	Subclass9	"h9_JSword"
 	Subclass10	"h9_JAcrobat"
-	Subclass11	"h9_JBrute"
-}
+	Subclass11	"h9_JBrute"}
 
 SubclassesForClass6
 {
@@ -120,5 +119,6 @@ SubclassesForClass6
 	Subclass13	"asg10_RahmKota"
 	Subclass14	"asg10_JForce"
 }
+
 
 
