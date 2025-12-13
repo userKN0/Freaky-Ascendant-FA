@@ -117,7 +117,7 @@ ClassInfo
 
 	c_att_skill_2	MB_ATT_ROCKET_LAUNCHER
 	c_att_names_2	"Wrist Rockets"
-	c_att_ranks_2	5
+	c_att_ranks_2	10
 	c_att_descs_2 "Watch those wrist rockets!"
 
 	c_att_skill_3	MB_ATT_SBD_CANNON
@@ -127,7 +127,7 @@ ClassInfo
 	
 	c_att_skill_4	MB_ATT_SHOTGUN
 	c_att_names_4	"Multi-Shot Blaster"
-	c_att_ranks_4	10
+	c_att_ranks_4	15
 
 	c_att_skill_5	MB_ATT_RESPAWNS
 	c_att_names_5	"Reinforcement"
@@ -159,7 +159,7 @@ ClassInfo
 
 	c_att_skill_12	MB_ATT_CORTOSIS
 	c_att_names_12	"Cortosis"
-	c_att_ranks_12	10,15
+	c_att_ranks_12	10,20
 
 }
 
@@ -214,3 +214,4 @@ A slow moving battle droid that must strike a balance between firepower, protect
 - 15% less KB taken
 
 - Battery Recharge (2)"
+
