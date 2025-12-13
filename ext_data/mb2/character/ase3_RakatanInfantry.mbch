@@ -10,6 +10,7 @@ ClassInfo
 	WP_CloneRifleFlags HELD_ALTRELOAD
 	attributes	MB_ATT_HEALING,1|MB_ATT_ASSEMBLE,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_WOOKIEE_FURY,2|MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_CLONEBLOBS,1
 	classflags	CFL_BLOODYMELEE
+	classNumberLimit	6
 
 	forcepowers	FP_RAGE,1|FP_LEVITATION,1|FP_PUSH,1
 	
@@ -270,5 +271,6 @@ A Rakatan soldier hailing from the Infinite Empire era with front and backline o
 - Strength (2)
 - Fury (2)
 - 300% Longer Skill CD"
+
 
 
