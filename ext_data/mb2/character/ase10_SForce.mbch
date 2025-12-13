@@ -1,275 +1,286 @@
 ClassInfo
-{ name "ase10_SForce"
- MBClass MB_CLASS_JEDI
- weapons WP_MELEE|WP_SABER
- forcepowers FP_LEVITATION,3|FP_SEE,3|FP_PUSH,2|FP_PULL,3|FP_PROTECT,2|FP_ABSORB,1|FP_RAGE,3
- attributes MB_ATT_FORCEBLOCK,3|MB_ATT_FORCEFOCUS,3|MB_ATT_FP_REPULSE,1|MB_ATT_FLIPKICK,1|MB_ATT_SPY_DISGUISE,2|MB_ATT_FP_SABER_DEFENSE,0|MB_ATT_DASH_JUMP|MB_ATT_DASH,1|MB_ATT_DEXTERITY,3|MB_ATT_THROWER_FLAME
- forcepool 90
- resource resource_battery
- resourceRegenAmount 4
- resourceRegenRate 700
- maxhealth 140
- rankforcepool 120
- classNumberLimit 2
- classflags CFL_ICETHROWER|CFL_SEEING_STEALTH|CFL_NOPICKUPS|CFL_AKIMBOPISTOL3
- WP_DCCarbineFlags HELD_STUN|HELD_ALTRELOAD
- WP_ClonePistolFlags HELD_PULSE|HELD_ALTRELOAD
- WP_ThrowerFlags HELD_ALTRELOAD
- WP_RocketLauncherFlags HELD_ALTRELOAD
- WP_SaberFlags HELD_STUN
- rateOfFire_Melee .8
- saberDamage 70
- saberMaxChain 4
- saber1 martialarts_legends
- saber2 martialarts_legends
- saberstyle SS_DUAL
- APMultiplier 0.96
- rankAP 1.15,1.25,1.35
- ASmultiplier 0.96
- rankAS 1.02,1.08,1.14
- saberStanceAnim BOTH_MELEE_STAND1 
- uioverlay_c "gfx/icons/brawler"
- uioverlay_l "gfx/icons/support"
- uioverlay_r "gfx/icons/infantry"
- model "reborn_twin"
- skin "default"
- uishader "models/players/reborn_twin/mb2_icon_default"
- model_1 "reborn_twin"
- skin_1 "boss"
- uishader_1 "models/players/reborn_twin/mb2_icon_boss"
- model_2 "reborn_concept"
- skin_2 "force"
- uishader_2 "models/players/reborn_concept/mb2_icon_force"
- model_3 "reborn2"
- skin_3 "default"
- uishader_3 "models/players/reborn2/mb2_icon_default"
- special1 EAS_FP_PROTECT
- special2 EAS_HI_DASH
- special3 EAS_HI_DEX
- special4 EAS_FP_REPULSE
- isCustomBuild 1
- mbPoints 25
- hasCustomSpec 3
- isOnlyOneSpec 1
- customSpecName_1 "BRAWLER"
- customSpecIcon_1 "gfx/menus/alpha/icon_weap_stun"
- customSpecDesc_1 "CQC Brawler"
- customSpecName_2 "AREA DENIAL"
- customSpecIcon_2 "gfx/menus/alpha/icon_weap_expdamagesplash"
- customSpecDesc_2 "AOE lockdown"
- customSpecName_3 "DUELIST"
- customSpecIcon_3 "gfx/hud/w_icon_fakedeath"
- customSpecDesc_3 "Single Target Duelist"
- c_att_skill_0 MB_ATT_RESPAWNS
- c_att_names_0 "Reinforcement:"
- c_att_ranks_0 4
- c_att_skill_1 MB_ATT_FP_MINDTRICK
- c_att_names_1 "Mindtrick:"
- c_att_ranks_1 2,2,2
- c_att_skill_2 MB_ATT_FP_DRAIN
- c_att_names_2 "Drain:"
- c_att_ranks_2 4,2
- c_att_skill_3 MB_ATT_AMBAN
- c_att_names_3 "Lightning Punch:"
- c_att_ranks_3 5,0,3
- c_att_skill_4 MB_ATT_CORTOSIS
- c_att_names_4 "Cortosis:"
- c_att_ranks_4 2
- c_att_skill_5 MB_ATT_FLIPKICK
- c_att_names_5 "Flipkick:"
- c_att_ranks_5 0,4
- c_att_skill_6 MB_ATT_WOOKIE_STRENGTH
- c_att_names_6 "Strength:"
- c_att_ranks_6 2
- c_att_skill_7 MB_ATT_BESKAR
- c_att_names_7 "Beskar Robes:"
- c_att_ranks_7 5
- c_att_skill_8 MB_ATT_FP_SABER_DEFENSE
- c_att_names_8 "Saber Defense:"
- c_att_ranks_8 1,2,3
- c_att_skill_9 MB_ATT_DEFLECT
- c_att_names_9 "Saber Deflect:"
- c_att_ranks_9 5
- c_att_skill_10 MB_ATT_AP_MULTIPLIER
- c_att_names_10 "Saber AP (1.02,1.08,1.14):"
- c_att_ranks_10 1,2,3
- c_att_skill_11 MB_ATT_AS_MULTIPLIER
- c_att_names_11 "Saber AS (1.02,1.08,1.14):"
- c_att_ranks_11 1,2,3
- c_att_skill_15 MB_ATT_RESPAWNS
- c_att_names_15 "Reinforcement:"
- c_att_ranks_15 5
- c_att_skill_16 MB_ATT_FP_LIGHTNING
- c_att_names_16 "Lightning:"
- c_att_ranks_16 1,2,3
- c_att_skill_17 MB_ATT_FP_DRAIN
- c_att_names_17 "Drain:"
- c_att_ranks_17 1,2,3
- c_att_skill_18 MB_ATT_FP_GRIP
- c_att_names_18 "Grip:"
- c_att_ranks_18 1,2,3
- c_att_skill_19 MB_ATT_POWER
- c_att_names_19 "Force Pool (120):"
- c_att_ranks_19 5
- c_att_skill_20 MB_ATT_BESKAR
- c_att_names_20 "Beskar Robes:"
- c_att_ranks_20 4
- c_att_skill_21 MB_ATT_CLONE_PISTOL
- c_att_names_21 "Lightning Charges:"
- c_att_ranks_21 6,0,2
- c_att_skill_22 MB_ATT_ROCKET_LAUNCHER
- c_att_names_22 "Force Blast:"
- c_att_ranks_22 6
- c_att_skill_23 MB_ATT_DEFLECT
- c_att_names_23 "Saber Deflect:"
- c_att_ranks_23 5
- c_att_skill_30 MB_ATT_RESPAWNS
- c_att_names_30 "Reinforcement:"
- c_att_ranks_30 5
- c_att_skill_31 MB_ATT_FP_GRIP
- c_att_names_31 "Grip:"
- c_att_ranks_31 1,2,3
- c_att_skill_32 MB_ATT_FP_DRAIN
- c_att_names_32 "Drain:"
- c_att_ranks_32 1,2
- c_att_skill_33 MB_ATT_FP_BLIND
- c_att_names_33 "Blind:"
- c_att_ranks_33 1,1,1
- c_att_skill_34 MB_ATT_ROCKET_LAUNCHER
- c_att_names_34 "Force Blast:"
- c_att_ranks_34 8
- c_att_skill_35 MB_ATT_THROWER
- c_att_names_35 "Force Pyrokinesis:"
- c_att_ranks_35 8
- c_att_skill_36 MB_ATT_DC_CARBINE
- c_att_names_36 "Sonic Scream (Sec. Fire):"
- c_att_ranks_36 3,0,1
- c_att_skill_37 MB_ATT_INVALID
- c_att_names_37 "Nil:"
- c_att_ranks_37 -1
- c_att_skill_38 MB_ATT_INVALID
- c_att_names_38 "Nil:"
- c_att_ranks_38 -1
- c_att_skill_39 MB_ATT_DEFLECT
- c_att_names_39 "Saber Deflect:"
- c_att_ranks_39 5 }
+{
+name "v10_SForce"
+MBClass MB_CLASS_JEDI
+weapons WP_MELEE|WP_SABER
+forcepowers FP_LEVITATION,3|FP_SEE,3|FP_PUSH,2|FP_PULL,3|FP_PROTECT,1|FP_ABSORB,1|FP_RAGE,3
+attributes MB_ATT_FORCEBLOCK,3|MB_ATT_FORCEFOCUS,3|MB_ATT_FP_REPULSE,1|MB_ATT_FLIPKICK,1|MB_ATT_SPY_DISGUISE,2|MB_ATT_FP_SABER_DEFENSE,0|MB_ATT_DASH_JUMP|MB_ATT_DASH,1|MB_ATT_DEXTERITY,3|MB_ATT_THROWER_FLAME
+forcepool 90
+resource resource_battery
+resourceRegenAmount 4
+resourceRegenRate 700
+maxhealth 140
+rankforcepool 120
+classNumberLimit 2
+classflags CFL_ICETHROWER|CFL_SEEING_STEALTH|CFL_NOPICKUPS|CFL_AKIMBOPISTOL3
+WP_DCCarbineFlags HELD_STUN|HELD_ALTRELOAD
+WP_ClonePistolFlags HELD_PULSE|HELD_ALTRELOAD
+WP_ThrowerFlags HELD_ALTRELOAD
+WP_RocketLauncherFlags HELD_ALTRELOAD
+WP_SaberFlags HELD_STUN
+rateOfFire_Melee .8
+saberDamage 70
+saberMaxChain 4
+saber1 martialarts_legends
+saber2 martialarts_legends
+saberstyle SS_DUAL
+APMultiplier 0.96
+rankAP 1.1,1.2,1.3
+ASmultiplier 0.96
+rankAS 1.02,1.08,1.14
+saberStanceAnim BOTH_MELEE_STAND1
+model "reborn_twin"
+skin "default"
+uishader "models/players/reborn_twin/mb2_icon_default"
+model_1 "reborn_twin"
+skin_1 "boss"
+uishader_1 "models/players/reborn_twin/mb2_icon_boss"
+model_2 "reborn_concept"
+skin_2 "force"
+uishader_2 "models/players/reborn_concept/mb2_icon_force"
+model_3 "reborn2"
+skin_3 "default"
+uishader_3 "models/players/reborn2/mb2_icon_default"
+special1 EAS_FP_PROTECT
+special2 EAS_HI_DASH
+special3 EAS_HI_DEX
+special4 EAS_FP_REPULSE
+isCustomBuild 1
+mbPoints 25
+hasCustomSpec 3
+isOnlyOneSpec 1
+customSpecName_1 "BRAWLER"
+customSpecIcon_1 "gfx/menus/alpha/icon_weap_stun"
+customSpecDesc_1 "CQC Brawler"
+customSpecName_2 "AREA DENIAL"
+customSpecIcon_2 "gfx/menus/alpha/icon_weap_expdamagesplash"
+customSpecDesc_2 "AOE lockdown"
+customSpecName_3 "DUELIST"
+customSpecIcon_3 "gfx/hud/w_icon_fakedeath"
+customSpecDesc_3 "Single Target Duelist"
+c_att_skill_0 MB_ATT_RESPAWNS
+c_att_names_0 "Reinforcement:"
+c_att_ranks_0 4
+c_att_skill_1 MB_ATT_FP_MINDTRICK
+c_att_names_1 "Mindtrick:"
+c_att_ranks_1 2,2,2
+c_att_skill_2 MB_ATT_FP_DRAIN
+c_att_names_2 "Drain:"
+c_att_ranks_2 4,2
+c_att_skill_3 MB_ATT_AMBAN
+c_att_names_3 "Lightning Punch:"
+c_att_ranks_3 5,0,3
+c_att_skill_4 MB_ATT_CORTOSIS
+c_att_names_4 "Cortosis:"
+c_att_ranks_4 2
+c_att_skill_5 MB_ATT_FLIPKICK
+c_att_names_5 "Flipkick:"
+c_att_ranks_5 0,4
+c_att_skill_6 MB_ATT_WOOKIE_STRENGTH
+c_att_names_6 "Strength:"
+c_att_ranks_6 2
+c_att_skill_7 MB_ATT_BESKAR
+c_att_names_7 "Beskar Robes:"
+c_att_ranks_7 5
+c_att_skill_8 MB_ATT_FP_SABER_DEFENSE
+c_att_names_8 "Saber Defense:"
+c_att_ranks_8 1,2,3
+c_att_skill_9 MB_ATT_DEFLECT
+c_att_names_9 "Saber Deflect:"
+c_att_ranks_9 5
+c_att_skill_10 MB_ATT_AP_MULTIPLIER
+c_att_names_10 "Saber AP (1.02,1.08,1.14):"
+c_att_ranks_10 1,2,3
+c_att_skill_11 MB_ATT_AS_MULTIPLIER
+c_att_names_11 "Saber AS (1.02,1.08,1.14):"
+c_att_ranks_11 1,2,3
+c_att_skill_15 MB_ATT_RESPAWNS
+c_att_names_15 "Reinforcement:"
+c_att_ranks_15 5
+c_att_skill_16 MB_ATT_FP_LIGHTNING
+c_att_names_16 "Lightning:"
+c_att_ranks_16 1,2,3
+c_att_skill_17 MB_ATT_FP_DRAIN
+c_att_names_17 "Drain:"
+c_att_ranks_17 1,2,3
+c_att_skill_18 MB_ATT_FP_GRIP
+c_att_names_18 "Grip:"
+c_att_ranks_18 1,2,3
+c_att_skill_19 MB_ATT_POWER
+c_att_names_19 "Force Pool (120):"
+c_att_ranks_19 5
+c_att_skill_20 MB_ATT_BESKAR
+c_att_names_20 "Beskar Robes:"
+c_att_ranks_20 4
+c_att_skill_21 MB_ATT_CLONE_PISTOL
+c_att_names_21 "Lightning Charges:"
+c_att_ranks_21 6,0,2
+c_att_skill_22 MB_ATT_ROCKET_LAUNCHER
+c_att_names_22 "Force Blast:"
+c_att_ranks_22 6
+c_att_skill_23 MB_ATT_DEFLECT
+c_att_names_23 "Saber Deflect:"
+c_att_ranks_23 5
+c_att_skill_30 MB_ATT_RESPAWNS
+c_att_names_30 "Reinforcement:"
+c_att_ranks_30 5
+c_att_skill_31 MB_ATT_FP_GRIP
+c_att_names_31 "Grip:"
+c_att_ranks_31 1,2,3
+c_att_skill_32 MB_ATT_FP_DRAIN
+c_att_names_32 "Drain:"
+c_att_ranks_32 1,2
+c_att_skill_33 MB_ATT_FP_BLIND
+c_att_names_33 "Blind:"
+c_att_ranks_33 1,1,1
+c_att_skill_34 MB_ATT_ROCKET_LAUNCHER
+c_att_names_34 "Force Blast:"
+c_att_ranks_34 8
+c_att_skill_35 MB_ATT_THROWER
+c_att_names_35 "Force Pyrokinesis:"
+c_att_ranks_35 8
+c_att_skill_36 MB_ATT_DC_CARBINE
+c_att_names_36 "Sonic Scream (Sec. Fire):"
+c_att_ranks_36 3,0,1
+c_att_skill_37 MB_ATT_INVALID
+c_att_names_37 "Nil:"
+c_att_ranks_37 -1
+c_att_skill_38 MB_ATT_INVALID
+c_att_names_38 "Nil:"
+c_att_ranks_38 -1
+c_att_skill_39 MB_ATT_DEFLECT
+c_att_names_39 "Saber Deflect:"
+c_att_ranks_39 5
+}
 WeaponInfo0
-{ WeaponToReplace WP_SABER
- WeaponBasedOff WP_SABER
- NewWorldModel "models/weapons2/noweap/noweap.glm"
- NewViewModel "models/weapons2/dummy/dummy.md3"
- Icon "models/weapons2/halo_melee/icon.png"
- WeaponName "Martial Arts" }
+{
+WeaponToReplace WP_SABER
+WeaponBasedOff WP_SABER
+NewWorldModel "models/weapons2/noweap/noweap.glm"
+NewViewModel "models/weapons2/dummy/dummy.md3"
+Icon "models/weapons2/halo_melee/icon.png"
+WeaponName "Martial Arts"
+}
 WeaponInfo1
-{ WeaponToReplace WP_ROCKET_LAUNCHER
- WeaponBasedOff WP_ROCKET_LAUNCHER
- NewWorldModel "models/weapons2/dummyblaster/model.glm"
- NewViewModel "models/weapons2/dummy/dummy.md3"
- MuzzleEffect "gfx/effects/forceflare"
- MissileEffect "Force/inv_wave"
- altMuzzleEffect "gfx/effects/forceflare"
- altMissileEffect "Force/inv_wave"
- hasAnimOverrides 1
- animReady BOTH_MELEE_STAND1
- animReadyWalk BOTH_MELEE_STAND1
- animReadyNoAmmo BOTH_MELEE_STAND1
- animAttack BOTH_SUPERPUSH
- animAttackWalk BOTH_SUPERPUSH
- animStand BOTH_MELEE_STAND1
- Icon "gfx/marvel/vamp"
- WeaponName "Force Blasts"
- clipSize 4
- CustomAmmo 36
- velocityMod 0.2 
- ReloadTimeModifier 5 }
+{
+WeaponToReplace WP_ROCKET_LAUNCHER
+WeaponBasedOff WP_ROCKET_LAUNCHER
+NewWorldModel "models/weapons2/dummyblaster/model.glm"
+NewViewModel "models/weapons2/dummy/dummy.md3"
+MuzzleEffect "gfx/effects/forceflare"
+MissileEffect "Force/inv_wave"
+altMuzzleEffect "gfx/effects/forceflare"
+altMissileEffect "Force/inv_wave"
+hasAnimOverrides 1
+animReady BOTH_MELEE_STAND1
+animReadyWalk BOTH_MELEE_STAND1
+animReadyNoAmmo BOTH_MELEE_STAND1
+animAttack BOTH_SUPERPUSH
+animAttackWalk BOTH_SUPERPUSH
+animStand BOTH_MELEE_STAND1
+Icon "gfx/marvel/vamp"
+WeaponName "Force Blasts"
+clipSize 4
+CustomAmmo 36
+velocityMod 0.2
+ReloadTimeModifier 5
+}
 WeaponInfo2
-{ WeaponToReplace WP_CLONE_PISTOL
- WeaponBasedOff WP_CLONE_PISTOL
- NewWorldModel "models/weapons2/saber_lightning/saber_lightning.glm"
- NewViewModel "models/weapons2/dummy/dummy.md3"
- Icon "gfx/marvel/magpush"
- WeaponName "Lightning Charges"
- MuzzleEffect "gfx/effects/forceflare
- MissileEffect "force/lightning_arc"
- Missile3Effect "force/lightning_arc"
- MissileHitHumanEffect "SBD/Cortosis_blue"
- MissileHitDroidEffect "SBD/Cortosis_blue"
- MissileMissEffect "SBD/Cortosis_blue"
- damageMod 0.4
- CustomAmmo 200
- ClipSize 20
- altFlashSound0 "sound/weapons/llc/fire.wav"
- altFlashSound1 "sound/weapons/llc/altfire.wav"
- primFireEnabled 0
- velocityMod 0.2
- rateMod 2 
- ReloadTimeModifier 5 }
+{
+WeaponToReplace WP_CLONE_PISTOL
+WeaponBasedOff WP_CLONE_PISTOL
+NewWorldModel "models/weapons2/saber_lightning/saber_lightning.glm"
+NewViewModel "models/weapons2/dummy/dummy.md3"
+Icon "gfx/marvel/magpush"
+WeaponName "Lightning Charges"
+MuzzleEffect "gfx/effects/forceflare"
+MissileEffect "force/lightning_arc"
+Missile3Effect "force/lightning_arc"
+MissileHitHumanEffect "SBD/Cortosis_blue"
+MissileHitDroidEffect "SBD/Cortosis_blue"
+MissileMissEffect "SBD/Cortosis_blue"
+damageMod 0.4
+CustomAmmo 200
+ClipSize 20
+altFlashSound0 "sound/weapons/llc/fire.wav"
+altFlashSound1 "sound/weapons/llc/altfire.wav"
+primFireEnabled 0
+velocityMod 0.2
+rateMod 2
+ReloadTimeModifier 5
+}
 WeaponInfo3
-{ WeaponToReplace WP_THROWER
- WeaponBasedOff WP_CLONE_RIFLE
- NewWorldModel "models/weapons2/dummyblaster/model.glm"
- NewViewModel "models/weapons2/noweap/noweap.md3"
- Icon "gfx/marvel/fireball"
- WeaponName "Force Pyrokinesis"
- clipSize 30
- customAmmo 250
- hasAnimOverrides 1
- animready BOTH_STAND9
- animReadyWalk BOTH_STAND9
- animReadyNoAmmo BOTH_JET_FORWARD
- animAttack BOTH_S7_S1
- animAttackWalk BOTH_S7_S1
- animStand BOTH_STAND9 
- ReloadTimeModifier 5 }
+{
+WeaponToReplace WP_THROWER
+WeaponBasedOff WP_CLONE_RIFLE
+NewWorldModel "models/weapons2/dummyblaster/model.glm"
+NewViewModel "models/weapons2/noweap/noweap.md3"
+Icon "gfx/marvel/fireball"
+WeaponName "Force Pyrokinesis"
+clipSize 30
+customAmmo 250
+hasAnimOverrides 1
+animReady BOTH_STAND9
+animReadyWalk BOTH_STAND9
+animReadyNoAmmo BOTH_JET_FORWARD
+animAttack BOTH_S7_S1
+animAttackWalk BOTH_S7_S1
+animStand BOTH_STAND9
+ReloadTimeModifier 5
+}
 WeaponInfo4
-{ WeaponToReplace WP_DC_CARBINE
- WeaponBasedOff WP_DC_CARBINE
- NewWorldModel "models/weapons2/dummyblaster/model.glm"
- NewViewModel "models/weapons2/noweap/noweap.md3"
- MissileMissEffect "grenade_heal/explosion"
- MissileHitHumanEffect "grenade_heal/grenade_heal"
- MissileHitDroidEffect "grenade_heal/grenade_heal_hit"
- AltMissileMissEffect "grenade_heal/explosion"
- AltMissileHitHumanEffect "grenade_heal/grenade_heal"
- AltMissileHitDroidEffect "grenade_heal/grenade_heal_hit"
- Icon "gfx/hud/HUD_body_blue.tga"
- WeaponName "Sonic Scream"
- altMuzzleEffect "gfx/effects/forceflare"
- altMissileEffect "Force/inv_wave"
- altFlashSound0	"sound/chars/glm_howler/misc/death2.mp3"
- DamageMod 3
- ReloadTimeModifier 5
- rateMod 2
- velocityMod 0.2
- clipsize 20
- CustomAmmo 500
- primFireEnabled 0
- hasAnimOverrides 1
- animReady BOTH_SONICPAIN_START
- animReadyWalk BOTH_SONICPAIN_START
- animReadyNoAmmo BOTH_SONICPAIN_START
- animAttack BOTH_MELEE6
- animAttackWalk BOTH_MELEE6
- animStand BOTH_SONICPAIN_START }
+{
+WeaponToReplace WP_DC_CARBINE
+WeaponBasedOff WP_DC_CARBINE
+NewWorldModel "models/weapons2/dummyblaster/model.glm"
+NewViewModel "models/weapons2/noweap/noweap.md3"
+MissileMissEffect "grenade_heal/explosion"
+MissileHitHumanEffect "grenade_heal/grenade_heal"
+MissileHitDroidEffect "grenade_heal/grenade_heal_hit"
+AltMissileMissEffect "grenade_heal/explosion"
+AltMissileHitHumanEffect "grenade_heal/grenade_heal"
+AltMissileHitDroidEffect "grenade_heal/grenade_heal_hit"
+Icon "gfx/hud/HUD_body_blue.tga"
+WeaponName "Sonic Scream"
+altMuzzleEffect "gfx/effects/forceflare"
+altMissileEffect "Force/inv_wave"
+altFlashSound0 "sound/chars/glm_howler/misc/death2.mp3"
+DamageMod 3
+ReloadTimeModifier 5
+rateMod 2
+velocityMod 0.2
+clipsize 20
+CustomAmmo 500
+primFireEnabled 0
+hasAnimOverrides 1
+animReady BOTH_SONICPAIN_START
+animReadyWalk BOTH_SONICPAIN_START
+animReadyNoAmmo BOTH_SONICPAIN_START
+animAttack BOTH_MELEE6
+animAttackWalk BOTH_MELEE6
+animStand BOTH_SONICPAIN_START
+}
 WeaponInfo5
-{ WeaponToReplace WP_AMBAN
- WeaponBasedOff WP_MELEE
- NewWorldModel "models/weapons2/dummy/dummy.glm"
- NewViewModel "models/weapons2/dummy/dummy.md3"
- Icon "gfx/marvel/maghand"
- WeaponName "Lightning Jab"
- primFireEnabled 1
- altfireenabled 0
- clipsize 0
- primGore 1
- altGore 1
- CustomAmmo 0
- hasAnimOverrides 1
- animReady BOTH_PAIN16
- animReadyWalk BOTH_PAIN16
- animAttack BOTH_PUNCH4
- animAttackWalk BOTH_PUNCH4
- animStand BOTH_STAND9 }
+{
+WeaponToReplace WP_AMBAN
+WeaponBasedOff WP_MELEE
+NewWorldModel "models/weapons2/dummy/dummy.glm"
+NewViewModel "models/weapons2/dummy/dummy.md3"
+Icon "gfx/marvel/maghand"
+WeaponName "Lightning Jab"
+primFireEnabled 1
+altfireenabled 0
+clipsize 0
+primGore 1
+altGore 1
+CustomAmmo 0
+hasAnimOverrides 1
+animReady BOTH_PAIN16
+animReadyWalk BOTH_PAIN16
+animAttack BOTH_PUNCH4
+animAttackWalk BOTH_PUNCH4
+animStand BOTH_STAND9
+}
 
 description "Sith Forcemaster
 Class: Sith"

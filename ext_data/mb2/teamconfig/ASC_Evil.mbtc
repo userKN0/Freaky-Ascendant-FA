@@ -121,5 +121,7 @@ SubclassesForClass6
 	Subclass10	"v10_Traya"
 	Subclass11	"ase10_Abeloth"
 	Subclass12	"ase10_Nadd"
+	Subclass13	"ase10_SForce"
 }
+
 
