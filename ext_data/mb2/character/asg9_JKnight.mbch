@@ -1,0 +1,298 @@
+//Siege class def file
+ClassInfo
+{
+	name		"asg9_JKnight"
+	weapons		WP_MELEE|WP_SABER
+	attributes	MB_ATT_FORCEFOCUS,1|MB_ATT_FP_SABER_DEFENSE,0|MB_ATT_GUN_DEFENSE,0|MB_ATT_DEFLECT,0|MB_ATT_SABER_MEDIUM,2
+	speed		1
+	modelscale	1
+	extralives	1
+	maxhealth 100
+	rankhealth 120
+	BPmultiplier   1
+	APmultiplier   1
+	MBClass		MB_CLASS_JEDI
+	forcepowers	FP_SABER_OFFENSE,3
+	classflags CFL_NOPICKUPS
+	special2 EAS_MELEE
+	forcepool	100
+	rankForcepool 120
+	uioverlay_l "gfx/icons/frontline"
+	uioverlay_r "gfx/icons/infantry"
+	model		"jeditrainer" 					
+	skin			"default"					
+	uishader		"models/players/jeditrainer/mb2_icon_default"
+	model_1		"jedi"
+	skin_1		"default"
+	uishader_1	"models/players/jedi/mb2_icon_default"
+	model_2		"jedi"
+	skin_2		"master"
+	uishader_2	"models/players/jedi/mb2_icon_master"
+	model_3		"jedi_hf"
+	skin_3		"legends1"
+	uishader_3	"models/players/jedi_hf/mb2_icon_legends1"
+	userRGB_3 		1
+	customred_3 		1
+	customgreen_3		1
+	customblue_3 		1
+	model_4		"jedi_hf"
+	skin_4		"legends2"
+	uishader_4 	"models/players/jedi_hf/mb2_icon_legends2"
+	userRGB_4 		1
+	customred_4 		1
+	customgreen_4		1
+	customblue_4 		1
+	model_5 		"jedi_hm"
+	skin_5 		"legends1"
+	uishader_5 	"models/players/jedi_hm/mb2_icon_legends1"
+	userRGB_5		1
+	customred_5 		1
+	customgreen_5		1
+	customblue_5 		1
+	model_6 		"jedi_hm"
+	skin_6 		"legends2"
+	uishader_6 	"models/players/jedi_hm/mb2_icon_legends2"
+	userRGB_6		1
+	customred_6 		1
+	customgreen_6		1
+	customblue_6 		1
+	model_7		"jedi_zf"
+	skin_7 		"legends1" 
+	uishader_7 	"models/players/jedi_zf/mb2_icon_legends1"
+	userRGB_7		1
+	customred_7 		1
+	customgreen_7		1
+	customblue_7 		1
+	model_8 		"jedi_zf"
+	skin_8 		"legends2"
+	uishader_8 	"models/players/jedi_zf/mb2_icon_legends2"
+	userRGB_8		1
+	customred_8 		1
+	customgreen_8		1
+	customblue_8 		1
+	model_9		"jedi_tf"
+	skin_9 		"legends1" 
+	uishader_9 	"models/players/jedi_tf/mb2_icon_legends1"
+	userRGB_9 		1
+	customred_9 		1
+	customgreen_9		1
+	customblue_9 		1
+	model_10 	"jedi_tf"
+	skin_10 		"legends2"
+	uishader_10 	"models/players/jedi_tf/mb2_icon_legends2"
+	userRGB_10		1
+	customred_10 		1
+	customgreen_10	1
+	customblue_10 	1
+	model_11		"jedi_kdm"
+	skin_11 		"legends1" 
+	uishader_11 	"models/players/jedi_kdm/mb2_icon_legends1"
+	userRGB_11		1
+	customred_11		1
+	customgreen_11	1
+	customblue_11 	1
+	model_12 	"jedi_kdm"
+	skin_12 		"legends2"
+	uishader_12 	"models/players/jedi_kdm/mb2_icon_legends2"
+	userRGB_12		1
+	customred_12		1
+	customgreen_12	1
+	customblue_12 	1
+	model_13		"jedi_rm"
+	skin_13 		"legends1" 
+	uishader_13 	"models/players/jedi_rm/mb2_icon_legends1"
+	userRGB_13		1
+	customred_13		1
+	customgreen_13	1
+	customblue_13 	1
+	model_14 	"jedi_rm"
+	skin_14 		"legends2"
+	uishader_14 	"models/players/jedi_rm/mb2_icon_legends2"
+	userRGB_14		1
+	customred_14		1
+	customgreen_14	1
+	customblue_14 	1
+	model_15		"jedi_female"
+	skin_15		"rcnaat"
+	uishader_15	"models/players/jedi_female/mb2_icon_rcnaat"
+	model_16		"gwethenea"
+	skin_16		"jedi"
+	uishader_16 	"models/players/gwethenea/mb2_icon_jedi"
+	model_17		"jedi_tf"
+	skin_17 		"twibabe" 
+	uishader_17 	"models/players/jedi_tf/mb2_icon_twibabe"
+	model_18 	"jedi_tf"
+	skin_18		"jt"
+	uishader_18 	"models/players/jedi_tf/mb2_icon_jt"
+	model_19		"jedipack_hb"
+	skin_19 		"twilek"
+	uishader_19 	"models/players/jedipack_hb/mb2_icon_twilek"
+	saber1			single_1
+	sabercolor		4
+	saberstyle		SS_MEDIUM
+	saber1_1			single_3
+	sabercolor_1		3
+	saberstyle_1		SS_MEDIUM
+	saber1_2  		single_5
+	sabercolor_2 		5
+	saberstyle_2		SS_MEDIUM	
+	saber1_3  		single_2
+	sabercolor_3 		2
+	saberstyle_3		SS_MEDIUM	
+	saber1_4  		single_4
+	sabercolor_4 		1
+	saberstyle_4		SS_MEDIUM	
+	saber1_5			single_9
+	sabercolor_5		4
+	saberstyle_5		SS_MEDIUM	
+	saber1_6			single_6
+	sabercolor_6		3
+	saberstyle_6		SS_MEDIUM
+	saber1_7  		single_7
+	sabercolor_7 		5
+	saberstyle_7		SS_MEDIUM
+	saber1_8 		single_8
+	sabercolor_8 		2
+	saberstyle_8		SS_MEDIUM	
+	saber1_9 		single_106
+	sabercolor_9 		1
+	saberstyle_9		SS_MEDIUM
+	classNumberLimit	2
+	isCustomBuild		1
+	mbPoints			80
+	hasCustomSpec 3
+	isOnlyOneSpec 1
+	customSpecName_1 "Guardian"
+	customSpecIcon_1 "gfx/menus/alpha/icon_weap_stun"
+	customSpecDesc_1 "Generalist"
+	customSpecName_2 "Sentinel"
+	customSpecIcon_2 "gfx/menus/alpha/icon_weap_expdamagesplash"
+	customSpecDesc_2 "Duelist"
+	customSpecName_3 "Consular"
+	customSpecIcon_3 "gfx/2d/hud/hlp_resupply_health"
+	customSpecDesc_3 "Team Support"
+
+	c_att_skill_0	MB_ATT_FP_LEVITATION
+	c_att_names_0	"Force Jump"
+	c_att_ranks_0	0,2,4
+	c_att_skill_1	MB_ATT_FP_PUSH
+	c_att_names_1	"Force Push"
+	c_att_ranks_1	4,4
+	c_att_skill_2	MB_ATT_FP_PULL
+	c_att_names_2	"Force Pull"
+	c_att_ranks_2	4,4
+	c_att_skill_3	MB_ATT_FP_SEE
+	c_att_names_3	"Force Sense"
+	c_att_ranks_3	2,2
+	c_att_skill_4	MB_ATT_FP_TELEPATHY
+	c_att_names_4	"Force Mind Trick ^3[CS4]"
+	c_att_ranks_4	6,2
+	c_att_skill_5	MB_ATT_FP_SPEED
+	c_att_names_5	"Force Speed ^3[CS3]"
+	c_att_ranks_5	4,2
+	c_att_skill_6	MB_ATT_POWER
+	c_att_names_6	"Force Pool (120)"
+	c_att_ranks_6	8
+	c_att_skill_7	MB_ATT_FORCEBLOCK
+	c_att_names_7	"Force Block"
+	c_att_ranks_7	4,6,4
+	c_att_skill_8	MB_ATT_SABER_FAST
+	c_att_names_8	"Fast Saber Styles"
+	c_att_ranks_8	4,0,2
+ c_att_descs_8 "Blue, Cyan, both"
+	c_att_skill_9	MB_ATT_SABER_STRONG
+	c_att_names_9	"Strong Saber Styles"
+	c_att_ranks_9	4,0,2
+ c_att_descs_9 "Red, Purple, both"
+	c_att_skill_10	MB_ATT_FP_SABER_DEFENSE
+	c_att_names_10	"Saber Defense"
+	c_att_ranks_10	6,6
+	c_att_skill_11	MB_ATT_GUN_DEFENSE
+	c_att_names_11	"Blaster Defense"
+	c_att_ranks_11	8,8	
+	c_att_skill_12	MB_ATT_DEFLECT
+	c_att_names_12	"Saber Deflect"
+	c_att_ranks_12	4,4
+	c_att_skill_13	MB_ATT_FP_SABERTHROW
+	c_att_names_13	"Saber Throw ^3[CS1]"
+	c_att_ranks_13	2,2,2
+
+	c_att_skill_15 MB_ATT_AP_MULTIPLIER
+	c_att_names_15 "Saber AP (1.05,1.10,1.15):"
+	c_att_ranks_15 3,3,3
+	c_att_skill_16 MB_ATT_AS_MULTIPLIER
+	c_att_names_16 "Saber AS (1.02,1.05,1.1):"
+	c_att_ranks_16 3,3,3
+	c_att_skill_17 MB_ATT_FP_SPEED
+	c_att_names_17 "Force Speed:"
+	c_att_ranks_17 3
+	c_att_skill_18 MB_ATT_FP_SEE
+	c_att_names_18 "Force Sense:"
+	c_att_ranks_18 3,6
+	c_att_skill_19 MB_ATT_POWER
+	c_att_names_19 "Force Pool (120):"
+	c_att_ranks_19 5
+	c_att_skill_20 MB_ATT_HEALTH
+	c_att_names_20 "Health (120):"
+	c_att_ranks_20 4
+	c_att_skill_21 MB_ATT_GUN_DEFENSE
+	c_att_names_21 "Blaster Defense:"
+	c_att_ranks_21 3,3,3
+	c_att_skill_22 MB_ATT_FP_SABER_DEFENSE
+	c_att_names_22 "Saber Defense:"
+	c_att_ranks_22 3,3,3
+	c_att_skill_23 MB_ATT_DEFLECT
+	c_att_names_23 "Saber Deflect:"
+	c_att_ranks_23 3
+	c_att_skill_24 MB_ATT_FORCEBLOCK
+	c_att_names_24 "Force Block:"
+	c_att_ranks_24 3,4,5
+	c_att_skill_25 MB_ATT_FP_SABERTHROW
+	c_att_names_25 "Saber Throw:"
+	c_att_ranks_25 2,2,2
+
+	c_att_skill_30 MB_ATT_POWER
+	c_att_names_30 "Force Pool (120,140,160)"
+	c_att_ranks_30 5,5,5
+	c_att_skill_31 MB_ATT_FP_TELEPATHY
+	c_att_names_31 "Mind Trick:"
+	c_att_ranks_31 1,2
+	c_att_skill_32 MB_ATT_FORCEBLOCK
+	c_att_names_32 "Force Block:"
+	c_att_ranks_32 2,2,2
+	c_att_skill_33 MB_ATT_FP_PULL
+	c_att_names_33 "Force Pull:"
+	c_att_ranks_33 3,3,3
+	c_att_skill_34 MB_ATT_FP_PUSH
+	c_att_names_34 "Force Push:"
+	c_att_ranks_34 3,3,3
+	c_att_skill_35 MB_ATT_THROWER
+	c_att_names_35 "Force Stasis:"
+	c_att_ranks_35 8
+	c_att_skill_36 MB_ATT_FP_SABERTHROW
+	c_att_names_36 "Saber Throw:"
+	c_att_ranks_36 2,2,2
+	c_att_skill_37 MB_ATT_GUN_DEFENSE
+	c_att_names_37 "Blaster Defense:"
+	c_att_ranks_37 9
+	c_att_skill_38 MB_ATT_FP_SABER_DEFENSE
+	c_att_names_38 "Saber Defense"
+	c_att_ranks_38 9
+	c_att_skill_39 MB_ATT_DEFLECT
+	c_att_names_39 "Saber Deflect:"
+	c_att_ranks_39 2,2,2
+}
+
+description	"Jedi Knight [Jedi]
+
+2-life Jedi with customizable Force Powers and Lightsaber attributes.
+
+^2Weaponry: 
+- Melee
+- Lightsaber (Yellow)
+-- Saber Throw ^3[CS1]
+-- Slap ^3[CS2]
+
+^8Attributes:
+- Reinforcement (1)
+- Force Focus (1)"
