@@ -1,0 +1,198 @@
+//Siege class def file
+
+ClassInfo
+{
+	name		"asg10_Jaden"
+	weapons		WP_MELEE|WP_SABER|WP_BLASTER_PISTOL
+	attributes	MB_ATT_FORCEFOCUS,2|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_GUN_DEFENSE,3|MB_ATT_DEFLECT,3|MB_ATT_SABER_MEDIUM,2|MB_ATT_PISTOL,3|MB_ATT_FORCEBLOCK,3|MB_ATT_AMMO,3
+
+	speed		1
+	modelscale	1
+	BPmultiplier   1
+	APmultiplier   1
+
+	MBClass		MB_CLASS_JEDI
+	
+	forcepowers	FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_SEE,3|FP_PUSH,3|FP_PULL,3|FP_SPEED,3
+	special2 EAS_MELEE
+		
+	forcepool	100
+	
+	uioverlay_l "gfx/icons/frontline"
+	uioverlay_r "gfx/icons/infantry"
+	
+	model		"jedi_hf"
+	skin		"legends1"
+	uishader	"models/players/jedi_hf/mb2_icon_legends1"
+	userRGB		1
+	customred 		1
+	customgreen		1
+	customblue 		1
+
+	model_1		"jedi_hf"
+	skin_1	"legends2"
+	uishader_1 	"models/players/jedi_hf/mb2_icon_legends2"
+	userRGB_1		1
+	customred_1 		1
+	customgreen_1		1
+	customblue_1		1
+
+	model_2 		"jedi_hm"
+	skin_2 		"legends1"
+	uishader_2 	"models/players/jedi_hm/mb2_icon_legends1"
+	userRGB_2		1
+	customred_2 		1
+	customgreen_2		1
+	customblue_2 		1
+
+	model_3 		"jedi_hm"
+	skin_3 		"legends2"
+	uishader_3 	"models/players/jedi_hm/mb2_icon_legends2"
+	userRGB_3		1
+	customred_3 		1
+	customgreen_3		1
+	customblue_3 		1
+
+	model_4		"jedi_zf"
+	skin_4 		"legends1" 
+	uishader_4 	"models/players/jedi_zf/mb2_icon_legends1"
+	userRGB_4		1
+	customred_4 		1
+	customgreen_4		1
+	customblue_4 		1
+
+	model_5 		"jedi_zf"
+	skin_5 		"legends2"
+	uishader_5 	"models/players/jedi_zf/mb2_icon_legends2"
+	userRGB_5		1
+	customred_5 		1
+	customgreen_5		1
+	customblue_5 		1
+
+	model_6		"jedi_tf"
+	skin_6		"legends1" 
+	uishader_6 	"models/players/jedi_tf/mb2_icon_legends1"
+	userRGB_6		1
+	customred_6 		1
+	customgreen_6		1
+	customblue_6 		1
+
+	model_7 	"jedi_tf"
+	skin_7 		"legends2"
+	uishader_7 	"models/players/jedi_tf/mb2_icon_legends2"
+	userRGB_7		1
+	customred_7 		1
+	customgreen_7	1
+	customblue_7 	1
+
+	model_8		"jedi_kdm"
+	skin_8 		"legends1" 
+	uishader_8 	"models/players/jedi_kdm/mb2_icon_legends1"
+	userRGB_8		1
+	customred_8		1
+	customgreen_8	1
+	customblue_8 	1
+
+	model_9 	"jedi_kdm"
+	skin_9 		"legends2"
+	uishader_9 	"models/players/jedi_kdm/mb2_icon_legends2"
+	userRGB_9		1
+	customred_9		1
+	customgreen_9	1
+	customblue_9 	1
+
+	model_10		"jedi_rm"
+	skin_10		"legends1" 
+	uishader_10	"models/players/jedi_rm/mb2_icon_legends1"
+	userRGB_10		1
+	customred_10		1
+	customgreen_10	1
+	customblue_10 	1
+
+	model_11 	"jedi_rm"
+	skin_11		"legends2"
+	uishader_11 	"models/players/jedi_rm/mb2_icon_legends2"
+	userRGB_11		1
+	customred_11	1
+	customgreen_11	1
+	customblue_11 	1
+	
+	saber1			single_1
+	sabercolor		4
+	saberstyle		SS_MEDIUM|SS_FAST|SS_STRONG
+	
+	saber1_1			single_3
+	sabercolor_1		3
+	saber2_1			single_3
+	sabercolor2_1 		5
+	saberstyle_1		SS_DUAL|SS_FAST
+	
+	saber1_3  		dual_3_kor_siege_jedi
+	sabercolor_3 		2
+	saberstyle_3		SS_STAFF|SS_MEDIUM
+	
+	classNumberLimit	1
+	
+	isCustomBuild		1
+	mbPoints			12
+	
+	c_att_skill_0	MB_ATT_FP_PROTECT
+	c_att_names_0	"Force Protect"
+	c_att_ranks_0	1,1,1
+	
+	c_att_skill_1	MB_ATT_FP_ABSORB
+	c_att_names_1	"Force Absorb"
+	c_att_ranks_1	1,1,1
+
+	c_att_skill_2	MB_ATT_FP_HEAL
+	c_att_names_2	"Force Heal"
+	c_att_ranks_2	1,1,1
+	
+	c_att_skill_3	MB_ATT_FP_TELEPATHY
+	c_att_names_3	"Force Mind Trick"
+	c_att_ranks_3	1,1,1
+	
+	c_att_skill_4	MB_ATT_FP_GRIP
+	c_att_names_4	"Force Grip"
+	c_att_ranks_4	1,1,1
+	
+	c_att_skill_5	MB_ATT_FP_LIGHTNING
+	c_att_names_5	"Force Lightning"
+	c_att_ranks_5	1,1,1
+	
+	c_att_skill_6	MB_ATT_FP_RAGE
+	c_att_names_6	"Force Rage"
+	c_att_ranks_6	1,1,1
+		
+	c_att_skill_7	MB_ATT_FP_DRAIN
+	c_att_names_7	"Force Drain"
+	c_att_ranks_7	1,1,1
+	
+	c_att_skill_8	MB_ATT_FP_SABERTHROW
+	c_att_names_8	"Saber Throw ^3[CS1]"
+	c_att_ranks_8	0,0,0
+}
+
+description	"Jedi Knight Jaden Korr [Jedi]
+
+Famed Jedi Knight who helped defeat the Disciples of Ragnos.
+
+^2Weaponry: 
+- Melee
+- Blaster Pistol (3)
+- Lightsaber
+-- Yellow/Blue/Red Styles
+-- Saber Defense (3)
+-- Blaster Defense (3)
+-- Saber Deflect (3)
+
+^5Force Powers:
+- Force Jump (3)
+- Force Push (3)
+- Force Pull (3)
+- Force Speed (3)
+- Force Sense (3)
+
+^8Attributes:
+- Force Focus (2)
+- Force Block (3)"

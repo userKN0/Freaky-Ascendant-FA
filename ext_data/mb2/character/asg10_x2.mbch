@@ -1,0 +1,60 @@
+//Siege class def file.
+
+ClassInfo
+{
+	name			"asr10_x2"
+	weapons			WP_MELEE|WP_SABER
+        saber1                  saber_x1
+        sabercolor              3
+        saberstyle              SS_MEDIUM|SS_STRONG|SS_FAST
+        attributes	        MB_ATT_FORCEBLOCK,4|MB_ATT_DEFLECT,3|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_GUN_DEFENSE,3|MB_ATT_FORCEFOCUS,2|MB_ATT_FP_REPULSE
+        forcepowers             FP_SEE,3|FP_LEVITATION,3|FP_PUSH,3|FP_SABERTHROW,3|FP_SPEED,2|FP_GRIP,1
+        forcepool               150
+	maxhealth		150
+        classflags	        CFL_STRONGAGAINSTPHYSICAL|CFL_NOLOCATIONALDAMAGE
+	model			"x2_jedi"
+	skin			"default"
+        uishader	        "models/players/x2_jedi/mb2_icon_default"
+        model_1                 "x2_jedi_alt"
+        skin_1                  "default"
+        uishader_1	        "models/players/x2_jedi_alt/mb2_icon_default"
+	MBClass			MB_CLASS_JEDI
+	classNumberLimit	1
+        gloatAnim               BOTH_FORCEHEAL_QUICK
+        flourishAnim            BOTH_STAND2IDLE2
+        tauntAnim               BOTH_BF2RETURN
+        saberStanceAnim         BOTH_S1_S1_BR
+		hackrate				0.75	
+		special1			EAS_FP_REPULSE
+}
+
+description	"Jedi Knight X2
+
+Weaponry:
+Fists
+Lightsaber
+-- Yellow/Red/Blue Styles
+-- Saber Defense (3)
+-- Blaster Defense (3)
+-- Saber Deflect (3)
+-- Saber Throw (3)
+
+Force Powers:
+Force Jump (3)
+Force Push (3)
+Force Sense (3)
+Force Speed (2)
+Force Choke (1)
+Force Block (4)
+Force Focus (2)
+Force Repulse ^3[CS1]
+
+Attributes:
+25% Faster Hacking
+
+X2, along with his brother X1, was a force-sensitive clone trooper of the Galactic Republic, secretly created from Jedi Knight Falon Grey's DNA. 
+Shortly after Order 66 X2 defected from the newly formed Empire, joining his genetic donor whose he considered as father on Dantooine. Imperial attack on Dantooine led by X1 then resulted in Falon Grey's death, who eventually sacrifised himself to save X2.
+Fifteen years later X2 was recruited by Rahm Kota to the cause of Rebel Alliance.
+After the creation of the New Republic X2, under Luke Skywalker's tutelage, became a Jedi Knight."
+
+

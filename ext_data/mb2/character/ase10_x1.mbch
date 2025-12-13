@@ -1,0 +1,61 @@
+//Siege class def file.
+
+ClassInfo
+{
+	name			"ase10_x1"
+	weapons			WP_MELEE|WP_SABER
+        saber1                  saber_x1
+        sabercolor              0
+        saberstyle              SS_MEDIUM|SS_STRONG|SS_FAST
+        attributes	        MB_ATT_FORCEBLOCK,2|MB_ATT_DEFLECT,3|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_GUN_DEFENSE,3|MB_ATT_FORCEFOCUS,2|MB_ATT_ROSH_TAUNT
+        forcepowers             FP_LEVITATION,3|FP_PUSH,3|FP_PULL,2|FP_SABERTHROW,3|FP_LIGHTNING,3|FP_SEE,3|FP_PROTECT,2
+        forcepool               150
+	maxhealth		150
+        classflags	        CFL_STRONGAGAINSTPHYSICAL|CFL_NOLOCATIONALDAMAGE
+	model			"x1_sith"
+	skin			"default"
+        uishader	        "models/players/x1_sith/mb2_icon_default"
+        model_1                 "x1_sith"
+        skin_1                  "elite"
+        uishader_1	        "models/players/x1_sith/mb2_icon_elite"
+        model_2                 "x1_sith"
+        skin_2                  "alt"
+        uishader_2              "models/players/x1_sith/mb2_icon_alt"
+	MBClass			MB_CLASS_JEDI
+	classNumberLimit	1
+        gloatAnim               BOTH_STAND5TOSTAND8
+        flourishAnim            BOTH_SCEPTER_HOLD
+        tauntAnim               BOTH_MINDTRICK2
+        saberStanceAnim         BOTH_S1_S1_TR
+}
+
+description	"Corrupt Clone X1
+
+Weaponry:
+Fists
+Lightsaber
+-- Yellow/Red/Blue Styles
+-- Saber Defense (3)
+-- Gun Defense (3)
+-- Saber Deflect (3)
+-- Saber Throw (3)
+
+Force Powers:
+Force Jump (3)
+Force Push (3)
+Force Pull (2)
+Force Sense (3)
+Force Lightning (3)
+Force Protect (2)
+Force Block (2)
+Force Focus (2)
+
+Attributes:
+Dun Möch (Taunting Hurts Jedi)
+
+
+
+X1, along with his brother X2, was a force-sensitive clone trooper of the Galactic Republic, secretly created from Jedi Knight Falon Grey's DNA. 
+Shortly after the creation of the Empire and his brother's defection, X1 led an attack on Falon Grey's hiding place on Dantooine, eventually killing him and leaving his brother X2 for dead.
+X1 then served the Empire for many years, while at the same time gaining knowledge about the dark side of the Force.
+After Empire's destruction X1 proclaimed himself a Sith Lord and became one of the many Imperial warlords fighting for control of the shattered Empire."

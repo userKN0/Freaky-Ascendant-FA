@@ -1,0 +1,10 @@
+name "hoth_hunt_wampa"
+
+ClassesAllowed 4
+TimePeriod 3
+EUAllowed 0
+
+Classes
+{
+	class1		"hoth_hunt_wampa"
+}

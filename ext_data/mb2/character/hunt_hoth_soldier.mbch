@@ -1,0 +1,31 @@
+//Siege class def file.
+
+ClassInfo
+{
+	name			"hunt_hoth_Rebel"
+	weapons			WP_BLASTER_PISTOL|WP_A280|WP_MELEE
+	attributes		MB_ATT_PISTOL,1|MB_ATT_A280,1|MB_ATT_AMMO,3|MB_ATT_RESPAWNS,2|MB_ATT_ASSEMBLE,3|MB_ATT_HEALING,1
+	maxhealth		60
+	maxarmor		30
+	model			"jedi_hm"
+	skin			"hothelite2"
+	uishader		"gfx/hud/FA_icons/mb2_icon_rebelhoth_m"
+	MBClass			MB_CLASS_SOLDIER
+	model_1			"jedi_hf"
+	skin_1			"hoth"
+	uishader_1		"gfx/hud/FA_icons/mb2_icon_rebelhoth_f"
+	WP_A280Flags		HELD_ALTRELOAD
+	WP_PISTOLFLAGS		HELD_ALTRELOAD
+}
+
+description	"Hoth Rebel Infantry
+
+Weaponry:
+DL-44 Pistol (1)
+A280 Blaster Rifle (1)
+
+Attributes:
+Reinforcements (2)
+Assemble (3)
+
+Your basic male Rebel infantry located on Hoth. These are your grunts and thus come in numbers and can be considered quite deadly."

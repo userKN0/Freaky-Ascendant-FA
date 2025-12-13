@@ -1,0 +1,48 @@
+//Siege class def file.
+
+ClassInfo
+{
+	name			"ase10_boc"
+	weapons			WP_SABER|WP_MELEE
+	saber1			saber_boc
+	saber2			saber_boc
+	sabercolor		5
+	saber2color		5
+	saberstyle		SS_Dual|SS_Staff
+	forcepowers		FP_LEVITATION,3|FP_SABER_OFFENSE,3|FP_SABER_DEFENSE,2|FP_DESTRUCTION,3|FP_TELEPATHY,1|FP_SEE,1|FP_RAGE,2
+	attributes		MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_FORCEFOCUS,1|MB_ATT_FORCEBLOCK,3|MB_ATT_DEXTERITY,3|MB_ATT_FLIPKICK,3
+	maxhealth		100
+	forcepool		100
+	model			"boc_aseca"
+	skin			"default"
+	uishader		"models/players/boc_aseca/mb2_icon_default"
+	MBClass			MB_CLASS_JEDI
+	classNumberLimit	1
+	special1		EAS_HI_DEX
+	special3		EAS_FP_DESTRUCTION
+	resource		resource_force
+}
+
+description	"Boc
+
+Weaponry:
+Boc's Dual Lightsabers
+-- Dual/Staff Styles
+-- Saber Defense (2)
+-- Blaster Defense (2)
+
+Force Powers:
+Force Jump		(3)
+Force Destruction (3) ^3[CS3]
+Mind Trick (1)
+Force Sense (1)
+Dark Rage (2)
+Force Block		(3)
+Force Focus 	(1)
+Force Pool		(100)
+
+Attributes:
+Deterity ^3[CS1]
+Flipkick (3) ^3[Contact Jump]
+
+Qu Rahn ~ I can�t abide this creature named Boc. He is one of the few that actually uses two lightsabers in battle. He is a crude individual that lacks both tact and teeth. Only a Dark Jedi can he be."

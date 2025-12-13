@@ -1,0 +1,52 @@
+//Siege class def file.
+
+ClassInfo
+{
+	name			"hunt_hoth_sniper"
+	weapons			WP_BLASTER_PISTOL|WP_DISRUPTOR|WP_MELEE
+	attributes		MB_ATT_PISTOL,1|MB_ATT_BLASTER,2|MB_ATT_AMMO,3|MB_ATT_RESPAWNS,2|MB_ATT_ASSEMBLE,1|MB_ATT_HEALING,1
+	maxhealth		50
+	maxarmor		30
+	model			"jedi_hm"
+	skin			"hothelite2"
+	uishader		"gfx/hud/FA_icons/mb2_icon_rebelhoth_m"
+	MBClass			MB_CLASS_SOLDIER
+}
+
+WeaponInfo1
+{
+	WeaponToReplace WP_DLT20A
+	WeaponBasedOff WP_DLT20A
+	NewWorldModel "models/weapons2/dlt-18_repeater/dlt-18_repeater_w.glm"
+	NewViewModel "models/weapons2/dlt-18_repeater/dlt-18_repeater.md3"
+	Icon "gfx/hud/w_icon_dlt-18"
+	WeaponName	"Electrified Railgun"
+	MuzzleEffect	"Blaster/MuzzleFlash01B"
+	MissileEffect	"halo_smg/projectile"
+	MissileMissEffect "halo_smg/wall_impact"
+	AltMuzzleEffect "Blaster/MuzzleFlash01B"
+	AltMissileEffect "Blaster/Shot02B"
+	FlashSound0 "sound/weapons/EL-16/fire.wav"
+	AltFlashSound0	"sound/weapons/EL-16/alt_fire.wav"
+	customAmmo 360
+	primHitscanShot 1
+	primHitscanTracer	10
+	primGore	1
+	clipSize 30
+	FPMult 1.1
+	ratemod	1.25
+	damageMod 1.1
+	ReloadTimeModifier 1.7
+}
+
+description	"Hoth Rebel Sniper
+
+Weaponry:
+DL-44 Pistol (1)
+Disruptor Rifle (2)
+
+Attributes:
+Reinforcements (2)
+Assemble
+
+Your basic male Rebel infantry located on Hoth. These are your grunts and thus come in numbers and can be considered quite deadly."

@@ -1,0 +1,44 @@
+//Siege class def file.
+
+ClassInfo
+{
+	name				"hunt_hoth_wookiee"
+	weapons				WP_MELEE|WP_FRAG_NADE
+	attributes			MB_ATT_HEALING,2|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_AMMO,3|MB_ATT_FRAGS,3
+	maxhealth			150
+	maxarmor			0
+	model				"chewbacca" 
+	skin				"default"
+	uishader			"models/players/chewbacca/mb2_icon_default"
+	MBClass				MB_CLASS_WOOKIE
+	classNumberLimit	1
+	modelscale			1.17
+	speed				0.77
+	special2			EAS_HI_BARGE
+	iscustombuild
+	mbpoints		1
+	c_att_names_0	"Traditional Bowcaster"
+	c_att_ranks_0	1,0,0
+	c_att_skill_0	MB_ATT_TRAD_BOWCASTER
+	c_att_names_1 	"Charging Bowcaster"
+	c_att_ranks_1 	1,0,0
+	c_att_skill_1	MB_ATT_BOWCASTER
+	WP_BowcasterFlags	HELD_ALTRELOAD
+	WP_TradBowcasterFlags	HELD_ALTRELOAD
+	WP_MeleeFlags	HELD_SPEED
+}
+
+description	"Wookiee Warrior
+
+Weaponry:
+Bowcaster/Trad Bowcaster
+Melee 
+-- Runs Faster in Melee
+3 Frag Nades
+
+Attributes:
+Wookiee Strength	(3)
+Shoulder Barge		^3[CS2]
+Healing				(2)
+
+A Fiercesome warrior, armed with a Bowcaster!"
