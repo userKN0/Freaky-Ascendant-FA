@@ -127,9 +127,9 @@ ClassInfo
 	sabercolor2_1 		5
 	saberstyle_1		SS_DUAL|SS_FAST
 	
-	saber1_3  		dual_3_kor_siege_jedi
-	sabercolor_3 		2
-	saberstyle_3		SS_STAFF|SS_MEDIUM
+	saber1_2  		dual_4
+	sabercolor_2 		2
+	saberstyle_2		SS_STAFF|SS_MEDIUM
 	
 	classNumberLimit	1
 	
