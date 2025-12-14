@@ -11,7 +11,7 @@ ClassInfo
         forcepowers             FP_LEVITATION,3|FP_PUSH,3|FP_PULL,2|FP_SABERTHROW,3|FP_LIGHTNING,3|FP_SEE,3|FP_PROTECT,2
         forcepool               150
 	maxhealth		150
-        classflags	        CFL_STRONGAGAINSTPHYSICAL|CFL_NOLOCATIONALDAMAGE
+        classflags	        CFL_STRONGAGAINSTPHYSICAL
 	model			"x1_sith"
 	skin			"default"
         uishader	        "models/players/x1_sith/mb2_icon_default"
@@ -52,6 +52,7 @@ Force Focus (2)
 
 Attributes:
 Dun Möch (Taunting Hurts Jedi)
+Resistant to Melee
 
 
 
