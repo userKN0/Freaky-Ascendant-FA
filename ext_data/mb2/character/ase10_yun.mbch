@@ -10,7 +10,7 @@ ClassInfo
 	maxarmor		0
 	saber1			saber_yun
 	sabercolor		2
-	saberstyle		SS_BLUE|SS_CYAN
+	saberstyle		SS_FAST|SS_TAVION
 	model				"yun"
 	skin				"default"
 	uishader			"models/players/Yun/mb2_icon_default"
