@@ -3,14 +3,13 @@
 ClassInfo
 {
 	name		"RakatanInfantry"
-	MBClass		MB_CLASS_SOLDIER
+	MBClass		MB_CLASS_WOOKIE
 	weapons		WP_SABER|WP_MELEE
 	WP_BlasterPistolFlags HELD_PULSE|HELD_AMMOREGEN
 	WP_RepeaterFlags HELD_AMMOREGEN
 	WP_CloneRifleFlags HELD_ALTRELOAD
 	attributes	MB_ATT_HEALING,1|MB_ATT_ASSEMBLE,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_WOOKIEE_FURY,2|MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_CLONEBLOBS,1
 	classflags	CFL_BLOODYMELEE
-	classNumberLimit	6
 
 	forcepowers	FP_RAGE,1|FP_LEVITATION,1|FP_PUSH,1
 	
@@ -124,13 +123,13 @@ ClassInfo
 	c_att_skill_21	MB_ATT_PISTOL
 	c_att_ranks_21	0
 	c_att_names_21	"Lightning Shock (Pistol)"
-	c_att_descs_21	"^750% Faster RoF, -50% DMG, -20% Velocity, 
+	c_att_descs_21	"^720% Faster RoF, -20% DMG, 
 	800% Longer Reload, +30% FP DMG"
 	c_att_skill_22	MB_ATT_REPEATER
 	c_att_ranks_22	0
 	c_att_names_22	"Lightning Blast (Repeater)"
-	c_att_descs_22	"^7350% Slower RoF, 1000% Longer Reload,
-	+30% DMG, +350% Velocity, Alt-Fire Only"
+	c_att_descs_22	"^7350% Slower RoF, 800% Longer Reload,
+	+40% DMG, +350% Velocity, Alt-Fire Only"
 	c_att_skill_23	MB_ATT_HEALING
 	c_att_ranks_23	0,0,10
 	c_att_names_23	"Healing"
@@ -159,11 +158,11 @@ MissileEffect	"arc_caster/ArcCasterShock"
 MuzzleEffect	"effects/force/lightningwide.efx"
 MissileMissEffect "SBD/Cortosis_blue"
 FlashSound0 "sound/weapons/force/lightning.wav"	
-Clipsize	5
+Clipsize	8
 customAmmo 150
-rateMod .5
-damageMod .5
-velocityMod	.8
+rateMod .8
+damageMod .8
+velocityMod	1
 reloadTimeModifier 8
 FPMult 1.3
 hasAnimOverrides 1
@@ -194,8 +193,8 @@ altFlashSound0 "sound/weapons/force/lightning.wav"
 Clipsize	25
 customAmmo 75
 rateMod 4.5
-reloadTimeModifier 10
-damageMod 1.3
+reloadTimeModifier 8
+damageMod 1.4
 velocityMod	3.5
 hasAnimOverrides 1
 firingAnim	BOTH_FORCE_DRAIN_RELEASE	
@@ -215,11 +214,12 @@ WeaponBasedOff WP_CLONE_RIFLE
 NewWorldModel		"models/weapons2/golan_arms/rakatagolan_arms_w.glm"
 NewViewModel		"models/weapons2/golan_arms/rakatagolan_arms.md3"
 NewBarrelModel		"models/weapons2/golan_arms/rakatagolan_arms_barrel.md3"
-Icon	"gfx/hud/w_icon_flechette.tga"
+Icon	"gfx/effects/w_icon_flechette.tga"
 FlashSound0 "sound/weapons/repeater/fire_old.wav"
 MissileHitHumanEffect "effects/Blaster/Impact_Flesh"
 MissileHitDroidEffect "effects/Blaster/Impact_Wall01R.efx"
 MissileEffect "blaster/Shot09R"
+WeaponName "Rakatan Blaster"
 MissileMissEffect "effects/impacts/ImpactSmallRed2.efx"
 MuzzleEffect "Blaster/MuzzleFlash01R"
 AltFlashSound0 "sound/weapons/explosions/coolexplode1.wav"
@@ -235,7 +235,7 @@ Clipsize	30
 customAmmo 400
 rateMod 2.0
 reloadTimeModifier 1.4
-damageMod 1.3
+damageMod 1.5
 velocityMod	1
 }
 ForceInfo0
@@ -247,7 +247,7 @@ StartSound	"sound/chars/rakata/misc/pain100.wav"
 LoopSound	"sound/chars/rakata/misc/death1.wav"
 }
 
-description "Rakatan Infantry [Soldier]
+description "Rakatan Infantry [Wookie]
 
 A Rakatan soldier hailing from the Infinite Empire era with front and backline options.
 
@@ -270,7 +270,5 @@ A Rakatan soldier hailing from the Infinite Empire era with front and backline o
 - Assemble (2)
 - Strength (2)
 - Fury (2)
+
 - 300% Longer Skill CD"
-
-
-
