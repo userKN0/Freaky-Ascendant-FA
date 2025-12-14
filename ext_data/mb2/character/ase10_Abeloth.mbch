@@ -6,7 +6,7 @@ Classinfo
 
     name        	"ase10_Abeloth"      
 	weapons     	WP_SABER|WP_MELEE|WP_THROWER|WP_BLASTER_PISTOL	
-	attributes		MB_ATT_FORCEFOCUS,1|MB_ATT_FORCEBLOCK,1|MB_ATT_FP_REPULSE,1|MB_ATT_SPY_DISGUISE,3|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_DEFLECT,3|MB_ATT_GUN_DEFENSE,3|MB_ATT_FLAMETHROWER|MB_ATT_JETPACK,1|MB_ATT_WATER_BREATHING|MB_ATT_FLOAT_HOP|MB_ATT_ANTI_MT,2|MB_ATT_DASH,2|MB_ATT_ROSHTAUNT|MB_ATT_LIGHTS_BEACON|MB_ATT_PISTOL,1|MB_ATT_THROWER_ICE,3|MB_ATT_SABER_COMBO_NONE|MB_ATT_RECHARGE,3|
+	attributes		MB_ATT_FORCEFOCUS,1|MB_ATT_FORCEBLOCK,1|MB_ATT_FP_REPULSE,1|MB_ATT_SPY_DISGUISE,3|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_DEFLECT,3|MB_ATT_GUN_DEFENSE,3|MB_ATT_FLAMETHROWER|MB_ATT_DASH_JUMP|MB_ATT_WATER_BREATHING|MB_ATT_FLOAT_HOP|MB_ATT_ANTI_MT,2|MB_ATT_DASH,2|MB_ATT_ROSHTAUNT|MB_ATT_LIGHTS_BEACON|MB_ATT_PISTOL,1|MB_ATT_THROWER_ICE,3|MB_ATT_SABER_COMBO_NONE|MB_ATT_RECHARGE,3|
 	
 	bpmultiplier    1      
     apmultiplier    1      
@@ -26,6 +26,8 @@ Classinfo
 	SPECIAL2	EAS_HI_PLASMA
 	SPECIAL3	EAS_FP_REPULSE
 	SPECIAL4 	EAS_FP_TEAM_FORCE
+	
+	skilltimermod 1.5
 	
 	knockbackTaken 0
 	
@@ -141,7 +143,7 @@ A delicate, but powerful Force entity capable of wreaking extreme havoc on the e
 -- 100% more damage
 - Cryokinesis
 -- Based on Icethrower
-- orce Scream
+- Force Scream
 -- Based on Pistol (1)
 -- Stuns Target 
 -- Clip size: 1
@@ -169,13 +171,14 @@ A delicate, but powerful Force entity capable of wreaking extreme havoc on the e
 - Saber Deflect (3)
 - No Knockback
 - Dash (2) ^3[CS1]
+- 50% slower skill cooldown
 - 50% Melee Damage Resistance
 - Damage Taken is non-locational 
 - Taunts damage Jedi
 - Acid Blood (poisons enemies on death)
 - Slow Faller
 - "Breathes" underwater
-- Flight
+- Dash Jump
 - Force Focus/Block (1)
 - Force Sense Immunity
 - Mind Trick Immunity

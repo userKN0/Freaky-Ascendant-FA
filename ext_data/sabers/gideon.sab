@@ -54,7 +54,7 @@ gideon_electrostaff_legends
 	trailStyle			1
 	noManualDeactivate		1
 
-	damageScale		0.65
+	damageScale		1
 	bladeStyle2Start		1
 	noWallMarks2			1
 	noDlight2			0

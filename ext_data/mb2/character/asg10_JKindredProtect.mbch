@@ -4,10 +4,10 @@ ClassInfo
 	name			"h10_JKindred(Protect)"
 	weapons			WP_MELEE|WP_SABER
 	saberstyle		SS_MEDIUM|SS_STRONG
-	forcepowers		FP_SABER_OFFENSE,2|FP_LEVITATION,2|FP_PUSH,3|FP_PULL,1|FP_PROTECT,1|FP_SEE,1|FP_SABERTHROW,2
+	forcepowers		FP_SABER_OFFENSE,2|FP_LEVITATION,3|FP_PUSH,3|FP_PULL,1|FP_PROTECT,1|FP_SEE,1|FP_SABERTHROW,2
 	attributes		MB_ATT_FORCEBLOCK,1|MB_ATT_DEFLECT,2|MB_ATT_FORCEFOCUS,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_LIGHTS_BEACON
 	
-	basespeed		230
+	basespeed		235
 	
 	BPmultiplier	1.0
 	APmultiplier	1.1
@@ -15,9 +15,10 @@ ClassInfo
 	CSmultiplier	1
 	saberThrowDamage 40
 	forcepool	120
-	skilltimermod 3
+	skilltimermod 2.5
 	maxhealth	120
 	modelscale	1
+	forceregen	1.1
 	MBClass		MB_CLASS_JEDI
 	classflags CFL_NOPICKUPS
 

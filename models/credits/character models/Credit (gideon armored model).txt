@@ -1,0 +1,69 @@
+﻿******************************************
+JEDI KNIGHT III : JEDI ACADEMY MODIFICATION
+******************************************
+
+Title			: Moff Gideon skin
+Author			: Ruxith
+File Name		: zzZ_moffgideon.pk3
+
+------------------------------------------
+Date Released		
+	Version 1	: August 04, 2025
+------------------------------------------
+Contact info
+	Discord		: Ruxith#5235
+	Steam		: Ruxith
+------------------------------------------
+Jedi of Freedom
+www.jofacademy.eu
+
+----------------------------------------------------------------------
+Description:
+----------------------------------------------------------------------
+THIS SKIN WAS TESTED ON JEDI OF FREEDOM SERVER WITH ETERNALJK INSTALLED. YOUR GAME MAY CRASH USING THIS SKIN IF YOU DO NOT HAVE THIS INSTALLED. THIS SKIN IS NOT DESIGNED FOR CLEAN JKA INSTALLATION.
+
+Imported model of "Moff Gideon" from Fortnite. Features shader effects, jetpack (static object on player model) and unmasked version. Some minor issues such as weights with clipping, and the shader for the shiny black armour could be improved!
+
+There is some clear model clipping with the cape, this variation of the model was intended more for people to use with RP/standing still, the main skin is the version without cape and with helmet. This may be improved in a later version.
+
+
+Jedi of Freedom
+www.jofacademy.eu
+
+----------------------------------------------------------------------
+Known Bugs:
+----------------------------------------------------------------------
+As with all content not made from scratch, please don't go expecting perfection! Due to restrictions in JKA there's likely going to be clipping issues with certain animations, this is unfortunately out of my control. The model should work as intended!
+
+Bot support: No
+NPC support: No
+Team Skins: No
+SP support: No
+Sounds: No
+
+
+----------------------------------------------------------------------
+Additional Credits (That did not have a readme included)
+----------------------------------------------------------------------
+- Fortnite for the "Moff Gideon" model
+
+
+------------------------------------------
+
+- Omicron for the all of the feedback and support with shaders, unfortunately inactive now
+- Milamber for all the support and advice since I started dabbling with 3d model programs
+- Sazen/Cloud & Maui for support and feedback with kitbashing
+
+----------------------------------------------------------------------
+Modders:
+----------------------------------------------------------------------
+I have no issues with this skin being edited or used by others, but for public re-releases please at least let me know. I would appreciate it if you kept the readme files so that myself and the original artists are credited for their work.
+
+
+----------------------------------------------------------------------
+Installation:
+----------------------------------------------------------------------
+Simply extract the pk3 file to the gamedata/base or gamedata/japlus folder of your Jedi Academy directory.
+
+======================================================================
+THIS MODIFICATION IS NOT MADE, DISTRIBUTED, OR SUPPORTED BY ACTIVISION, RAVEN, OR LUCASARTS ENTERTAINMENT COMPANY LLC. ELEMENTS TM & © LUCASARTS ENTERTAINMENT COMPANY LLC AND/OR ITS LICENSORS.

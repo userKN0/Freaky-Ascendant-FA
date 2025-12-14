@@ -4,10 +4,10 @@ ClassInfo
 	name			"h10_JKindred(Absorb)"
 	weapons			WP_MELEE|WP_SABER
 	saberstyle		SS_MEDIUM|SS_FAST
-	forcepowers		FP_SABER_OFFENSE,1|FP_LEVITATION,2|FP_PUSH,1|FP_PULL,3|FP_ABSORB,1|FP_SEE,1|FP_SABERTHROW,2
-	attributes		MB_ATT_FORCEBLOCK,2|MB_ATT_DEFLECT,2|MB_ATT_FORCEFOCUS,1|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_LIGHTS_BEACON
+	forcepowers		FP_SABER_OFFENSE,1|FP_LEVITATION,3|FP_PUSH,1|FP_PULL,3|FP_ABSORB,1|FP_SEE,1|FP_SABERTHROW,2
+	attributes		MB_ATT_FORCEBLOCK,2|MB_ATT_DEFLECT,2|MB_ATT_FORCEFOCUS,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_LIGHTS_BEACON
 	
-	basespeed		230
+	basespeed		235
 	
 	BPmultiplier	1.1
 	APmultiplier	1
@@ -15,7 +15,8 @@ ClassInfo
 	CSmultiplier	1.05
 	saberThrowDamage 40
 	forcepool	120
-	skilltimermod 3
+	forceregen	1.1
+	skilltimermod 2.5
 	maxhealth	120
 	modelscale	1
 	MBClass		MB_CLASS_JEDI

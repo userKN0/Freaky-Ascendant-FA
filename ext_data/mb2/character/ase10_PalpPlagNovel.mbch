@@ -81,7 +81,7 @@ Classinfo
 	uishader_8	"models/players/palpatine/mb2_icon_darkempire"
 	
 	model_9		"palpatine_plagnovel"
-	skin_9		"youngpalpatine1"
+	skin_9		"default"
 	uishader_9	"model/players/palpatine_plagnovel/mb2_icon_apprentice"
 	
 	

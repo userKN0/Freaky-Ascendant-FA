@@ -6,13 +6,11 @@ ClassInfo
 	forcepowers FP_LEVITATION,3|FP_SEE,3|FP_PUSH,2|FP_PULL,3|FP_PROTECT,2|FP_ABSORB,1|FP_SPEED,3
 	attributes MB_ATT_FORCEBLOCK,3|MB_ATT_FORCEFOCUS,3|MB_ATT_FP_REPULSE,1|MB_ATT_FLIPKICK,1|MB_ATT_SPY_DISGUISE,2|MB_ATT_FP_SABER_DEFENSE,0|MB_ATT_DASH_JUMP|MB_ATT_DASH,1|MB_ATT_DEXTERITY,3|MB_ATT_THROWER_ICE
 	forcepool 90
-	forceregen 1.1
 	resource resource_battery
 	resourceRegenAmount 4
-	resourceRegenRate 700
+	resourceRegenRate 600
 	maxhealth 140
 	rankforcepool 120
-	Speed 1
 	modelscale 1
 	classNumberLimit 2
 	classflags CFL_ICETHROWER|CFL_SEEING_STEALTH|CFL_NOPICKUPS|CFL_AKIMBOPISTOL3
@@ -74,16 +72,16 @@ ClassInfo
 	c_att_ranks_3 5
 	c_att_skill_4 MB_ATT_CORTOSIS
 	c_att_names_4 "Cortosis:"
-	c_att_ranks_4 2
+	c_att_ranks_4 3
 	c_att_skill_5 MB_ATT_FP_DRAIN
 	c_att_names_5 "Drain:"
-	c_att_ranks_5 4,2
+	c_att_ranks_5 3
 	c_att_skill_6 MB_ATT_WOOKIE_STRENGTH
 	c_att_names_6 "Strength:"
-	c_att_ranks_6 2
+	c_att_ranks_6 3
 	c_att_skill_7 MB_ATT_FP_SABER_DEFENSE
 	c_att_names_7 "Saber Defense:"
-	c_att_ranks_7 1,2,3
+	c_att_ranks_7 2,2,3
 	c_att_skill_8 MB_ATT_AP_MULTIPLIER
 	c_att_names_8 "Saber AP (1.15,1.25,1.35):"
 	c_att_ranks_8 1,2,3
@@ -155,111 +153,110 @@ ClassInfo
 }
 WeaponInfo0
 {
-	WeaponToReplace WP_SABER
-	WeaponBasedOff WP_SABER
-	NewWorldModel "models/weapons2/noweap/noweap.glm"
-	NewViewModel "models/weapons2/dummy/dummy.md3"
-	Icon "models/weapons2/halo_melee/icon.png"
-	WeaponName "Martial Arts"
+WeaponToReplace WP_SABER
+WeaponBasedOff WP_SABER
+NewWorldModel "models/weapons2/noweap/noweap.glm"
+NewViewModel "models/weapons2/dummy/dummy.md3"
+Icon "models/weapons2/halo_melee/icon.png"
+WeaponName "Martial Arts"
 }
 WeaponInfo1
 {
- WeaponToReplace WP_ROCKET_LAUNCHER
- WeaponBasedOff WP_ROCKET_LAUNCHER
- NewWorldModel "models/weapons2/dummyblaster/model.glm"
-	NewViewModel "models/weapons2/dummy/dummy.md3"
-	MuzzleEffect "gfx/effects/forceflare"
-	MissileEffect "Force/inv_wave"
-	altMuzzleEffect "gfx/effects/forceflare"
-	altMissileEffect "Force/inv_wave"
-	hasAnimOverrides 1
-	animReady BOTH_MELEE_STAND1
-	animReadyWalk BOTH_MELEE_STAND1
-	animReadyNoAmmo BOTH_MELEE_STAND1
-	animAttack BOTH_SUPERPUSH
-	animAttackWalk BOTH_SUPERPUSH
-	animStand BOTH_MELEE_STAND1
-	Icon "gfx/marvel/vamp"
-	WeaponName "Force Blasts"
-	clipSize 4
-	CustomAmmo 36
-	velocityMod 0.2
-	ReloadTimeModifier 5 }
+WeaponToReplace WP_ROCKET_LAUNCHER
+WeaponBasedOff WP_ROCKET_LAUNCHER
+NewWorldModel "models/weapons2/dummyblaster/model.glm"
+NewViewModel "models/weapons2/dummy/dummy.md3"
+MuzzleEffect "gfx/effects/forceflare"
+MissileEffect "Force/inv_wave"
+altMuzzleEffect "gfx/effects/forceflare"
+altMissileEffect "Force/inv_wave"
+hasAnimOverrides 1
+animReady BOTH_MELEE_STAND1
+animReadyWalk BOTH_MELEE_STAND1
+animReadyNoAmmo BOTH_MELEE_STAND1
+animAttack BOTH_SUPERPUSH
+animAttackWalk BOTH_SUPERPUSH
+animStand BOTH_MELEE_STAND1
+Icon "gfx/marvel/vamp"
+WeaponName "Force Blasts"
+clipSize 4
+CustomAmmo 36
+velocityMod 0.5
+ReloadTimeModifier 2 }
 WeaponInfo2
 {
-	WeaponToReplace WP_CLONE_PISTOL
-	WeaponBasedOff WP_CLONE_PISTOL
-	NewWorldModel "models/weapons2/saber_lightning/saber_lightning.glm"
-	NewViewModel "models/weapons2/dummy/dummy.md3"
-	Icon "gfx/marvel/maghand"
-	WeaponName "Lightning Bolts"
-	MuzzleEffect "gfx/effects/forceflare
-	MissileEffect "force/lightning_arc"
-	Missile3Effect "force/lightning_arc"
-	MissileHitHumanEffect "SBD/Cortosis_blue"
-	MissileHitDroidEffect "SBD/Cortosis_blue"
-	MissileMissEffect "SBD/Cortosis_blue"
-	CustomAmmo 200
-	ClipSize 24
-	FlashSound0 "sound/weapons/llc/fire.wav"
-	FlashSound1 "sound/weapons/llc/altfire.wav"
-	AltFireEnabled 0
-	velocityMod 0.2
-	rateMod 2
-	ReloadTimeModifier 5
-	hasAnimOverrides 1
-	animReady BOTH_MELEE_BLOCK_BLASTER_L
-    animReadyWalk BOTH_SABER_OBIWAN_STANCE 
-    animStand BOTH_MELEE_BLOCK_BLASTER_R
-	animRunAttackR BOTH_MELEE1
-	animRunAttackL BOTH_MELEE2
-	animWalkAttackR BOTH_MELEE1
-	animWalkAttackL BOTH_MELEE2 }
+WeaponToReplace WP_CLONE_PISTOL
+WeaponBasedOff WP_CLONE_PISTOL
+NewWorldModel "models/weapons2/saber_lightning/saber_lightning.glm"
+NewViewModel "models/weapons2/dummy/dummy.md3"
+Icon "gfx/marvel/maghand"
+WeaponName "Lightning Bolts"
+MuzzleEffect "gfx/effects/forceflare
+MissileEffect "force/lightning_arc"
+Missile3Effect "force/lightning_arc"
+MissileHitHumanEffect "SBD/Cortosis_blue"
+MissileHitDroidEffect "SBD/Cortosis_blue"
+MissileMissEffect "SBD/Cortosis_blue"
+CustomAmmo 200
+ClipSize 24
+FlashSound0 "sound/weapons/llc/fire.wav"
+FlashSound1 "sound/weapons/llc/altfire.wav"
+AltFireEnabled 0
+velocityMod 0.5
+rateMod 2
+ReloadTimeModifier 2
+hasAnimOverrides 1
+animReady BOTH_MELEE_BLOCK_BLASTER_L
+animReadyWalk BOTH_SABER_OBIWAN_STANCE 
+animStand BOTH_MELEE_BLOCK_BLASTER_R
+animRunAttackR BOTH_MELEE1
+animRunAttackL BOTH_MELEE2
+animWalkAttackR BOTH_MELEE1
+animWalkAttackL BOTH_MELEE2 }
 WeaponInfo3
 {
-	WeaponToReplace WP_THROWER
-	WeaponBasedOff WP_CLONE_RIFLE
-	NewWorldModel "models/weapons2/dummyblaster/model.glm"
-	NewViewModel "models/weapons2/noweap/noweap.md3"
-	Icon "gfx/marvel/freeze"
-	WeaponName "Force Stasis"
-	hasAnimOverrides 1
-	animready BOTH_STAND9
-	animReadyWalk BOTH_STAND9
-	animReadyNoAmmo BOTH_JET_FORWARD
-	animAttack BOTH_FORCE_2HANDEDLIGHTNING_HOLD
-	animAttackWalk BOTH_FORCE_2HANDEDLIGHTNING_HOLD
-	animStand BOTH_STAND9
-	ReloadTimeModifier 5 }
+WeaponToReplace WP_THROWER
+WeaponBasedOff WP_CLONE_RIFLE
+NewWorldModel "models/weapons2/dummyblaster/model.glm"
+NewViewModel "models/weapons2/noweap/noweap.md3"
+Icon "gfx/marvel/freeze"
+WeaponName "Force Stasis"
+hasAnimOverrides 1
+animready BOTH_STAND9
+animReadyWalk BOTH_STAND9
+animReadyNoAmmo BOTH_JET_FORWARD
+animAttack BOTH_FORCE_2HANDEDLIGHTNING_HOLD
+animAttackWalk BOTH_FORCE_2HANDEDLIGHTNING_HOLD
+animStand BOTH_STAND9
+ReloadTimeModifier 2 }
 WeaponInfo4
 {
-	WeaponToReplace WP_DC_CARBINE
-	WeaponBasedOff WP_DC_CARBINE
-	NewWorldModel "models/weapons2/dummyblaster/model.glm"
-	NewViewModel "models/weapons2/noweap/noweap.md3"
-	MissileMissEffect "grenade_heal/explosion"
-	MissileHitHumanEffect "grenade_heal/grenade_heal"
-	MissileHitDroidEffect "grenade_heal/grenade_heal_hit"
-	AltMissileMissEffect "grenade_heal/explosion"
-	AltMissileHitHumanEffect "grenade_heal/grenade_heal"
-	AltMissileHitDroidEffect "grenade_heal/grenade_heal_hit"
-	Icon "gfx/marvel/heal"
-	WeaponName "Healing Burst"
-	altMuzzleEffect "gfx/effects/forceflare"
-	altMissileEffect "Force/inv_wave"
-	DamageMod -2
-	rateMod 2
-	velocityMod 0.2
-	CustomAmmo 500
-	primFireEnabled 0
-	hasAnimOverrides 1
-	animReady BOTH_FORCE_2HANDEDLIGHTNING_START
-	animReadyWalk BOTH_FORCE_2HANDEDLIGHTNING_START
-	animReadyNoAmmo BOTH_MAND_FLAME_IDLE
-	animAttack BOTH_SUPERPUSH
-	animAttackWalk BOTH_SUPERPUSH
-	animStand BOTH_SABER_OBIWAN_STANCE
-	ReloadTimeModifier 5 }
+WeaponToReplace WP_DC_CARBINE
+WeaponBasedOff WP_DC_CARBINE
+NewWorldModel "models/weapons2/dummyblaster/model.glm"
+NewViewModel "models/weapons2/noweap/noweap.md3"
+MissileMissEffect "grenade_heal/explosion"
+MissileHitHumanEffect "grenade_heal/grenade_heal"
+MissileHitDroidEffect "grenade_heal/grenade_heal_hit"
+AltMissileMissEffect "grenade_heal/explosion"
+AltMissileHitHumanEffect "grenade_heal/grenade_heal"
+AltMissileHitDroidEffect "grenade_heal/grenade_heal_hit"
+Icon "gfx/marvel/heal"
+WeaponName "Healing Burst"
+altMuzzleEffect "gfx/effects/forceflare"
+altMissileEffect "Force/inv_wave"
+DamageMod -2
+rateMod 2
+CustomAmmo 500
+primFireEnabled 0
+hasAnimOverrides 1
+animReady BOTH_FORCE_2HANDEDLIGHTNING_START
+animReadyWalk BOTH_FORCE_2HANDEDLIGHTNING_START
+animReadyNoAmmo BOTH_MAND_FLAME_IDLE
+animAttack BOTH_SUPERPUSH
+animAttackWalk BOTH_SUPERPUSH
+animStand BOTH_SABER_OBIWAN_STANCE
+ReloadTimeModifier 2 }
 
 description "Jedi Forcemaster [Jedi]
 "

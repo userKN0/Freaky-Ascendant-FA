@@ -15,13 +15,9 @@ ClassInfo
 	modelscale	0.95
 	speed .94
 	
-	model			"kreia" 					
-	skin				"traya"
-	uishader			"models/players/kreia/mb2_icon_traya"
-	
-	model_1			"kreia"
-	skin_1				"telekineticduelist"
-	uishader_1			"models/players/kreia/mb2_icon_telekineticduelist"
+	model			"darthtraya"
+	skin				"telekineticduelist"
+	uishader			"models/players/darthtraya/mb2_icon_telekineticduelist"
 	
  	saber1			trayasab
 	sabercolor		0
