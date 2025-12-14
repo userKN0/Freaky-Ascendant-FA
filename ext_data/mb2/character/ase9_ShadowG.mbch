@@ -10,25 +10,25 @@ ClassInfo
 	
 	attributes	MB_ATT_FORCEBLOCK,2|MB_ATT_HEALING,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_FORCEFOCUS,2|MB_ATT_DEFLECT,1|MB_ATT_DEXTERITY,3|MB_ATT_PISTOL,1
 
-	forcepowers	FP_SABER_OFFENSE,3|FP_SPEED,3|FP_LEVITATION,3
+	forcepowers	FP_SABER_OFFENSE,3|FP_SPEED,2|FP_LEVITATION,3
 	resource RESOURCE_FORCE
 	forcepool	100
 	forceregen 1.05
 	
 	maxhealth	80
  rankHealth 100
-	maxarmor	80
- rankArmor 100
- 	basespeed 	240
+	maxarmor	40
+ rankArmor 80
+ 	basespeed 	230
 	saberdamage	400
 
 	saberstyle	SS_DESANN
 	saber1		lightsaber_pike_legends
 	sabercolor 0
-	APmultiplier 1.10
-	BPmultiplier 1.10
-	CSmultiplier 1.10
-	ASmultiplier 1.10
+	APmultiplier 1.1
+	BPmultiplier 1.1
+	CSmultiplier 1
+	ASmultiplier 1.1
 	modelscale   1.01
 	uioverlay_r 		"gfx/icons/frontline"
 	model			"royal"
@@ -77,7 +77,7 @@ mbPoints	8
 	c_att_ranks_7	1
 	
 	c_att_skill_8	MB_ATT_ARMOUR
-	c_att_names_8	"Armor (100)"
+	c_att_names_8	"Armor (80)"
 	c_att_ranks_8	1
 }
 
@@ -105,7 +105,7 @@ WeaponInfo1
 	clipsize            21
 	damageMod 1.25
 	FPmult    1.25
-	rateMod 1
+	rateMod 1.25
 	hasAnimOverrides 1
 	animStand 		BOTH_STAND5
 	altfireenabled 	0
@@ -127,9 +127,10 @@ Highly mobile saberists that can choose between a versatile one-life or speciali
 -- Mag reload
 ^5Force Powers:
 - Jump (3)
-- Speed (3)
+- Speed (2)
 
 ^8Attributes:
 - Dexterity (3)
 - Healing (1)
 - Force Block/Focus (2)"
+
