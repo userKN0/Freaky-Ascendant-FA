@@ -1,0 +1,77 @@
+//Oirignal character file - Created by Frenzy & Leos
+//Updated Ascended FA file - Kir Kanos
+
+ClassInfo
+{
+	name					"asg2_senator"
+	weapons					WP_MELEE|WP_BLASTER_PISTOL
+	attributes				MB_ATT_HEALING,3|MB_ATT_DASH,2|MB_ATT_AMMO,3|MB_ATT_RALLY,1|MB_ATT_DODGE,3|MB_ATT_PISTOL,2|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_USE_DISTANCE,10|MB_ATT_DISP_BLOCK,3|MB_ATT_DISP_FORCE,3|MB_ATT_GRAPPLE_HOOK,1|MB_ATT_ANTI_MT,2|MB_ATT_SPY_DISGUISE,3|MB_ATT_DASH_JUMP
+	maxhealth				120
+	maxarmor				65
+	
+	resource 				RESOURCE_ENERGY
+	forcepool 				80
+	MBClass					MB_CLASS_HERO
+	speed					1.05
+	rateOfFire				1.2
+	rateOfFire_Melee		1.2
+	skilltimermod			0.80
+	knockbackGiven 			0.6
+	classNumberLimit 		1
+	holdables       		HI_MEDPAC_BIG|HI_MEDPAC
+	
+	resourceregenrate			125
+	resourceregenamount			1.2
+		
+	model		"organa" 				
+	skin			"default"					
+	uishader		"models/players/organa/mb2_icon_default"
+
+	model_1		"organa" 				
+	skin_1		"cape"					
+	uishader_1	"models/players/organa/mb2_icon_cape"
+	
+	model_2		"monmothma" 				
+	skin_2		"default"					
+	uishader_2	"models/players/monmothma/icon_default"
+	
+	respawnCustomTime  50000	
+	special1		EAS_HI_DODGE
+	special2 		EAS_HI_DASH
+//	special3		
+	special4		EAS_HI_GRAPPLEHOOK
+	
+	uioverlay "gfx/icons/spec_infantry"
+	
+	flourishAnim BOTH_STAND5TOAIM
+}
+
+description	"Republic Senator [Hero]
+
+Support Hero that focuses on helping their team rather than Offense.
+
+^2Weaponry:
+- Melee
+-- 20% Slower ROF
+- Blaster Pistol (2)
+-- 20% Slower ROF
+
+^6Inventory:
+- Kolto (Gradual 50 HP)
+- Bacta (Instant 50 HP)
+
+^8Attributes:
+- 40% Less KB Given
+- 20% faster skill CD
+- Healing (3)
+- Anti-Mind Trick (2)
+- Rally
+- Disguise Kit (3)
+
+^3Abilities:
+- BP/Resource Dispenser (3) ^3['Use' on ^3allies]
+-- +10 range
+- Dodge (3) ^3[CS1]
+- Dash (2) ^3[CS2]
+- Dash Jump
+- Grappling Hook (1) ^3[CS4 Melee]"

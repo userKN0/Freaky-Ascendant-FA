@@ -1,0 +1,107 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name				"asg2_zeb"
+	weapons 			WP_E_22|WP_MELEE|WP_SABER|WP_CONC_NADE
+	attributes  		MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_E_22,2|MB_ATT_BLAST_ARMOUR|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_MICRO_GRENADES,6
+	maxhealth			300
+	maxarmor			100
+	modelscale  		1.15
+	model 				"zeb"
+	skin  				"default"
+	uishader  			"models/players/zeb/icon_default"
+	MBClass 			MB_CLASS_WOOKIEE
+	classNumberLimit	1
+	rageSoundOverride 	"sound/chars/BlackKrr/misc/BKrage.mp3"
+	bargeSoundOverride 	"sound/chars/BlackKrr/misc/Scream2BK.mp3"
+	speed               1.05067
+	damageTaken         0.95
+	damageGiven         1.05
+	rateoffire          1.02
+	rateoffire_melee	1.05
+	skilltimermod 0.90
+	hackrate	0.95
+	
+	saber1		electrostaff_legends
+	sabercolor	5
+	saberstyle		SS_STAFF
+	saberdamage		33
+	
+	resource	resource_energy
+	forcepool 110
+	
+	WP_SaberFlags HELD_PULSE
+	WP_ConcNadeFlags	HELD_LOWDAMAGE
+	
+	respawncustomtime 75000
+	
+//	special1	
+	special2	EAS_HI_BARGE
+	
+	flourishAnim BOTH_WOOKIEE_ENRAGE
+	
+	uioverlay_l	"gfx/icons/scout"
+	uioverlay_r "gfx/icons/brawler"
+	
+	meleeMoves M_UPPERCUT|M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_PUNCH|M_RLKICK
+}
+WeaponInfo0 
+{
+    WeaponToReplace            WP_CONC_NADE
+    WeaponBasedOff            WP_CONC_NADE
+    NewWorldModel                "models/weapons2/thermal/thermal_w.glm"
+    NewViewModel                "models/weapons2/thermal/thermal_hand.md3"
+    Icon                        "gfx/hud/w_thermal_grenade"
+    MissileModel                 "models/weapons2/thermal/thermal_proj.md3"
+    AltMissileModel            "models/weapons2/thermal/thermal_proj.md3"
+    MissileEffect             "stone/missile1"
+    AltMissileEffect             "stone/missile1"
+    MissileMissEffect            "smokenadeleg/explode_vol"
+    MissileHitHumanEffect    "smokenadeleg/explode_vol"
+    MissileHitDroidEffect    "smokenadeleg/explode_vol"
+    AltMissileMissEffect        "smokenadeleg/explode_vol"
+    AltMissileHitHumanEffect    "smokenadeleg/explode_vol"
+    AltMissileHitDroidEffect    "smokenadeleg/explode_vol"
+    FlashSound0        "sound/weapons/smokenade/select.mp3"
+    AltFlashSound0     "sound/weapons/smokenade/select.mp3"
+    WeaponName                  "Smoke Grenades"
+    primFireEnabled 1
+    hasAnimOverrides 1
+    animReady  BOTH_SABERDUAL_STANCE //upper
+    animReadyWalk  BOTH_SABERDUAL_STANCE
+    animReadyNoAmmo  BOTH_SABERDUAL_STANCE
+    animAttack NADE_SECONDARY
+    animAttackWalk NADE_SECONDARY
+    animStand BOTH_STAND1 //lower
+    damagemod 0.001
+	customammo	6
+}
+
+description	"Garazeb "Zeb" Orrelios [Wookiee]
+
+A large but swift Wookiee / Melee / Gunner hybrid.
+
+^2Weaponry:
+- Wookiee-style Melee
+- 5% Faster Swings
+- E-22 Blaster
+- Electro Staff
+-- Staff Style Only
+-- Saber Defense (2)
+-- Gun Defense (1)
+-- 33 Saber Damage
+-- Pulse Stun on Hit
+- 6 Smoke Grenades
+-- Based on Conc Nades
+-- 99.99% Reduced Damage
+
+^8Attributes:
+- 10% faster skill cooldown
+- Strength (2)
+- Blast Armor
+
+
+^3Abilities:
+- 5% Faster Hacking
+- Shoulder Barge ^3[CS2 in Melee]"
