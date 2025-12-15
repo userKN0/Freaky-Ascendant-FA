@@ -15,6 +15,8 @@ ClassInfo
 	
 	forcepowers	FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_SEE,3|FP_PUSH,3|FP_PULL,3|FP_SPEED,3
 	special2 EAS_MELEE
+	
+	healthregencap	100
 		
 	forcepool	100
 	
@@ -144,9 +146,10 @@ ClassInfo
 	c_att_names_1	"Force Absorb"
 	c_att_ranks_1	1,1,1
 
-	c_att_skill_2	MB_ATT_FP_HEAL
+	c_att_skill_2	MB_ATT_HEAL
 	c_att_names_2	"Force Heal"
 	c_att_ranks_2	1,1,1
+	c_att_descs_2	"Uncapped Hero Heal 2HP/4HP/8HP per Second per level"
 	
 	c_att_skill_3	MB_ATT_FP_TELEPATHY
 	c_att_names_3	"Force Mind Trick"

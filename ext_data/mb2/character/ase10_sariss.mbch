@@ -16,6 +16,7 @@ ClassInfo
 	uishader		"models/players/gwethenea/mb2_icon_sariss_cape"
 	MBClass			MB_CLASS_JEDI
 	classNumberLimit	1
+	saberStanceAnim         BOTH_S1_S1_BR
 }
 
 description	"Sariss
