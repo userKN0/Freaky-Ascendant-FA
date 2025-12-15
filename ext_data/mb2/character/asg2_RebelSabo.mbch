@@ -14,7 +14,7 @@ MBClass MB_CLASS_HERO
 classNumberLimit 3
 holdables HI_SEEKER
 special1 EAS_HI_POISON
-special2 
+special2 EAS_FP_BLIND
 special3 EAS_HI_DASH
 special4 EAS_HI_GRAPPLEHOOK
 uioverlay "gfx/icons/tactician"
@@ -255,12 +255,10 @@ description "Rebel Saboteur [Hero]
 
 An elite saboteur with damage over time weapons and getaway tools.
 ^8Default Equipment:
--Force Blind
 -Tracking Beacon
 -Dext 2
--Force Blind
 -Poison Darts ^3[CS1]
--Tracking Darts ^3[CS2]
+-Force Blind^3[CS2]
 -Dash ^3[CS3]
 -Grapplehook ^3[CS4]
 -Seeker Droid"
