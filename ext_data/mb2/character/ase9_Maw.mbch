@@ -3,17 +3,19 @@ ClassInfo
 {
 name	"ase9_Maw"
 
-MBclass		MB_CLASS_JEDI
+MBclass		MB_CLASS_WOOKIE
 classNumberLimit	1
 weapons		WP_MELEE|WP_SABER
 
-forcepowers	FP_PULL,1|FP_PUSH,3|FP_RAGE,2|FP_SABERTHROW,2|FP_GRIP,2
+forcepowers	FP_PULL,1|FP_PUSH,3|FP_RAGE,2|FP_SABERTHROW,2|FP_GRIP,2|FP_DRAIN,1
 
-attributes	MB_ATT_JETPACK,1|MB_ATT_DEFLECT,1|MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_WOOKIE_STRENGTH,3|MB_ATT_WOOKIEE_FURY,1|MB_ATT_HEALING,3
+attributes	MB_ATT_JETPACK,1|MB_ATT_DEFLECT,1|MB_ATT_FORCEBLOCK,1|MB_ATT_FORCEFOCUS,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_WOOKIE_STRENGTH,3|MB_ATT_WOOKIEE_FURY,1|MB_ATT_HEALING,3
 classflags CFL_BLOODYMELEE|CFL_STRONGAGAINSTPHYSICAL|CFL_HEAVYMELEE|CFL_DISMEMBERFRAGILE|CFL_BPFREEJUMPS|CFL_NOPICKUPS|CFL_NO_JETPACK_COOLDOWN|CFL_NO_JETPACK_OVERHEAT
+noGunbash	1
 
 jetpackThrustEffect	""
 jetpackIdleEffect	""
+saberMaxChain	 2
 	
 jetpackFinishSound 	"sound/effects/woosh4"
 jetpackThrustSound  "sound/ambience/artus/artus_shaft"
@@ -26,7 +28,6 @@ maxhealth 175
 maxarmor	0
 damageTaken 0.9
 damagegiven 1.1
-knockbackTaken .1
 knockbackGiven 1.2
 resource RESOURCE_RAGE
 
@@ -39,7 +40,7 @@ forceregen 2.1
 
 special1 EAS_FP_SABERTHROW		
 
-special2 EAS_MELEE
+special2 EAS_FP_DRAIN
 
 special3 EAS_FP_RAGE
 
@@ -52,12 +53,12 @@ meleeMoves M_BLOCK|M_KATA|M_PUNCH|M_UPPERCUT
 
 saber1 		saber_maw_legends
 sabercolor	0
-saberstyle	SS_DESANN
+saberstyle	MB_ATT_SS_REDSTYLE
 saberThrowDamage	70
-APmultiplier    1.4
-BPmultiplier	.60
-CSmultiplier	1.1
-ASmultiplier	1.1
+APmultiplier    1.3
+BPmultiplier	.40
+CSmultiplier	1.05
+ASmultiplier	1.05
 
 model "maw"
 uishader	"models/players/maw/icon_default"
@@ -77,35 +78,38 @@ To the one called Maw: a bitter individual that loathes all and holds loyalty to
 ^2Weaponry:
 - Heavy Melee
 -- 35% slower punches
--- No sweepkick/kicks
+-- Wookie Slap
 - Maw's Lightsaber
+-- Chain Limit: 2
 -- Saber Defense (3)
--- Blaster Defense (2)
+-- Blaster Defense (1)
 -- Saber Deflect (1)
 -- 25% longer reach
 -- 20% more KB given
+-- Cannot Slap
 -- EX Saber Throw (2) ^3[CS1]
 --- 133% more DMG
--- Slap ^3[CS2]
 
 ^5Force Powers:
-- Pull (1)
 - Push (3)
+- Pull (1)
+- Drain (1) ^3[CS2]
 - Dark Rage (2) ^3[CS3]
 - Grip (2) ^3[CS4]
 
 ^8Attributes:
 - 500% longer skill CD
-- 90% less KB taken
-- Strength (2)
+- Strength (3)
 - Fury (1)
 - Physical Resist
 - Healing (3)
-- Force Block/Focus (2)
+- Force Block (1)
+- Force Focus (2)
 
 ^3Abilities:
 - Flight (Jetpack)
 -- No cooldown
 -- No overheating"
+
 
 

@@ -486,7 +486,7 @@ rakatan_forceblade_staff
 	noWallMarks	1
 	trailStyle	1
 	noManualDeactivate	0
-	bounceOnWalls	1
+	bounceOnWalls	0
  
 	animspeedscale	1
 
@@ -517,5 +517,6 @@ rakatan_forceblade_staff
 	hitPersonEffect "melee_weap/attack.efx"
 	hitOtherEffect	"melee_weap/other.efx"
 }
+
 
 
