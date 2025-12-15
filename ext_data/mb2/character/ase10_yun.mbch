@@ -4,7 +4,7 @@ ClassInfo
 {
 	name			"ase10_yun"
 	weapons			WP_MELEE|WP_SABER
-	forcepowers		FP_LEVITATION,2|FP_PUSH,3|FP_PULL,3|FP_SEE,2|FP_BLIND,2|FP_TELEPATHY,2|FP_SABER_OFFENSE,2|FP_SPEED,1
+	forcepowers		FP_LEVITATION,2|FP_PUSH,1|FP_PULL,2|FP_SEE,2|FP_BLIND,2|FP_TELEPATHY,2|FP_SABER_OFFENSE,2|FP_SPEED,1
 	attributes		MB_ATT_FORCEFOCUS,1|MB_ATT_FORCEBLOCK,3|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_DEFLECT,1
 	maxhealth		90
 	maxarmor		0
@@ -29,8 +29,8 @@ Yun's Lightsaber
 
 Force Powers:
 Force Jump (2)
-Force Pull (3)
-Force Push (3)
+Force Pull (2)
+Force Push (1)
 Force Speed (1)
 Force Blinding (2)
 Mind Trick (2)

@@ -8,9 +8,9 @@ ClassInfo
 	maxhealth			300
 	maxarmor			100
 	modelscale  		1.15
-	model 				"zeb"
+	model 				"pZeb_pnbl"
 	skin  				"default"
-	uishader  			"models/players/zeb/icon_default"
+	uishader  			"models/players/pZeb_pnbl/mb2_icon_default"
 	MBClass 			MB_CLASS_WOOKIEE
 	classNumberLimit	1
 	rageSoundOverride 	"sound/chars/BlackKrr/misc/BKrage.mp3"
