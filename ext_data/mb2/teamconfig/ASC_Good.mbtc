@@ -31,6 +31,7 @@ SubclassesForClass1
 	Subclass13	"asg2_Carth"
 	Subclass14  "asg2_RebelSabo"
 	Subclass15	"asg2_engineer"
+	Subclass16	"asg2_senator"
 }
 
 SubclassesForClass2
