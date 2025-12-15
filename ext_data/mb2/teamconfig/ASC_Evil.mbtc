@@ -33,9 +33,8 @@ SubclassesForClass1
 	Subclass15	"v3_DeathTr"
 	Subclass16	"v3_Bossk"
 	Subclass17	"v3_IG88"
-	Subclass18	"ase3_SithTr"
-	Subclass19	"ase3_RakatanInfantry"
-	Subclass20	"ase2_engineer"
+	Subclass18	"ase3_RakatanInfantry"
+	Subclass19	"ase2_engineer"
 }
 
 SubclassesForClass2
