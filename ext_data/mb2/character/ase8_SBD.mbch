@@ -33,7 +33,7 @@ ClassInfo
 	forcepool 100
 	
 	//WP_MeleeFlags		HELD_SLOW
-	WP_RocketLauncherFlags HELD_LOWDAMAGE
+	//WP_RocketLauncherFlags HELD_LOWDAMAGE
 
 	model		"SBD"
 	skin			"default"
@@ -219,4 +219,5 @@ A slow moving battle droid that must strike a balance between firepower, protect
 - Battery Recharge (2)
 - Advanced Logic (1)
 - Advanced Radar"
+
 
