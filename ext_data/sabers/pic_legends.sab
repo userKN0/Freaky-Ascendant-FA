@@ -1,0 +1,25 @@
+saber_pic_legends
+{
+	name  		"Pic's Shoto Saber"
+	saberType 	SABER_SINGLE
+	saberModel  "models/weapons2/yoda_legends/model_w.glm"
+	saberLength 30
+	saberColor  orange
+	saberRadius 2.23
+	//jumpAtkFwdMove	LS_JUMPATTACK_DUAL
+	//lungeAtkMove LS_A_BACKFLIP_ATK
+	//noCartwheels 1
+	//jumpAtkRightMove LS_A_L2R
+	//jumpAtkLeftMove LS_A_R2L
+	//readyAnim BOTH_B1_TR___
+	soundOn		"s/w/s/yon.wav"
+	soundLoop	"s/w/s/yhum.wav"	
+	soundOff		"s/w/s/off.wav"
+	spinsound	"s/w/s/spin.wav"
+	hitSound1	"s/w/s/hit1.mp3"
+    hitSound2	"s/w/s/hit2.mp3"
+    hitSound3	"s/w/s/hit3.mp3"
+	bounceSound1	"s/w/s/bounce1.mp3"	
+	bounceSound2	"s/w/s/bounce2.mp3"
+	bounceSound3	"s/w/s/bounce3.mp3"
+}

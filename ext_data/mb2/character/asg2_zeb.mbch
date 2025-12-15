@@ -22,6 +22,7 @@ ClassInfo
 	rateoffire_melee	1.05
 	skilltimermod 0.90
 	hackrate	0.95
+	sabermaxchain	2
 	
 	saber1		electrostaff_legends
 	sabercolor	5
@@ -91,6 +92,7 @@ A large but swift Wookiee / Melee / Gunner hybrid.
 -- Saber Defense (2)
 -- Gun Defense (1)
 -- 33 Saber Damage
+-- 2 Chain Limit
 -- Pulse Stun on Hit
 - 6 Smoke Grenades
 -- Based on Conc Nades
