@@ -2,14 +2,15 @@
 
 ClassInfo
 {
-	name		"RakatanInfantry"
+	name		"ase3_RakatanInfantry"
 	MBClass		MB_CLASS_WOOKIE
 	weapons		WP_SABER|WP_MELEE
 	WP_BlasterPistolFlags HELD_PULSE|HELD_AMMOREGEN
-	WP_RepeaterFlags HELD_AMMOREGEN
+	WP_RepeaterFlags HELD_AMMOREGEN|HELD_PULSE
 	WP_CloneRifleFlags HELD_ALTRELOAD
-	attributes	MB_ATT_HEALING,1|MB_ATT_ASSEMBLE,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_WOOKIEE_FURY,2|MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_CLONEBLOBS,1
+	attributes	MB_ATT_HEALING,2|MB_ATT_ASSEMBLE,2|MB_ATT_GUN_DEFENSE,0|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_WOOKIEE_FURY,2|MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_CLONEBLOBS,1
 	classflags	CFL_BLOODYMELEE
+	classNumberLimit	6
 
 	forcepowers	FP_RAGE,1|FP_LEVITATION,1|FP_PUSH,1
 	
@@ -23,9 +24,9 @@ ClassInfo
 	uioverlay_l "gfx/icons/infantry"
 	uioverlay_c "gfx/icons/hybrid"
 	uioverlay_r "gfx/icons/brawler"
-	maxhealth	100
-	maxarmor	0
-	rankArmor	25,50,75
+	maxhealth	125
+	maxarmor	10
+	rankArmor	35
 	basespeed	215
 	skilltimermod	3.0
 	damageTaken		0.85
@@ -75,10 +76,10 @@ ClassInfo
 	c_att_skill_2	MB_ATT_CLONERIFLE
 	c_att_ranks_2	15,0
 	c_att_names_2	"Rakatan Blaster (Clone Rifle)"
-	c_att_descs_2	"^72 Ion Blobs, +30% DMG, 40% Longer Reload, 100% Slower RoF"
+	c_att_descs_2	"^72 Ion Blobs, +35% DMG, 40% Longer Reload, 100% Slower RoF"
 	c_att_skill_3	MB_ATT_ARMOUR
 	c_att_ranks_3	5
-	c_att_names_3	"Armor (25)"
+	c_att_names_3	"Armor (35)"
 	c_att_skill_4
 	c_att_ranks_4
 	c_att_names_4	""
@@ -91,12 +92,9 @@ ClassInfo
 	c_att_skill_7	MB_ATT_BP_MULTIPLIER
 	c_att_ranks_7	4
 	c_att_names_7	"Saber BP (100%)"
-	c_att_skill_8	MB_ATT_HEALING
-	c_att_ranks_8	4,0
-	c_att_names_8	"Healing"
-	c_att_skill_9	MB_ATT_POWER
-	c_att_ranks_9	4
-	c_att_names_9	"Rage Pool (100)"
+	c_att_skill_8	MB_ATT_POWER
+	c_att_ranks_8	4
+	c_att_names_8	"Rage Pool (100)"
 	
 	
 	customSpecName_2 "Sorcerer"
@@ -122,14 +120,14 @@ ClassInfo
 	
 	c_att_skill_21	MB_ATT_PISTOL
 	c_att_ranks_21	0
-	c_att_names_21	"Lightning Shock (Pistol)"
-	c_att_descs_21	"^720% Faster RoF, -20% DMG, 
-	800% Longer Reload, +30% FP DMG"
+	c_att_names_21	"Lightning Zap (Pistol)"
+	c_att_descs_21	"^7-40% Velocity, 700% Longer Reload, +40% FP DMG, +15% DMG,
+	35% Slower RoF"
 	c_att_skill_22	MB_ATT_REPEATER
 	c_att_ranks_22	0
 	c_att_names_22	"Lightning Blast (Repeater)"
-	c_att_descs_22	"^7350% Slower RoF, 800% Longer Reload,
-	+40% DMG, +350% Velocity, Alt-Fire Only"
+	c_att_descs_22	"^720% Faster RoF, 8000% Longer Reload,
+	+220% DMG, +250% Velocity, Alt-Fire Only"
 	c_att_skill_23	MB_ATT_HEALING
 	c_att_ranks_23	0,0,10
 	c_att_names_23	"Healing"
@@ -151,20 +149,20 @@ WeaponBasedOff WP_BLASTER_PISTOL
 NewWorldModel		"models/weapons2/dummyblaster/model.glm"
 NewViewModel		"models/weapons2/dummy/dummy.md3"
 Icon	"gfx/effects/rakatanpistol.tga"
-WeaponName "Lightning Blast"
+WeaponName "Lightning Zap"
 MissileHitHumanEffect "SBD/Cortosis_blue"
 MissileHitDroidEffect "SBD/Cortosis_blue"
 MissileEffect	"arc_caster/ArcCasterShock"
 MuzzleEffect	"effects/force/lightningwide.efx"
 MissileMissEffect "SBD/Cortosis_blue"
 FlashSound0 "sound/weapons/force/lightning.wav"	
-Clipsize	8
+Clipsize	10
 customAmmo 150
-rateMod .8
-damageMod .8
-velocityMod	1
-reloadTimeModifier 8
-FPMult 1.3
+rateMod 1.35
+damageMod 1.15
+velocityMod	.60
+reloadTimeModifier 7
+FPMult 1.4
 hasAnimOverrides 1
 firingAnim	BOTH_FORCE_DRAIN_GRAB_HOLD
 AnimStand BOTH_FORCE_2HANDEDLIGHTNING_RELEASE
@@ -191,11 +189,11 @@ altMuzzleEffect	"effects/force/lightningwide.efx"
 altMissileMissEffect "effects/Grenades/EXP_Pulsenade.efx"
 altFlashSound0 "sound/weapons/force/lightning.wav"	
 Clipsize	25
-customAmmo 75
-rateMod 4.5
-reloadTimeModifier 8
-damageMod 1.4
-velocityMod	3.5
+customAmmo 50
+rateMod .8
+reloadTimeModifier 80
+damageMod 2.2
+velocityMod	2.5
 hasAnimOverrides 1
 firingAnim	BOTH_FORCE_DRAIN_RELEASE	
 AnimStand BOTH_FORCE_DRAIN_START
@@ -235,7 +233,7 @@ Clipsize	30
 customAmmo 400
 rateMod 2.0
 reloadTimeModifier 1.4
-damageMod 1.5
+damageMod 1.35
 velocityMod	1
 }
 ForceInfo0
@@ -255,7 +253,7 @@ A Rakatan soldier hailing from the Infinite Empire era with front and backline o
 -Melee
 -Rakatan Armament
 -- Saber Defense (1)
--- Blaster Defense (1)
+-- Blaster Defense (0)
 -- Chain Limit: 3
 >Rakatan Staffblade (Staff)
 >Rakatan Saberpike (Purple)
@@ -266,9 +264,8 @@ A Rakatan soldier hailing from the Infinite Empire era with front and backline o
 - Force Jump (1)
 
 ^8Attributes:
-- Healing (1)
+- Healing (2)
 - Assemble (2)
 - Strength (2)
 - Fury (2)
-
 - 300% Longer Skill CD"
