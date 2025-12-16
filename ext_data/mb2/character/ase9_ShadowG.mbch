@@ -16,7 +16,7 @@ ClassInfo
 	forceregen 1.05
 	
 	maxhealth	80
- rankHealth 120
+ rankHealth 100
 	maxarmor	40
  rankArmor 80
  	basespeed 	230
@@ -27,13 +27,17 @@ ClassInfo
 	sabercolor 0
 	APmultiplier 1.1
 	BPmultiplier 1.1
-	CSmultiplier 1
-	ASmultiplier 1.1
+	CSmultiplier 1.1
+	ASmultiplier 1.05
 	modelscale   1.01
 	uioverlay_r 		"gfx/icons/frontline"
 	model			"royal"
 	skin				"default_b"
 	uishader	"models/players/royal/mb2_icon_default_b"
+
+	model_1	"royalguard_tfu"
+	skin_1	"shadow"
+	uishader_1 "models/players/royalguard_tfu/mb2_icon_shadow"
 
 	gloatAnim BOTH_SHOWOFF_STAFF
 	saberstanceAnim BOTH_SPEAR_STANCE
@@ -133,5 +137,6 @@ Highly mobile saberists that can choose between a versatile one-life or speciali
 - Dexterity (3)
 - Healing (1)
 - Force Block/Focus (2)"
+
 
 
