@@ -66,18 +66,18 @@ c_att_descs_1	"^72 Concussion Blobs, 45% Longer Reload, 10% Faster RoF, -10% Vel
 c_att_skill_2	MB_ATT_ARMOUR
 c_att_ranks_2	5
 c_att_names_2	"Armor (35)"
-c_att_skill_3	MB_ATT_SABER_DAMAGE
-c_att_ranks_3	4
-c_att_names_3	"Saber Damage (235)"
-c_att_skill_4	MB_ATT_FP_SABER_DEFENSE
-c_att_ranks_4	4,0
-c_att_names_4	"Saber Defense"
-c_att_skill_5	MB_ATT_BP_MULTIPLIER
-c_att_ranks_5	4
-c_att_names_5	"Saber BP (100%)"
-c_att_skill_6	MB_ATT_POWER
+c_att_skill_4	MB_ATT_SABER_DAMAGE
+c_att_ranks_4	4
+c_att_names_4	"Saber Damage (235)"
+c_att_skill_5	MB_ATT_FP_SABER_DEFENSE
+c_att_ranks_5	4,0
+c_att_names_5	"Saber Defense"
+c_att_skill_6	MB_ATT_BP_MULTIPLIER
 c_att_ranks_6	4
-c_att_names_6	"Rage Pool (100)"
+c_att_names_6	"Saber BP (100%)"
+c_att_skill_7	MB_ATT_POWER
+c_att_ranks_7	4
+c_att_names_7	"Rage Pool (100)"
 customSpecName_2 "Sorcerer"
 customSpecIcon_2 "gfx/menus/alpha/Icon_SaberCustom"
 customSpecDesc_2 "^7A backliner with force power options."
@@ -90,29 +90,26 @@ c_att_names_16	"Push"
 c_att_skill_17	MB_ATT_FP_PULL
 c_att_ranks_17  0,5
 c_att_names_17  "Pull"
-c_att_skill_18	MB_ATT_FP_PULL
-c_att_ranks_18	0,5
-c_att_names_18	"Pull"
-c_att_skill_19	MB_ATT_FP_REPULSE
-c_att_ranks_19	10
-c_att_names_19 	"Repulse"
-c_att_descs_19	"^3[CS3]"
-c_att_skill_21	MB_ATT_PISTOL
+c_att_skill_18	MB_ATT_FP_REPULSE
+c_att_ranks_18	10
+c_att_names_18 	"Repulse"
+c_att_descs_18	"^3[CS3]"
+c_att_skill_20	MB_ATT_PISTOL
+c_att_ranks_20	0
+c_att_names_20	"Lightning Zap (Pistol)"
+c_att_descs_20	"^7-10% Velocity, 700% Longer Reload, +60% FP DMG, +15% DMG,
+30% Slower RoF"
+c_att_skill_21	MB_ATT_REPEATER
 c_att_ranks_21	0
-c_att_names_21	"Lightning Zap (Pistol)"
-c_att_descs_21	"^7-40% Velocity, 700% Longer Reload, +40% FP DMG, +15% DMG,
-35% Slower RoF"
-c_att_skill_22	MB_ATT_REPEATER
-c_att_ranks_22	0
-c_att_names_22	"Lightning Blast (Repeater)"
-c_att_descs_22	"^720% Faster RoF, 8000% Longer Reload,
+c_att_names_21	"Lightning Blast (Repeater)"
+c_att_descs_21	"^720% Faster RoF, 8000% Longer Reload,
 +220% DMG, +250% Velocity, Alt-Fire Only"
-c_att_skill_23	MB_ATT_HEALING
-c_att_ranks_23	0,0,10
-c_att_names_23	"Healing"
-c_att_skill_24	MB_ATT_POWER
-c_att_ranks_24  0,0
-c_att_names_24  "Rage Pool (100/125)"
+c_att_skill_22	MB_ATT_HEALING
+c_att_ranks_22	0,0,10
+c_att_names_22	"Healing"
+c_att_skill_23	MB_ATT_POWER
+c_att_ranks_23  0,0
+c_att_names_23  "Rage Pool (100/125)"
 }
 WeaponInfo0
 {
@@ -130,11 +127,11 @@ MissileMissEffect "SBD/Cortosis_blue"
 FlashSound0 "sound/weapons/force/lightning.wav"	
 Clipsize 10
 customAmmo 150
-rateMod 1.35
+rateMod 1.30
 damageMod 1.15
-velocityMod	.60
+velocityMod	.90
 reloadTimeModifier 7
-FPMult 1.4
+FPMult 1.6
 hasAnimOverrides 1
 firingAnim	BOTH_FORCE_DRAIN_GRAB_HOLD
 AnimStand BOTH_FORCE_2HANDEDLIGHTNING_RELEASE
@@ -143,6 +140,10 @@ animReadyWalk BOTH_FORCE_DRAIN_GRAB_START
 animReadyNoAmmo BOTH_FORCE_2HANDEDLIGHTNING_RELEASE
 animAttack BOTH_FORCE_DRAIN_GRAB_HOLD
 animAttackWalk BOTH_FORCE_DRAIN_GRAB_HOLD
+animReadyRun	BOTH_FORCE_DRAIN_GRAB_START
+animReadyZoomRun	BOTH_FORCE_DRAIN_GRAB_START
+animAttackRun	BOTH_FORCE_DRAIN_GRAB_HOLD
+animAttackZoomRun	BOTH_FORCE_DRAIN_GRAB_HOLD
 AltFireEnabled 0
 PrimFireEnabled	1
 }
@@ -161,7 +162,7 @@ altMuzzleEffect	"effects/force/lightningwide.efx"
 altMissileMissEffect "effects/Grenades/EXP_Pulsenade.efx"
 altFlashSound0 "sound/weapons/force/lightning.wav"	
 Clipsize	25
-customAmmo 50
+customAmmo 75
 rateMod .8
 reloadTimeModifier 80
 damageMod 2.2
@@ -174,6 +175,10 @@ animReadyWalk BOTH_FORCE_DRAIN_START
 animReadyNoAmmo BOTH_FORCE_DRAIN_GRAB_END
 animAttack BOTH_FORCE_DRAIN_HOLD
 animAttackWalk BOTH_FORCE_DRAIN_HOLD
+animReadyRun	BOTH_FORCE_DRAIN_START
+animReadyZoomRun	BOTH_FORCE_DRAIN_START
+animAttackRun	BOTH_FORCE_DRAIN_HOLD
+animAttackZoomRun	BOTH_FORCE_DRAIN_HOLD
 AltFireEnabled 		1
 PrimFireEnabled		0
 }
