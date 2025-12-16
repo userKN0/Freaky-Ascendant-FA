@@ -1,11 +1,11 @@
 // Air
 ClassInfo
 {
-	name			"h10_JKindred(Absorb)"
+	name			"asg10_JKindredTwo"
 	weapons			WP_MELEE|WP_SABER
 	saberstyle		SS_MEDIUM|SS_FAST
-	forcepowers		FP_SABER_OFFENSE,1|FP_LEVITATION,3|FP_PUSH,1|FP_PULL,3|FP_ABSORB,1|FP_SEE,1|FP_SABERTHROW,2
-	attributes		MB_ATT_FORCEBLOCK,2|MB_ATT_DEFLECT,2|MB_ATT_FORCEFOCUS,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_LIGHTS_BEACON
+	forcepowers		FP_SABER_OFFENSE,1|FP_LEVITATION,3|FP_PUSH,1|FP_PULL,3|FP_PROTECT,1|FP_SEE,1|FP_SABERTHROW,2
+	attributes		MB_ATT_FORCEBLOCK,2|MB_ATT_DEFLECT,2|MB_ATT_FORCEFOCUS,1|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_LIGHTS_BEACON
 	
 	basespeed		235
 	
@@ -22,12 +22,11 @@ ClassInfo
 	MBClass		MB_CLASS_JEDI
 	classflags CFL_NOPICKUPS
 
+	special1	EAS_FP_SABERTHROW
 	
 	special2	EAS_MELEE
 	
-	special3    EAS_FP_ABSORB
-	
-	special4	EAS_FP_SABERTHROW
+	special3    EAS_FP_PROTECT
 	
 	classNumberLimit	1
 	
@@ -58,8 +57,11 @@ ClassInfo
 }
 
 description	"Defensive Jedi Kindred [Jedi]
-			A single jedi from a typical pair. 
-Defensive support that can absorb others force powers whilst being vulnerable to physical harm.
+
+Air
+
+		A single jedi from a typical pair. 
+Defensive support that can protect others from physical harm whilst being vulnerable to the force.
 
 ^2Weaponry:
 - Melee
@@ -72,14 +74,14 @@ Defensive support that can absorb others force powers whilst being vulnerable to
 -- Slap ^3[CS2]
 
 ^5Force Powers:
-- Jump (2)
+- Jump (3)
 - Push (1)
 - Pull (3)
 - Sense (1) 
-- Absorb (1) ^3[CS3]
+- Protect (1) ^3[CS3]
 
 ^8Attributes:
 - Force Block (2)
 - Force Focus (1)
 ^7- ^3*^7Light's Beacon (Shares Force Powers with a ^7targeted/nearby ally)
-- 200% slower skill CD"
+- 250% slower skill CD"
