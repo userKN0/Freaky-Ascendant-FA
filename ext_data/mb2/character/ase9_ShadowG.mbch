@@ -8,7 +8,7 @@ ClassInfo
 	weapons		WP_SABER|WP_MELEE
 	WP_BlasterPistolFlags HELD_ALTRELOAD
 	
-	attributes	MB_ATT_FORCEBLOCK,2|MB_ATT_HEALING,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_FORCEFOCUS,2|MB_ATT_DEFLECT,1|MB_ATT_DEXTERITY,3|MB_ATT_PISTOL,1
+	attributes	MB_ATT_FORCEBLOCK,2|MB_ATT_HEALING,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_FORCEFOCUS,2|MB_ATT_DEFLECT,1|MB_ATT_DEXTERITY,3|MB_ATT_PISTOL,1|MB_ATT_REPULSE
 
 	forcepowers	FP_SABER_OFFENSE,3|FP_SPEED,2|FP_LEVITATION,3
 	resource RESOURCE_FORCE
@@ -52,37 +52,33 @@ mbPoints	7
 	c_att_names_0	"Reinforcement"
 	c_att_ranks_0	5
 
-	c_att_skill_1	MB_ATT_FP_PUSH
-	c_att_names_1	"Force Push"
+	c_att_skill_1	MB_ATT_FP_PULL
+	c_att_names_1	"Force Pull"
 	c_att_ranks_1	1,0
-	
-	c_att_skill_2	MB_ATT_FP_PULL
-	c_att_names_2	"Force Pull"
+
+	c_att_skill_2	MB_ATT_FP_LIGHTNING
+	c_att_names_2	"Force Lightning ^3[CS4]"
 	c_att_ranks_2	1,0
 
-	c_att_skill_3	MB_ATT_FP_LIGHTNING
-	c_att_names_3	"Force Lightning ^3[CS4]"
+	c_att_skill_3	MB_ATT_FP_GRIP
+	c_att_names_3	"Force Grip"
 	c_att_ranks_3	1,0
-
-	c_att_skill_4	MB_ATT_FP_GRIP
-	c_att_names_4	"Force Grip"
-	c_att_ranks_4	1,0
 	
-	c_att_skill_5	MB_ATT_FP_SABER_DEFENSE
-	c_att_names_5	"Saber Defense"
-	c_att_ranks_5	0,1
+	c_att_skill_4	MB_ATT_FP_SABER_DEFENSE
+	c_att_names_4	"Saber Defense"
+	c_att_ranks_4	0,1
 	
-	c_att_skill_6	MB_ATT_GUN_DEFENSE
-	c_att_names_6	"Blaster Defense"
-	c_att_ranks_6	0,1	
+	c_att_skill_5	MB_ATT_GUN_DEFENSE
+	c_att_names_5	"Blaster Defense"
+	c_att_ranks_5	0,1	
 	
-	c_att_skill_7	MB_ATT_HEALTH
-	c_att_names_7	"Health (100)"
+	c_att_skill_6	MB_ATT_HEALTH
+	c_att_names_6	"Health (100)"
+	c_att_ranks_6	1
+	
+	c_att_skill_7	MB_ATT_ARMOUR
+	c_att_names_7	"Armor (80)"
 	c_att_ranks_7	1
-	
-	c_att_skill_8	MB_ATT_ARMOUR
-	c_att_names_8	"Armor (80)"
-	c_att_ranks_8	1
 }
 
 WeaponInfo0
@@ -137,6 +133,7 @@ Highly mobile saberists that can choose between a versatile one-life or speciali
 - Dexterity (3)
 - Healing (1)
 - Force Block/Focus (2)"
+
 
 
 
