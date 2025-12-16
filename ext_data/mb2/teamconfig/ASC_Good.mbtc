@@ -57,6 +57,8 @@ SubclassesForClass2
 	Subclass18	"asg3_handmaiden"
 	Subclass19	"asg3_baodur"
 	subclass20	"asg3_itsatrap"
+	Subclass21 "asg3_P1Clone"
+	Subclass22 "asg3_ReconClone"
 }
 
 SubclassesForClass3
