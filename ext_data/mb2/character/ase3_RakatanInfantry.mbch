@@ -115,7 +115,6 @@ c_att_skill_19	MB_ATT_FP_REPULSE
 c_att_ranks_19	10
 c_att_names_19 	"Repulse"
 c_att_descs_19	"^3[CS3]"
-	
 c_att_skill_21	MB_ATT_PISTOL
 c_att_ranks_21	0
 c_att_names_21	"Lightning Zap (Pistol)"
@@ -257,7 +256,7 @@ A Rakatan soldier hailing from the Infinite Empire era with front and backline o
 - Force Jump (1)
 
 ^8Attributes:
-- Healing (1)
+- Healing (2)
 - Assemble (2)
 - Strength (2)
 - Fury (2)
