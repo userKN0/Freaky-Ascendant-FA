@@ -1,0 +1,185 @@
+//Legends Mode character file - Created by MARSHALL
+
+ClassInfo
+{
+	name			    "h3_Clone"
+	weapons		        WP_MELEE|WP_CLONE_PISTOL
+	attributes	        MB_ATT_AMMO,3|MB_ATT_ASSEMBLE|MB_ATT_CLONE_PISTOL,1|MB_ATT_BESKAR,1|MB_ATT_STAMINA,3|MB_ATT_QUICKTHROW,2
+	
+	MBClass		        MB_CLASS_CLONETROOPER
+	holdables 	        HI_MEDPAC
+	
+	resource            RESOURCE_STAMINA
+	forcepool           20  
+	
+	modelscale      	1.02
+	classNumberLimit	10
+
+	speed 				0.95
+
+	extralives		    1
+
+	maxhealth		    60
+	maxArmor			100
+	knockbacktaken      0.8
+	
+	special1			EAS_HI_SPRINT
+	special2			EAS_HI_MEDPAC
+    special3            EAS_HI_QUICKTHROW
+	special4 		    EAS_HI_GRAPPLEHOOK
+	
+    WP_T21Flags     	HELD_SLOW
+    WP_CloneRifleFlags  HELD_SLOW
+    WP_DLT20AFlags      HELD_SLOW
+
+
+	flourishAnim BOTH_PUNCH1
+	
+	uioverlay_l "gfx/icons/heavy"
+	uioverlay_r "gfx/icons/infantry"
+	
+model       "clonetrooper_p1"
+skin        "shiny"
+uishader    "models/players/clonetrooper_p1/mb2_icon_shiny"
+
+model_1     "clonetrooper_p1"
+skin_1      "default"
+uishader_1  "models/players/clonetrooper_p1/mb2_icon_default"
+
+model_2     "clonetrooper_p1"
+skin_2      "poncho"
+uishader_2  "models/players/clonetrooper_p1/mb2_icon_poncho"
+
+
+    isCustomBuild    1
+    mbPoints        9
+
+    c_att_skill_0    MB_ATT_INVALID
+    c_att_names_0    "^2Weaponry"
+    c_att_ranks_0    -1
+
+    c_att_skill_1   MB_ATT_CLONERIFLE
+    c_att_names_1   "DC-15A Clone Rifle"
+    c_att_ranks_1   5,0
+
+    c_att_skill_2   MB_ATT_CLONEBLOBS
+    c_att_names_2   "Concussion Blobs:"
+    c_att_ranks_2   1,1
+
+    c_att_skill_3   MB_ATT_STRONGBLOBS 
+    c_att_names_3   "Ion Blobs:"
+    c_att_ranks_3   1,1
+
+    c_att_skill_4   MB_ATT_DLT20A
+    c_att_names_4   "DC-15A Burst Configuration:"
+    c_att_ranks_4   5,0
+
+    c_att_skill_5   MB_ATT_T21
+    c_att_names_5   "DC-15LE Heavy Rifle:"
+    c_att_ranks_5   5,0,0
+
+    c_att_skill_6   MB_ATT_PULSE_GRENADES
+    c_att_names_6   "Pulse Grenades:"
+    c_att_ranks_6   2,1,1
+
+    c_att_skill_7   MB_ATT_QUICKTHROW 
+    c_att_names_7   "Quickthrow ^3[CS3]:"
+    c_att_ranks_7   0
+
+    c_att_skill_8	MB_ATT_RESPAWNS
+	c_att_names_8	"Reinforcements:"
+	c_att_ranks_8	1,1
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_CLONE_RIFLE
+	WeaponBasedOff		WP_CLONE_RIFLE
+	NewWorldModel		"models/weapons2/dc-15a/dc-15a_w.glm"
+	NewViewModel		"models/weapons2/dc-15a/dc-15a.md3"
+	NewHandsModel       "models/weapons2/dc-15a/dc-15a_hand.md3"
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01B"
+	MissileEffect		"Blaster/Shot02B"
+	FlashSound0			"sound/weapsup/sup/wpn_rep_blaster_fire.wav"
+	Icon				"gfx/hud/w_icon_clonerifle"
+	WeaponName			"DC-15A Clone Rifle"
+	altfireenabled		1
+}
+WeaponInfo1
+{
+	WeaponToReplace		WP_T21
+	WeaponBasedOff		WP_T21
+	NewWorldModel		"models/weapons2/dc-15a/dc-15a_w.glm"
+	NewViewModel		"models/weapons2/dc-15a/dc-15a.md3"
+	NewHandsModel        "models/weapons2/dc-15a/dc-15a_hand.md3"
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01B"
+	MissileEffect		"Blaster/Shot02B"
+	AltMissileEffect	"Blaster/Shot03B"
+	FlashSound0			"sound/weapsup/sup/wpn_rep_blaster_fire.wav"
+    AltFlashSound0      "sound/weapons/repeater/alt_fire_old.mp3"
+	Icon				"gfx/hud/w_icon_clonerifle"
+	WeaponName			"DC-15LE Heavy Rifle"
+	primFireEnabled		0
+	altfireenabled		1
+    rateMod             0.9
+    velocityMod         1.1
+    CustomAmmo          800
+    clipsize            70
+}
+WeaponInfo2
+{
+	WeaponToReplace		WP_DLT20A
+	WeaponBasedOff		WP_CLONE_RIFLE
+	NewWorldModel		"models/weapons2/dc-15a/dc-15a_w.glm"
+	NewViewModel		"models/weapons2/dc-15a/dc-15a.md3"
+	NewHandsModel       "models/weapons2/dc-15a/dc-15a_hand.md3"
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01B"
+	AltMissileEffect	"Blaster/Shot02B"
+	MissileEffect	    "Blaster/Shot02B"
+	FlashSound0			"sound/weapsup/sup/wpn_rep_blaster_fire.wav"
+    AltFlashSound0      "sound/weapons/repeater/alt_fire_old.mp3"
+	Icon				"gfx/hud/w_icon_clonerifle"
+	WeaponName			"DC-15A Burst Config"
+	altfireenabled		1
+    CustomAmmo          750
+    clipsize            50
+    rateMod             0.9
+    velocityMod         1.1
+}
+
+description	"Clone Trooper (Phase I)
+
+Class: Heavy Infantry
+Brief Overview: 
+A Phase I Clone Trooper built for sustained frontline combat. Slow and dangerous. Equipped with one of 3 DC-15 rifle configurations and pulse grenades.
+
+^2Default Weaponry:
+- Melee
+- DC-15s Clone Pistol (1)
+
+^6Default Inventory:
+- Bacta (25 HP to self) ^3[CS2]
+
+^8Default Attributes:
+- Reinforcement (1)
+- 20% reduced knockback
+- Stamina 3 with small resource pool
+- Beskar 1
+- Assemble (Respawn at rally point)
+
+^3Default Abilities:
+- Sprint ^3[CS1]
+- Quickthrow ^3[CS3]
+
+^9Point Buy Info:
+- DC-15 Clone Rifle
+- Concussion Blobs
+- Ion Blobs
+- DC-15LE Heavy Rifle (T-21 no primary)
+-- 10% faster ROF and 10% faster projectile velocity
+- DC-15 Burst Configuration (DLT20A)
+-- 10% faster ROF and projectile velocity"
