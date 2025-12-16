@@ -2,71 +2,71 @@
 
 ClassInfo
 {
-	name		"ase3_RakatanInfantry"
-	MBClass		MB_CLASS_WOOKIE
-	weapons		WP_SABER|WP_MELEE
-	WP_BlasterPistolFlags HELD_PULSE|HELD_AMMOREGEN
-	WP_RepeaterFlags HELD_AMMOREGEN|HELD_PULSE
-	WP_CloneRifleFlags HELD_ALTRELOAD
-	attributes	MB_ATT_HEALING,2|MB_ATT_ASSEMBLE,2|MB_ATT_GUN_DEFENSE,0|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_WOOKIEE_FURY,2|MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_CLONEBLOBS,1
-	classflags	CFL_BLOODYMELEE
-	classNumberLimit	6
+name		"ase3_RakatanInfantry"
+MBClass		MB_CLASS_WOOKIE
+weapons		WP_SABER|WP_MELEE
+WP_BlasterPistolFlags HELD_PULSE|HELD_AMMOREGEN
+WP_RepeaterFlags HELD_AMMOREGEN|HELD_PULSE
+WP_CloneRifleFlags HELD_ALTRELOAD
+attributes	MB_ATT_HEALING,2|MB_ATT_ASSEMBLE,2|MB_ATT_GUN_DEFENSE,0|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_WOOKIEE_FURY,2|MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_CLONEBLOBS,1
+classflags	CFL_BLOODYMELEE
+classNumberLimit	6
 
-	forcepowers	FP_RAGE,1|FP_LEVITATION,1|FP_PUSH,1
+forcepowers	FP_RAGE,1|FP_LEVITATION,1|FP_PUSH,1
 	
-	resource RESOURCE_RAGE
-	resourceRegenCap 	300
-	resourceRegenAmount 1
-	resourceRegenRate 350
-	forcepool	60
-	forceregen .1
-	rankForcepool 100,125
-	uioverlay_l "gfx/icons/infantry"
-	uioverlay_c "gfx/icons/hybrid"
-	uioverlay_r "gfx/icons/brawler"
-	maxhealth	125
-	maxarmor	10
-	rankArmor	35
-	basespeed	215
-	skilltimermod	3.0
-	damageTaken		0.85
+resource RESOURCE_RAGE
+resourceRegenCap 	300
+resourceRegenAmount 1
+resourceRegenRate 350
+forcepool	60
+forceregen .1
+rankForcepool 100,125
+uioverlay_l "gfx/icons/infantry"
+uioverlay_c "gfx/icons/hybrid"
+uioverlay_r "gfx/icons/brawler"
+maxhealth	125
+maxarmor	10
+rankArmor	35
+basespeed	215
+skilltimermod	3.0
+damageTaken		0.85
 	
-	special1 EAS_MELEE
-	special2 EAS_FP_RAGE
-	special3 EAS_FP_REPULSE
-	rankSaberDamage 235, 270
-	saberdamage 120
+special1 EAS_MELEE
+special2 EAS_FP_RAGE
+special3 EAS_FP_REPULSE
+rankSaberDamage 235, 270
+saberdamage 120
 
-	saberMaxChain 3
-	saber1		rakatan_forceblade_staff
-	saberstyle	SS_STAFF
-	saber1_1	rakatan_saberpike_legends
-	saberstyle_1	SS_DESANN
-	sabercolor_1	.070
+saberMaxChain 3
+saber1		rakatan_forceblade_staff
+saberstyle	SS_STAFF
+saber1_1	rakatan_saberpike_legends
+saberstyle_1	SS_DESANN
+sabercolor_1	.070
 	
-	APmultiplier	1.05
-	rankAPMultiplier
-	BPmultiplier	.6
-	rankBPMultiplier 1
-	CSmultiplier	1
-	ASmultiplier	1.0
-	modelscale        1.05
+APmultiplier	1.05
+rankAPMultiplier
+BPmultiplier	.6
+rankBPMultiplier 1
+CSmultiplier	1
+ASmultiplier	1.0
+modelscale        1.05
 	
-	model 		"Rakata"
-	skin		"default_2"
-	uishader	"models/players/Rakata/mb2_icon_default"
+model 		"Rakata"
+skin		"default_2"
+uishader	"models/players/Rakata/mb2_icon_default"
 	
-	model_1 	"Rakata"
-	skin_1		"default_3"
-	uishader_1	"models/players/Rakata/mb2_icon_default3"	
+model_1 	"Rakata"
+skin_1		"default_3"
+uishader_1	"models/players/Rakata/mb2_icon_default3"	
 	
-	hasCustomSpec 2
-	isOnlyOneSpec 1
-    isCustomBuild	1
-	mbPoints 20
-	customSpecName_1 "Soldier"
-	customSpecIcon_1 "gfx/menus/alpha/icon_Weap_Accuracy"
-	customSpecDesc_1 "^7A frontliner with ranged or melee options."
+hasCustomSpec 2
+isOnlyOneSpec 1
+isCustomBuild	1
+mbPoints 20
+customSpecName_1 "Soldier"
+customSpecIcon_1 "gfx/menus/alpha/icon_Weap_Accuracy"
+customSpecDesc_1 "^7A frontliner with ranged or melee options."
 c_att_skill_0	MB_ATT_RESPAWNS
 c_att_ranks_0	0,0
 c_att_names_0	"Reinforcements"
@@ -97,9 +97,9 @@ c_att_ranks_6	4
 c_att_names_6	"Rage Pool (100)"
 
 	
-	customSpecName_2 "Sorcerer"
-	customSpecIcon_2 "gfx/menus/alpha/Icon_SaberCustom"
-	customSpecDesc_2 "^7A backliner with force power options."
+customSpecName_2 "Sorcerer"
+customSpecIcon_2 "gfx/menus/alpha/Icon_SaberCustom"
+customSpecDesc_2 "^7A backliner with force power options."
 	
 c_att_skill_15	MB_ATT_RESPAWNS
 c_att_ranks_15	0
@@ -137,11 +137,6 @@ c_att_names_21	"Healing"
 c_att_skill_22	MB_ATT_POWER
 c_att_ranks_22	0,0
 c_att_names_22	"Rage Pool (100/125)"
-	// point buy between lightning 3 and sd3
-	//Rally
-	// give bd2, better duelling stats
-	//Better Saber/Blaster Defense
-	// more hp/armor
 }
 WeaponInfo0
 {
@@ -269,5 +264,5 @@ A Rakatan soldier hailing from the Infinite Empire era with front and backline o
 - Assemble (2)
 - Strength (2)
 - Fury (2)
-
 - 300% Longer Skill CD"
+
