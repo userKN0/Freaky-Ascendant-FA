@@ -42,7 +42,7 @@ special4 EAS_FP_RAGE
 WalkBackward BOTH_WALK_DUAL
 WalkForward BOTH_WALKBACK_DUAL
 isCustomBuild 1
-mbPoints 6
+mbPoints 7
 hasCustomSpec 2
 isOnlyOneSpec 1
 customSpecName_1 "Deathwatch Warrior"

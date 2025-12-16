@@ -32,7 +32,7 @@ resourceRegenCap 50
 resourceRegenAmount 1
 resourceRegenRate 5000
 WP_E22Flags HELD_ALTRELOAD
-WP_BlasterFlags HELD_ALTRELOAD|HELD_IGNOREBLOCK
+WP_BlasterFlags HELD_ALTRELOAD|HELD_POISON
 WP_DLT20AFlags HELD_ALTRELOAD
 WP_BlasterPistolFlags HELD_ALTRELOAD
 WP_ProjFlags HELD_ALTRELOAD|HELD_DISRUPTIFY
@@ -85,7 +85,7 @@ c_att_descs_16 "10% more FP DMG,30% less DMG,100% slower mag reload"
 c_att_skill_17 MB_ATT_TRAD_BOWCASTER
 c_att_names_17 "Kryze Echo-Bolter"
 c_att_ranks_17 2,1
-c_att_descs_17 "20% less dmg,20% more ROF,20% more velocity"
+c_att_descs_17 "30% less dmg,20% more ROF,20% more velocity"
 c_att_skill_18 MB_ATT_E_22
 c_att_names_18 "Repeater Pistol"
 c_att_ranks_18 1
@@ -228,9 +228,9 @@ animAttack BOTH_THERMAL_THROW2
 animAttackWalk BOTH_THERMAL_THROW2
 animStand BOTH_THERMAL_READY2
 clipSize 6
-customAmmo 48
+customAmmo 60
 rateMod 2
-damageMod 1.1
+damageMod 1.5
 primGore 1
 }
 WeaponInfo7
@@ -260,7 +260,7 @@ NewViewModel "models\weapons2\kotor_bowcaster1\kotor_bowcaster1.md3"
 Icon "gfx/hud/w_icon_kotor_bowcaster1"
 WeaponName "Kryze Echo-Bolter"
 damageMod 0.8
-rateMod 0.8
+rateMod 0.7
 velocityMod 1.2
 }
 description "Nite Owl Mandalorian [Mandalorian]

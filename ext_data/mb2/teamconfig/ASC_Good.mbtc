@@ -77,7 +77,7 @@ SubclassesForClass3
 SubclassesForClass4
 {
 	Subclass1	"h7_Spy"
-	Subclass2 	"h7_RebSapper"
+	Subclass2 	"asg7_RebSapper"
 	Subclass3	"asg7_RebSpecOps"
 	Subclass4	"h7_CloneAss"
 	Subclass5	"h7_Hera"
