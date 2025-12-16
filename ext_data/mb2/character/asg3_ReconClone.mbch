@@ -1,0 +1,98 @@
+//Legends Mode character file - Created by MARSHALL
+
+ClassInfo
+{
+	name				"asg3_ReconClone"
+	weapons				WP_MELEE|WP_DC_CARBINE|WP_PROJ
+	attributes			MB_ATT_DC_CARBINE,1|MB_ATT_AMMO,3|MB_ATT_BLAST_ARMOUR,1|MB_ATT_STAMINA,1|MB_ATT_DEXTERITY,1|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_PROJECTILE_RIFLE,1|MB_ATT_TRACKING_DART,2|MB_ATT_TRACKING_BEACON|MB_ATT_RESPAWNS,1
+	maxhealth			80
+	maxarmor			80
+	forcepool 			100
+	forceregen 			1
+	resource			resource_stamina
+	speed               1.13
+	MBClass				MB_CLASS_ARCTROOPER
+	classNumberLimit	2
+	modelscale      	1.02
+	holdables			HI_SEEKER
+	
+	saberStanceAnim		BOTH_STAND9
+	flourishAnim 		TORSO_HANDSIGNAL4
+	gloatAnim 			BOTH_STAND5TOAIM
+	
+	classflags			CFL_STATVIEWER
+	
+	model				"clonetrooper_p1"
+	skin				"thire"
+	uishader			"models/players/clonetrooper_p1/mb2_icon_thire"
+
+	model_1				"clonekeller"
+	skin_1				"rgb"
+	uishader_1			"models/players/clonekeller/mb2_icon_rgb"
+	userRGB_1 			1
+
+	model_2				"clonetrooper_p2"
+	skin_2				"deviss_rgb"
+	uishader_2			"models/players/clonetrooper_p2/mb2_icon_deviss_rgb"
+	userRGB_2 			1
+
+	special1			EAS_HI_SPRINT
+	special2			EAS_HI_DEX	
+	special3 			EAS_HI_TRACKER
+	special4			EAS_HI_GRAPPLEHOOK
+	
+	uioverlay 			"gfx/icons/scout"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace	WP_SABER
+	WeaponBasedOff	WP_SABER
+	NewWorldModel		"models/weapons2/ct_weapon/ct_knife_F.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_prisonknife"
+	WeaponName		"Vibroknife"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_PROJ					 
+	WeaponBasedOff      WP_CONCUSSION
+	NewWorldModel "models/weapons2/dlt-18_repeater/dlt-18_repeater_w.glm"
+	NewViewModel  "models/weapons2/dlt-18_repeater/dlt-18_repeater.md3"
+	Icon  "gfx/hud/w_icon_dlt-18"
+	FlashSound0  "sound/weapons/Glie-44/alt_fire.wav"		
+	WeaponName			"Valken-38x Projectile Rifle"    				 
+	CustomAmmo 	24
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	MissileEffect		"Blaster/Shot10B"
+}
+
+description	"Recon Clone
+
+Class: ARC Trooper
+Brief Overview:
+A backline sniper with a projectile rifle, dexterity, grapple hook and a backup carbine.
+
+^2Weaponry:
+- Melee
+- DC-15c Carbine (1)
+- Valken-38x Projectile Rifle
+-- Based on Proj
+
+^6Inventory:
+- Tracking Darts ^3[CS3]
+- Seeker Droid
+
+^8Attributes:
+- Stamina (1)
+- Dexterity (1)
+- Ally Stat Viewer
+- Tracking Beacon
+- Reinforcements (1)
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Dex Roll ^3[CS2]
+- Grappling Hook (2) ^3[CS4 in ^3Melee]"
+
