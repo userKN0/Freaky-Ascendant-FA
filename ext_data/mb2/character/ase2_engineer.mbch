@@ -2,7 +2,7 @@
 
 ClassInfo
 {
-	name			"ase2_engineer"
+	name			"asg2_engineer"
 	weapons			WP_BLASTER_PISTOL|WP_MELEE|WP_STUN_BATON|WP_DET_PACK|WP_FLECHETTE
 	attributes		MB_ATT_PISTOL,1|MB_ATT_DET_PACK,3|MB_ATT_STUN_BATON,3|MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,2|MB_ATT_RESPAWNS,2|MB_ATT_DISP_AMMO,2|MB_ATT_HEALING,1|MB_ATT_FLECHETTE,1
 	maxhealth		50
@@ -10,13 +10,20 @@ ClassInfo
 	MBClass			MB_CLASS_SOLDIER
 	classflags		CFL_STATVIEWER
 	wp_stunbatonflags	HELD_FLAME
-		model	"rebel_pilot"
-	skin		"rgb"
-	uishader	"models/players/rebel_pilot/mb2_icon_rgb"
-	userRGB 		1
-	customred 		0.945
-	customgreen	0.510
-	customblue 	0.099 
+	model		"stormpilot"
+	skin		"default"
+	uishader	"models/players/stormpilot/mb2_icon_default"
+
+	model_1		"stormpilot_fml"
+	skin_1		"rgb"
+	uishader_1	"models/players/stormpilot_fml/mb2_icon_rgb"
+	userRGB_1 	1
+	customred_1 	0.709
+	customgreen_1	0.12
+	customblue_1 	0.12
+		model_2	"imperial_worker"
+	skin_2		"default"
+	uishader_2	"models/players/imperial_worker/mb2_icon_default"
 	hackrate	0.82
 }
 WeaponInfo0
@@ -79,7 +86,7 @@ WeaponInfo2
 	AltFireEnabled 		 0
 	damageMod 1.15
 }
-description	"Rebel Engineer [Soldier]
+description	"Imperial Engineer [Soldier]
 
 Weaponry:
 DL-44 Pistol (1)

@@ -10,20 +10,13 @@ ClassInfo
 	MBClass			MB_CLASS_SOLDIER
 	classflags		CFL_STATVIEWER
 	wp_stunbatonflags	HELD_FLAME
-	model		"stormpilot"
-	skin		"default"
-	uishader	"models/players/stormpilot/mb2_icon_default"
-
-	model_1		"stormpilot_fml"
-	skin_1		"rgb"
-	uishader_1	"models/players/stormpilot_fml/mb2_icon_rgb"
-	userRGB_1 	1
-	customred_1 	0.709
-	customgreen_1	0.12
-	customblue_1 	0.12
-		model_2	"imperial_worker"
-	skin_2		"default"
-	uishader_2	"models/players/imperial_worker/mb2_icon_default"
+		model	"rebel_pilot"
+	skin		"rgb"
+	uishader	"models/players/rebel_pilot/mb2_icon_rgb"
+	userRGB 		1
+	customred 		0.945
+	customgreen	0.510
+	customblue 	0.099 
 	hackrate	0.82
 }
 WeaponInfo0
@@ -86,7 +79,7 @@ WeaponInfo2
 	AltFireEnabled 		 0
 	damageMod 1.15
 }
-description	"Imperial Engineer [Soldier]
+description	"Rebel Engineer [Soldier]
 
 Weaponry:
 DL-44 Pistol (1)
