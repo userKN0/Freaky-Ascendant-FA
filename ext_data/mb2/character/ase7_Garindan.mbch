@@ -25,7 +25,7 @@ ClassInfo
 	APmultiplier	1.2
 	BPmultiplier    0
 	saber1			garindan_leg_asp
-	forcepowers     FP_SABER_OFFENSE,3|FP_SABER_THROW,0
+	forcepowers     FP_SABER_OFFENSE,3|FP_SABERTHROW,0
 	saberstyle		SS_MEDIUM|SS_STRONG
 	saberDamage 	120
 	saberSpecialDamage 2
