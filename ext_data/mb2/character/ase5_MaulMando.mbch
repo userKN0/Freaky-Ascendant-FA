@@ -62,11 +62,11 @@ c_att_descs_1 "20% faster RoF,20% more velocity,10% more FP DMG,10% less DMG"
 c_att_skill_2 MB_ATT_A280
 c_att_names_2 "Concordian Rifle (A280)"
 c_att_ranks_2 1,2,0
-c_att_descs_2 "25% more FP DMG & velocity,25% slower RoF,40% slower mag reload"
+c_att_descs_2 "25% more FP DMG & velocity,40% slower mag reload"
 c_att_skill_3 MB_ATT_EE3
 c_att_names_3 "Sundari Repeater (EE-3)"
 c_att_ranks_3 2,0,1
-c_att_descs_3 "30% faster RoF,20% more velocity,40% slower mag reload"
+c_att_descs_3 "20% faster RoF,20% more velocity,40% slower mag reload"
 c_att_skill_4 MB_ATT_FLAMETHROWER
 c_att_names_4 "Wrist Flamethrower ^3[CS2 TM]"
 c_att_ranks_4 1
@@ -191,9 +191,8 @@ AltFlashSound2 "sound/weapons/EL-16/alt_fire.wav"
 AltFlashSound3 "sound/weapons/EL-16/alt_fire.wav"
 customammo 800
 clipsize 80
-FPMult 1.25
+FPMult 1.3
 ReloadTimeModifier 1.4
-rateMod 1.25
 velocityMod 1.25
 }
 WeaponInfo4
@@ -213,7 +212,7 @@ AltMissileEffect "Blaster/Shot04Y"
 customAmmo 1000
 clipsize 32
 ReloadTimeModifier 1.4
-rateMod 0.7
+rateMod 0.8
 velocityMod 1.2
 }
 WeaponInfo5
@@ -233,6 +232,8 @@ animReadyNoAmmo BOTH_FORCE_2HANDEDLIGHTNING
 animStand BOTH_FORCE_2HANDEDLIGHTNING_START
 animAttack BOTH_MAND_FLAME_READY
 animAttackWalk BOTH_MAND_FLAME_READY
+animReadyRun BOTH_FORCE_2HANDEDLIGHTNING_START
+animAttackRun BOTH_MAND_FLAME_READY
 }
 description "Mandalorian Super Commando [Mandalorian]
 
