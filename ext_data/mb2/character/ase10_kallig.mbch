@@ -26,7 +26,7 @@ classinfo
 	sabercolor	0
 	saberstyle	SS_MEDIUM
 	
-	saber_1		saber_kallig2_legends
+	saber1_1		saber_kallig2_legends
 	sabercolor_1	0
 	saberstyle_1	SS_STAFF
 	
@@ -41,7 +41,7 @@ classinfo
 	
 	iscustombuild	1
 	mbpoints		35
-	asCustomSpec 3
+	hasCustomSpec 3
 	isOnlyOneSpec 1
 	customSpecName_1 "Sorcerer (DPS)"
 	customSpecIcon_1 "gfx/menus/alpha/icon_weap_expdamagesplash"

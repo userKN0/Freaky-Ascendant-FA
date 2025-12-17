@@ -24,7 +24,7 @@ ClassInfo
 	saberstyle	SS_TAVION|SS_DESANN
 	model		"gorc"
 	skin			"default"
-	uishader		"models/players/gorc/mb2_icon_default"	
+	uishader		"models/players/gorc/icon_default"	
 	uioverlay 	"gfx/icons/frontline"
 	modelscale 	1.44
 	speed       	0.6
