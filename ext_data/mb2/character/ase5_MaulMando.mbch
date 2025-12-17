@@ -161,13 +161,12 @@ FlashSound0 "sound/weapons/MWC-35c/fire.wav"
 isMinigun 1
 Icon "gfx/hud/w_icon_rotary_cannon"
 WeaponName "Vornax Rotary Siege Cannon"
-FPMult 4
-rateMod 2
-damageMod 4
+FPMult 3
+RateMod 9
 ReloadTimeModifier 2
 velocityMod 1.2
-clipsize 10
-customAmmo 600
+clipsize 6
+customammo 100
 }
 WeaponInfo3
 {
