@@ -38,7 +38,7 @@ FlashSound0 "sound/weapons/fusioncutter/cutter_hit.mp3"
 MissileMissEffect "effects/sparks/spark_exp_nosnd"
 MissileHitHumanEffect "effects/sparks/spark_exp_nosnd"
 MissileHitDroidEffect "effects/sparks/spark_exp_nosnd"
-rateMod .2
+rateMod .4
 damageMod 0.8
 }
 

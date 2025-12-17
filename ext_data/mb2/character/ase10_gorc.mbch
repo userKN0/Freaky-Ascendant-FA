@@ -27,7 +27,7 @@ ClassInfo
 	uishader		"models/players/gorc/icon_default"	
 	uioverlay 	"gfx/icons/frontline"
 	modelscale 	1.44
-	speed       	0.6
+	speed       	0.77
 	damageGiven  	1.4
 	apmultiplier	1.8
 	rateoffire_melee	1.4
