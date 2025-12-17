@@ -26,7 +26,7 @@ classinfo
 	sabercolor	0
 	saberstyle	SS_MEDIUM
 	
-	saber1_1		saber_kallig2_legends
+	saber1_1		saber_kallig_staff
 	sabercolor_1	0
 	saberstyle_1	SS_STAFF
 	
@@ -40,7 +40,7 @@ classinfo
 	special1	EAS_FP_REPULSE
 	
 	iscustombuild	1
-	mbpoints		35
+	mbpoints		45
 	hasCustomSpec 3
 	isOnlyOneSpec 1
 	customSpecName_1 "Sorcerer (DPS)"

@@ -34,7 +34,7 @@ modelscale 1.04
 resource RESOURCE_RAGE
 forcepool 150
 resourceRegenCap 50
-resourceRegenAmount 2
+resourceRegenAmount 3
 resourceRegenRate 750
 special1 EAS_HI_ROCKET
 special3 EAS_HI_DEX
@@ -244,17 +244,15 @@ Enforcers with brutal burst fire/area control.
 - Personal Energy Shield (Cyan Saber)
 -- Saber Defense/Deflect (0)
 -- Blaster Defense (3)
--- 150% more KB
--- 50% less DMG
 -- Slap ^3[GB]
 - Fire Grenade (1)
 ^5Powers:
 - Dark Rage (3) ^3[CS4]
 ^8Attributes:
 - Fury (2)
--- Resource Regen: 2/.75s to 50
+-- Rage Regen: 3/s to 50
 - Strength (1)
-- Dexterity (3)
+- Dex (3)
 - Beskar (2)
 - Tracking Beacon
 ^3Abilities:

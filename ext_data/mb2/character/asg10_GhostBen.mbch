@@ -81,21 +81,21 @@ ForceInfo0
 ForceToReplace	FP_PUSH
 Icon	"gfx/mp/new_f_icon_push"
 ForcePowerName	"Force Push"
-HandShader	"gfx/effects/forcePush"
+HandShader	"gfx/effects/dekashield2"
 StartSound "sound/chars/oldben/alternatives_to_fighting.mp3"
-HandShaderRed	0
-HandShaderBlue	0
-HandShaderGreen	150
+//HandShaderRed	0
+//HandShaderBlue	0
+//HandShaderGreen	150
 }
 ForceInfo1
 {
 ForceToReplace	FP_PULL
 Icon	"gfx/mp/new_f_icon_pull"
 ForcePowerName	"Force Pull"
-HandShader	"gfx/effects/forcePush"
-HandShaderRed	0
-HandShaderBlue	0
-HandShaderGreen	150
+HandShader	"gfx/effects/dekashield2"
+//HandShaderRed	0
+//HandShaderBlue	0
+//HandShaderGreen	150
 }
 WeaponInfo0
 {

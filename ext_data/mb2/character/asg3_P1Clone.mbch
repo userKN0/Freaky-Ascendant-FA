@@ -50,6 +50,27 @@ model_2     "clonetrooper_p1"
 skin_2      "poncho"
 uishader_2  "models/players/clonetrooper_p1/mb2_icon_poncho"
 
+model_3     "clonetrooper_p1"
+skin_3     "rgb"
+uishader_3  "models/players/clonetrooper_p1/mb2_icon_rgb"
+	userRGB_1 		1
+	customred_3 		1
+	customgreen_3		1
+	customblue_3 		1
+
+model_4     "clonetrooper_p1"
+skin_4     "filsquad"
+uishader_4  "models/players/clonetrooper_p1/mb2_icon_filsquad"
+
+model_5     "clonetrooper_p1"
+skin_5     "horncompany"
+uishader_5  "models/players/clonetrooper_p1/mb2_icon_horncompany"
+
+model_6     "clonetrooper_p1"
+skin_6     "ordinance"
+uishader_6  "models/players/clonetrooper_p1/mb2_icon_ordinance"
+
+
     isCustomBuild    1
     mbPoints        9
 

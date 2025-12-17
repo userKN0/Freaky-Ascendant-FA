@@ -2,7 +2,7 @@
 
 ClassInfo
 {
-	name			"asg2_engineer"
+	name			"ase2_engineer"
 	weapons			WP_BLASTER_PISTOL|WP_MELEE|WP_STUN_BATON|WP_DET_PACK|WP_FLECHETTE
 	attributes		MB_ATT_PISTOL,1|MB_ATT_DET_PACK,3|MB_ATT_STUN_BATON,3|MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,2|MB_ATT_RESPAWNS,2|MB_ATT_DISP_AMMO,2|MB_ATT_HEALING,1|MB_ATT_FLECHETTE,1
 	maxhealth		50
@@ -45,7 +45,7 @@ FlashSound0 "sound/weapons/fusioncutter/cutter_hit.mp3"
 MissileMissEffect "effects/sparks/spark_exp_nosnd"
 MissileHitHumanEffect "effects/sparks/spark_exp_nosnd"
 MissileHitDroidEffect "effects/sparks/spark_exp_nosnd"
-rateMod .2
+rateMod .4
 damageMod 0.8
 }
 
