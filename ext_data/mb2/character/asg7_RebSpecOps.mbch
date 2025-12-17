@@ -4,13 +4,12 @@ ClassInfo
 	MBClass				MB_CLASS_JEDI
 	classNumberLimit	2
 	weapons			WP_MELEE|WP_SABER
-	attributes		MB_ATT_TRACKING_BEACON|MB_ATT_TRACKING_DART,3|MB_ATT_DEXTERITY,3|MB_ATT_STAMINA,3|MB_ATT_FLOAT_HOP|MB_ATT_BUNNY_HOP,1|MB_ATT_STRONGBLOBS,10|MB_ATT_AMMO,3|MB_ATT_BLAST_ARMOUR
+	attributes		MB_ATT_TRACKING_BEACON|MB_ATT_TRACKING_DART,3|MB_ATT_DEXTERITY,3|MB_ATT_STAMINA,3|MB_ATT_FLOAT_HOP|MB_ATT_BUNNY_HOP,1|MB_ATT_STRONGBLOBS,3|MB_ATT_AMMO,3|MB_ATT_BLAST_ARMOUR|MB_ATT_DODGE,3
 	maxhealth	90
-	MaxArmor	100
+	MaxArmor	80
 	resource	RESOURCE_STAMINA
-	forceregen	1.2
 	forcepool	80
-	rankForcepool	110,140
+	rankForcepool	100,120
 	saberMaxChain 1
 	saberDamage	60
 	saber1	energyshield_as2
@@ -20,16 +19,15 @@ ClassInfo
 	saber1_2	ct_shield4
 	saberstyle_2	SS_FAST|SS_TAVION
 	APmultiplier	0	//no bp dmg but can mb and parry
-	BPmultiplier 	1.2
 	classflags	CFL_HEAVYMELEE|CFL_SEEING_STEALTH
 	holdables	HI_SEEKER|HI_STIMPACK|HI_MEDPAC_BIG
-	special1	EAS_HI_TRACKING
+	special1	EAS_HI_DODGE
 	special2	EAS_HI_DEX
-	special3	EAS_HI_DASH
+	special3	EAS_HI_TRACKER
 	special4 	EAS_HI_GRAPPLEHOOK
 	uioverlay "gfx/icons/tactician"
 	WP_CloneRifleFlags	HELD_KNOCKDOWN
-	WP_MandoPistolFlags	HELD_ALTRELOAD|HELD_FREEZE
+	WP_ClonePistolFlags	HELD_ALTRELOAD|HELD_FREEZE
 	WP_BlasterPistolFlags	HELD_ALTRELOAD|HELD_POISON
 	model			"rebel_marine"
 	skin			"default"
@@ -58,7 +56,7 @@ ClassInfo
 	c_att_skill_0	MB_ATT_INVALID
 	c_att_names_0	"^2SH-9 Slugthrower Pistol"
 	c_att_ranks_0	-1
-	c_att_skill_1	MB_ATT_MANDO_PISTOL
+	c_att_skill_1	MB_ATT_CLONE_PISTOL
 	c_att_names_1	"Cryo-Ban Projectile Rounds:"
 	c_att_ranks_1	10,0
 	c_att_descs_1	"Freezes on hit, 44.5% more DMG, 35% more FP DMG,
@@ -80,8 +78,8 @@ ClassInfo
 	c_att_skill_7	MB_ATT_CLONERIFLE
 	c_att_names_7	"^2A180 Electro-mag Pulse Con.:"
 	c_att_ranks_7	15
-	c_att_descs_7	"Clone Rifle with 20 Ion Blobs, knockdown on direct hit,
-100% more velocity, 70% faster swap speed"
+	c_att_descs_7	"Clone Rifle with 6 Ion Blobs, knockdown on direct hit,
+20% less velocity, 70% faster swap speed"
 	c_att_skill_8	MB_ATT_FRAGS
 	c_att_names_8	"Smoke Grenades:"
 	c_att_ranks_8	1
@@ -90,14 +88,14 @@ ClassInfo
 	c_att_ranks_9	-1
 	c_att_skill_10	MB_ATT_FP_SABER_DEFENSE
 	c_att_names_10	"Saber Defense:"
-	c_att_ranks_10	10,10
+	c_att_ranks_10	10
 	c_att_skill_11	MB_ATT_GUN_DEFENSE
 	c_att_names_11	"Blaster Defense:"
-	c_att_ranks_11	10,10,10
+	c_att_ranks_11	10,10
 	c_att_skill_12	MB_ATT_POWER
 	c_att_names_12	"Stamina Pool:"
 	c_att_ranks_12	2,3
-	c_att_descs_12	"110, 140"
+	c_att_descs_12	"100, 120"
 	c_att_skill_13	MB_ATT_GRAPPLE_HOOK
 	c_att_names_13	"Grappling Hook ^3[CS3]:"
 	c_att_ranks_13	2,3
@@ -107,8 +105,8 @@ ClassInfo
 }
 WeaponInfo0
 {
-	WeaponToReplace		WP_MANDO_PISTOL
-	WeaponBasedOff		WP_MANDO_PISTOL
+	WeaponToReplace		WP_CLONE_PISTOL
+	WeaponBasedOff		WP_CLONE_PISTOL
 	NewWorldModel		"models/weapons2/usp_match/usp_match.glm"
 	NewViewModel		"models/weapons2/usp_match/usp_match.md3"
 	MuzzleEffect		"null"
@@ -204,9 +202,10 @@ WeaponInfo4
 	hasAnimOverrides 1
 	animReady BOTH_STAND5TOSTAND8
 	animReadyWalk BOTH_STAND5TOSTAND8
-	//animReadyNoAmmo BOTH_STAND5TOSTAND8
+	animReadyRun BOTH_STAND5TOSTAND8
 	animAttack NADE_SECONDARY
 	animAttackWalk NADE_SECONDARY
+	animAttackRun NADE_SECONDARY
 	animStand BOTH_STAND1
 	primFireEnabled	0
 	customAmmo	4
@@ -220,22 +219,25 @@ WeaponInfo5
 	NewViewModel	"models/weapons2/a180/model_ion.md3"
 	AltMissileEffect	"arc_caster/ArcCasterShock"
 	AltMuzzleEffect	"arc_caster/ArcCasterMuzzle"
-	//AltFlashSound0	"vehicles/weapons/common/IonCannon.mp3"
-	AltFlashSound0	"Sound/Weapons/plasma_sword/impact.wav"
+	AltFlashSound0	"vehicles/weapons/common/IonCannon.mp3"
+	//AltFlashSound0	"Sound/Weapons/plasma_sword/impact.wav"
 	Icon	"gfx/hud/w_icon_a180_ion"
 	WeaponName	"A180 Electro-mag Pulse Conversion"
 	ClipSize	-1
 	CustomAmmo	-1
-	velocityMod	2
+	velocityMod .8
 	rateMod	.3
 }
-description	"Rebel SpecOps(WIP)
+description	"Rebel SpecOps(Jedi)
 Brief Overview:
-An elite with access to special x, y and z.
+An elite with access to special x, y and z. (WIP)
 
 ^2Default Weaponry:
 - Heavy Melee
 - Personal Shield
+-- Chain Limit: 1
+-- 50% less DMG
+-- 60% less Reach
 
 ^6Default Inventory:
 - Seeker Droid
@@ -246,15 +248,15 @@ An elite with access to special x, y and z.
 - Repulsor Assisted Movement
 -- Slowfall
 -- Bunny Hop (1)
--- Dash (1)
 -- Dexterity (3)
 -- Jedi Getups
+- Dodge (3)
 - Force Sense Immunity
 - Blast Armour
 - Tracking Beacon
 
 ^3Abilities:
-- Tracking Darts ^3[CS1]
+- Dodge ^3[CS1]
 - Dex Roll ^3[CS2]
-- Dash ^3[CS3]
+- Tracking Darts (3) ^3[CS3]
 - Grapplehook ^3[CS4]"
