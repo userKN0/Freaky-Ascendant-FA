@@ -83,9 +83,9 @@ c_att_names_16 "Kingpin Projectile Rifle"
 c_att_ranks_16 3
 c_att_descs_16 "10% more FP DMG,30% less DMG,100% slower mag reload"
 c_att_skill_17 MB_ATT_TRAD_BOWCASTER
-c_att_names_17 "Kryze Echo-Bolter"
-c_att_ranks_17 2,1
-c_att_descs_17 "30% less dmg,20% more ROF,20% more velocity"
+c_att_names_17 "Kryze Echo-Bolter(Sec. Fire)"
+c_att_ranks_17 3,0,0
+c_att_descs_17 "30% less dmg,40% more ROF,20% more velocity"
 c_att_skill_18 MB_ATT_E_22
 c_att_names_18 "Repeater Pistol"
 c_att_ranks_18 1
@@ -134,8 +134,10 @@ hasAnimOverrides 1
 animStand BOTH_STAND9
 animReady BOTH_MAND_PISTOL_READY
 animReadyWalk BOTH_MAND_PISTOL_READY
+animReadyRun BOTH_MAND_PISTOL_READY
 animAttack BOTH_MAND_PISTOL_ATTACK
 animAttackWalk BOTH_MAND_PISTOL_ATTACK
+animAttackRun BOTH_MAND_PISTOL_ATTACK
 clipsize 6
 FPMult 1.6
 rateMod 1.3
@@ -206,6 +208,8 @@ animReady BOTH_PISTOL_IDLE2
 animReadyWalk BOTH_PISTOL_READY
 animAttack BOTH_PISTOL_ATTACK
 animAttackWalk BOTH_PISTOL_ATTACK
+animReadyRun
+animAttackRun
 }
 WeaponInfo6
 {
@@ -227,6 +231,8 @@ animReadyNoAmmo BOTH_TUSKENTAUNT1
 animAttack BOTH_THERMAL_THROW2
 animAttackWalk BOTH_THERMAL_THROW2
 animStand BOTH_THERMAL_READY2
+animReadyRun BOTH_SABER_OBIWAN_STANCE
+animAttackRun BOTH_THERMAL_THROW2
 clipSize 6
 customAmmo 60
 rateMod 2
@@ -250,6 +256,8 @@ animReadyNoAmmo BOTH_FORCE_2HANDEDLIGHTNING
 animStand BOTH_FORCE_2HANDEDLIGHTNING_START
 animAttack BOTH_MAND_FLAME_READY
 animAttackWalk BOTH_MAND_FLAME_READY
+animReadyRun BOTH_FORCE_2HANDEDLIGHTNING_START
+animAttackRun BOTH_MAND_FLAME_READY
 }
 WeaponInfo8
 {
@@ -260,8 +268,9 @@ NewViewModel "models\weapons2\kotor_bowcaster1\kotor_bowcaster1.md3"
 Icon "gfx/hud/w_icon_kotor_bowcaster1"
 WeaponName "Kryze Echo-Bolter"
 damageMod 0.8
-rateMod 0.7
+rateMod 0.6
 velocityMod 1.2
+primfireenabled 0
 }
 description "Nite Owl Mandalorian [Mandalorian]
 
