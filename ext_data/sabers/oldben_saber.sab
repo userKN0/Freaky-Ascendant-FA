@@ -1,0 +1,31 @@
+saber_old_ben
+{
+	name  		"Obi-Wan Kenobi (Ep. IV)"
+	saberType 	SABER_SINGLE
+	saberModel  "models/weapons2/saber_plasma/saber_obi_wan3.glm"
+	saberLength 40
+	soundOn		"sound/weapons/saber/saberon_kenobi.mp3"
+	soundLoop	"sound/weapons/saber/saberhumkenobi.wav"
+	soundOff		"sound/weapons/saber/saberoff_kenobi.mp3"
+	ReadyAnim   BOTH_SABER_OBIWAN_STANCE
+	drawanim	BOTH_WALK2
+	spinsound	"s/w/s/spin.wav"
+	hitSound1	"s/w/s/hit1.mp3"
+    hitSound2	"s/w/s/hit2.mp3"
+    hitSound3	"s/w/s/hit3.mp3"
+	bounceSound1	"s/w/s/bounce1.mp3"	
+	bounceSound2	"s/w/s/bounce2.mp3"
+	bounceSound3	"s/w/s/bounce3.mp3"
+	jumpAtkFwdMove LS_NONE
+	noCartwheels 1
+	jumpAtkLeftMove LS_NONE
+	jumpAtkRightMove LS_NONE
+    noRollStab      	1
+    noWallRuns    	1
+    noWallFlips   	1
+    noWallGrab    	1
+    noRolls      	1
+    noFlips      	1
+    noCartwheels   	1
+    noKicks       	1
+}

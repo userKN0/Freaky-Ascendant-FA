@@ -1,0 +1,196 @@
+ClassInfo
+{
+name	"asg9_GhostBen"
+weapons	WP_SABER|WP_REPEATER
+attributes	MB_ATT_JETPACK,1|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_CCTRAINING,3|MB_ATT_BUNNY_HOP,1|MB_ATT_BLAST_ARMOUR|MB_ATT_FORCEFOCUS,2|MB_ATT_FORCEBLOCK,4|MB_ATT_ANTI_MT,2|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_GUN_DEFENSE,3|MB_ATT_DEFLECT,3|MB_ATT_GUN_DEFENSE,3|MB_ATT_SABER_MEDIUM,2|MB_ATT_FP_REPULSE|MB_ATT_MAGNETIC_PLATING|MB_ATT_CORTOSIS,2|MB_ATT_DISP_HEALTH,2|MB_ATT_HEALING,2
+speed	0.95
+baseSpeed	226
+maxhealth	50
+forcepool	145
+forceregen	1.2
+skilltimermod	0.8
+MBClass	MB_CLASS_JEDI
+forcepowers	FP_SABERTHROW,3|FP_SABER_OFFENSE,3|FP_LEVITATION,2|FP_HEAL,3|FP_TELEPATHY,3|FP_SPEED,1|FP_PUSH,3|FP_PULL,3|FP_BLIND,3|FP_ABSORB,2|FP_PROTECT,2|FP_SEE,3
+classflags CFL_NOPICKUPS|CFL_HASQ3|CFL_FASTHACKING|CFL_NOPICKUPS|CFL_NOLOCATIONALDAMAGE|CFL_BPFREEJUMPS|CFL_SEEING_STEALTH|CFL_STRONGAGAINSTPHYSICAL|CFL_DISMEMBERFRAGILE
+special1 EAS_FP_SABERTHROW
+special2 EAS_FP_ABSORB
+special3 EAS_FP_PROTECT
+special4 EAS_FP_REPULSE
+getupAnim	BOTH_CWCIRCLELOCK
+flourishAnim	BOTH_STAND5TOSTAND8
+gloatAnim	BOTH_MINDTRICK1
+saberStanceAnim BOTH_SABER_OBIWAN_STANCE
+WP_MeleeFlags	HELD_KNOCKDOWN|HELD_KNOCKDOWNRESISTANCE|HELD_LOWDAMAGE
+WP_SaberFlags	HELD_KNOCKDOWNRESISTANCE
+WP_RepeaterFlags	HELD_KNOCKDOWN|HELD_LOWDAMAGE|HELD_KNOCKDOWNRESISTANCE|HELD_IGNOREBLOCK
+resource RESOURCE_FORCE
+knockbackGiven 1.2
+jetpackThrustEffect	""
+jetpackIdleEffect	""
+jetpackFinishSound 	"sound/effects/woosh4"
+jetpackThrustSound  "sound/ambience/artus/artus_shaft"
+jetpackStartSound 	"sound/effects/woosh22"
+jetpackIdleSound	"sound/ambience/artus/artus_shaft"
+rateOfFire_Melee	1.5
+CSmultiplier 2.0
+APmultiplier 1.2
+BPmultiplier 0.5
+blockAmount 120
+blockRegenCap 120
+blockRegenRate 200
+blockRegenAmount 4
+saberMaxChain 6
+saberDamage 0.6
+saberThrowDamage 40
+modelScale	1.01
+uioverlay_l "gfx/icons/support"
+uioverlay_r "gfx/icons/aerial"
+model	"obiwan_ot"
+skin	"ghost"
+uishader "models/players/obiwan_ot/mb2_icon_ghost"
+saber1	saber_old_ben
+sabercolor	4
+saberstyle	SS_MEDIUM|SS_FAST
+classNumberLimit	1
+isCustomBuild	1
+mbPoints	0
+hasCustomSpec 3
+isOnlyOneSpec 1
+customSpecName_1	""
+customSpecIcon_1	"gfx/null/null"
+customSpecDesc_1	""
+customSpecName_2	"Old Ben Kenobi"
+customSpecIcon_2	"gfx/models/players/oldben/oldben_ghost"
+customSpecDesc_2	""
+customSpecName_3	""
+customSpecIcon_3	"gfx/null/null"
+customSpecDesc_3	""
+
+c_att_skill_0	MB_ATT_INVALID
+c_att_names_0	"^5WE LOVE YOU ALEC GUINNESS!"
+c_att_ranks_0	-1
+c_att_skill_15	MB_ATT_INVALID
+c_att_names_15	"^5WE LOVE YOU ALEC GUINNESS!"
+c_att_ranks_15	-1
+c_att_skill_30	MB_ATT_INVALID
+c_att_names_30	"^5WE LOVE YOU ALEC GUINNESS!"
+c_att_ranks_30	-1
+}
+ForceInfo0
+{
+ForceToReplace	FP_PUSH
+Icon	"gfx/mp/new_f_icon_push"
+ForcePowerName	"Force Push"
+HandShader	"gfx/effects/forcePush"
+StartSound "sound/chars/oldben/alternatives_to_fighting.mp3"
+HandShaderRed	0
+HandShaderBlue	0
+HandShaderGreen	150
+}
+ForceInfo1
+{
+ForceToReplace	FP_PULL
+Icon	"gfx/mp/new_f_icon_pull"
+ForcePowerName	"Force Pull"
+HandShader	"gfx/effects/forcePush"
+HandShaderRed	0
+HandShaderBlue	0
+HandShaderGreen	150
+}
+WeaponInfo0
+{
+WeaponToReplace WP_REPEATER
+WeaponBasedOff WP_REPEATER
+NewWorldModel	"models/weapons2/dummyblaster/model.glm"
+NewViewModel	"models/weapons2/dummy/dummy.md3"
+Icon	"gfx/mp/new_f_icon_push"
+WeaponName "Force Barrage"
+altMissileHitHumanEffect "grenade_heal/grenade_heal"
+altMissileHitDroidEffect "grenade_heal/grenade_heal_hit"
+altMissileEffect	"Force/inv_wave"
+altMuzzleEffect	"gfx/effects/forceflare"
+altMissileMissEffect "grenade_heal/explosion"
+altFlashSound0 "sound/effects/woosh10.mp3"
+Clipsize	50
+customAmmo 125
+rateMod .8
+reloadTimeModifier 20
+damageMod 2.2
+velocityMod	2.5
+hasAnimOverrides 1
+firingAnim	BOTH_FORCE_DRAIN_RELEASE	
+AnimStand BOTH_FORCE_DRAIN_START
+animReady BOTH_FORCE_DRAIN_START
+animReadyWalk BOTH_FORCE_DRAIN_START
+animReadyNoAmmo BOTH_FORCE_DRAIN_GRAB_END
+animAttack BOTH_FORCE_DRAIN_HOLD
+animAttackWalk BOTH_FORCE_DRAIN_HOLD
+animReadyRun	BOTH_FORCE_DRAIN_START
+animReadyZoomRun	BOTH_FORCE_DRAIN_START
+animAttackRun	BOTH_FORCE_DRAIN_HOLD
+animAttackZoomRun	BOTH_FORCE_DRAIN_HOLD
+AltFireEnabled		1
+PrimFireEnabled		0
+}
+description	"Old Ben Kenobi (Force Ghost)
+
+Force Ghost (50 HP)
+
+WEAPONS:
+- Lightsaber (Medium, Fast)
+--- Absolute Precision (6 chain) (200%+ CS)
+--- Deals 20% more saber damage
+--- Defensive Offense (Q3)
+--- BP Regen (200/4ms)
+-- Blaster Defense (3)
+-- Saber Throw (3) (40 DMG)
+-- Saber Defense (0.5)
+-- Saber Offense (3)
+-- Saber Deflect (3)
+
+- Force Shove (Melee)
+-- Knocks down targets
+-- Slowed melee speed (-50%)
+--- Works with slapping
+
+- Force Barrage (Repeater)
+-- Knocks down targets
+
+FORCE POWERS:
+- Force Ghost (Immortality)
+-- Spirit Levitation (Jetpack, 1)
+-- Immune to Force Sight
+-- Force Pool (145)
+--- Force Regen (1.2/s)
+--- 20% increased force action speed
+-- Force Block (4)
+-- Force Focus (2)
+
+- Force Repulse
+
+- Force Sight (3)
+- Force Push (3)
+- Force Pull (3)
+- Force Heal (2)
+- Force Speed (1)
+- Force Levitate (2)
+- Force Mind Trick (3)
+- Force Blind (3)
+- Force Absorb (2)
+- Force Protect (2)
+
+ABILITIES:
+- Spirit Healing (2)
+- Mend Others Wounds (2)
+- Jedi Combat Training (CC, 3)
+- Explosive Resistance (Blast Armour)
+- Difficult to Target (Magnetic Plating)
+- Immune to Knockdown (Knockdown Resistance)
+- No Locational Damage (Force Ghost)
+- Ethereal Visage (Cortosis, 2)
+- Nimble (Bunny Hop, 1)
+- Immune to Mind Tricks
+- In-Air Force Regen
+- Knockdown Roll
+- Fast Hacking
+- NO BP Jumps"

@@ -113,7 +113,7 @@ SubclassesForClass5
 
 SubclassesForClass6
 {
-	Subclass1	"h10_Obi"
+	Subclass1	"asg10_Obi"
 	Subclass2	"h10_PloK"
 	Subclass3	"asg10_JTradition"
 	Subclass4	"asg10_JHeal"
@@ -129,6 +129,7 @@ SubclassesForClass6
 	Subclass14	"asg10_JForce"
 	Subclass15	"asg10_jaden"
 	Subclass16	"asg10_x2"
+	Subclass17	"asg10_GhostBen"
 }
 
 

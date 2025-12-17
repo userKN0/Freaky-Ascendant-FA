@@ -1,0 +1,169 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name	"asg10_Obi"
+	MBClass	MB_CLASS_JEDI
+	classNumberLimit	1
+	
+	weapons	WP_MELEE|WP_SABER
+	
+	attributes	MB_ATT_FORCEBLOCK,1|MB_ATT_FORCEFOCUS,2|MB_ATT_DEFLECT,3|MB_ATT_GUN_DEFENSE,3|MB_ATT_FP_SABER_DEFENSE,3
+	
+	saberstyle	SS_FAST|SS_MEDIUM|SS_TAVION
+	forcepowers	FP_LEVITATION,2|FP_PUSH,3|FP_SEE,3|FP_SABER_OFFENSE,3
+	
+	maxhealth	150
+	
+	forcepool	140
+	rankForcePool 185
+	
+	forceregen  .85
+	rankforceregen 1
+	saberThrowDamage 40
+
+	blockRegenAmount 5
+	blockRegenRate 400
+
+	APmultiplier	0.8
+	BPmultiplier	1.6
+	CSmultiplier  1.05
+	ASmultiplier	1.05
+	classflags CFL_NOPICKUPS
+	speed			0.94
+	
+	//special1 EAS_FP_SABERTHROW game chooses spec1 if not defined, leave as is
+	special2 EAS_MELEE
+	//special3 EAS_FP_TELEPATHY
+	//special4 EAS_FP_PROTECT
+	
+	//tauntAnim   BOTH_DESANN_STANCE
+	flourishAnim	BOTH_STAND5TOSTAND8
+	gloatAnim	BOTH_MINDTRICK1
+	//saberStanceAnim BOTH_SABER_OBIWAN_STANCE
+	
+	saber1		saber_obi_wan_legends3
+	sabercolor	4
+	
+	saber1_1		saber_obi_wan_legends
+	sabercolor_1	4
+	
+	saber1_2		saber_obi_wan_legends4
+	sabercolor_2 	0.58
+	modelscale	1.01
+	uioverlay "gfx/icons/support"
+	model		"obiwan_ep3"
+	skin			"default"
+	uishader		"models/players/obiwan_ep3/mb2_icon_default"
+	
+	model_1		"obiwan_ep3"
+	skin_1		"robe"
+	uishader_1	"models/players/obiwan_ep3/mb2_icon_robe"
+	
+	model_2		"obiwan_ep3"
+	skin_2		"robehood"
+	uishader_2	"models/players/obiwan_ep3/mb2_icon_robehood"
+	
+	model_3		"obiwan_ep1"
+	skin_3		"default"
+	uishader_3	"models/players/obiwan_ep1/mb2_icon_default"
+	
+	model_4		"obiwan_ep1"
+	skin_4		"robed"
+	uishader_4	"models/players/obiwan_ep1/mb2_icon_robed"
+	
+	model_5		"obiwan_ep2"
+	skin_5		"default"
+	uishader_5	"models/players/obiwan_ep2/mb2_icon_default"
+	
+	model_6		"obiwan_ep2"
+	skin_6		"robed"
+	uishader_6	"models/players/obiwan_ep2/mb2_icon_robed"
+	
+	model_7		"obiwan_ep2"
+	skin_7		"hooded"
+	uishader_7	"models/players/obiwan_ep2/mb2_icon_hooded"
+	
+	model_8		"obiwan_cw"
+	skin_8		"default"
+	uishader_8	"models/players/obiwan_cw/mb2_icon_default"
+	
+	model_9		"obiwan_ot"
+	skin_9		"default"
+	uishader_9	"models/players/obiwan_ot/mb2_icon_default"
+	
+	model_10		"obiwan_ot"
+	skin_10		"robed"
+	uishader_10	"models/players/obiwan_ot/mb2_icon_robed"
+	
+	model_11		"obiwan_ot"
+	skin_11		"hooded"
+	uishader_11	"models/players/obiwan_ot/mb2_icon_hooded"
+	
+	model_12		"obiwan_owk"
+	skin_12		"default"
+	uishader_12	"models/players/obiwan_owk/mb2_icon_default"
+
+	model_13		"obiwan_owk"
+	skin_13		"goggles"
+	uishader_13	"models/players/obiwan_owk/mb2_icon_goggles"
+	
+	isCustomBuild	1
+	mbPoints	0
+	hasCustomSpec 2
+	isOnlyOneSpec 1
+	customSpecName_1 "Man"
+	customSpecIcon_1 "gfx/menus/alpha/icon_stats_armor"
+	customSpecDesc_1 "Defensive/supportive skills"
+	customSpecName_2 "Boy"
+	customSpecIcon_2 "gfx/menus/alpha/icon_stats_movespeed"
+	customSpecDesc_2 "Offensive/mobility skills"
+	
+	c_att_skill_0		MB_ATT_FP_TELEPATHY
+	c_att_names_0		"Force Mind Trick ^3[CS4]"
+	c_att_ranks_0		0,0,0
+	
+	c_att_skill_1		MB_ATT_FP_PROTECT
+	c_att_names_1		"Force Protect"
+	c_att_ranks_1		0
+		
+	c_att_skill_2		MB_ATT_POWER
+	c_att_names_2		"Extra Force Pool (185)"
+	c_att_ranks_2		0
+	
+	
+	c_att_skill_15	MB_ATT_FP_LEVITATION
+	c_att_names_15	"Force Jump"
+	c_att_ranks_15	0,0,0
+	
+	c_att_skill_16	MB_ATT_FP_SPEED
+	c_att_names_16	"Force Speed ^3[CS3]"
+	c_att_ranks_16	0
+	
+	c_att_skill_17	MB_ATT_REGEN
+	c_att_names_17	"Force Regen (100%)"
+	c_att_ranks_17	0
+}
+
+description	"Obi-Wan Kenobi [Jedi]
+
+A seasoned Jedi with exceptional Saber skills and high BP regen. Choice of old and young builds.
+
+^2Weaponry:
+- Melee
+- Lightsaber (Yellow/Cyan/Blue)
+-- Saber/Blaster Defense (3)
+--- BP Regen: 5/.4s to 100
+-- Saber Deflect (3)
+-- Saber Throw ^3[CS1]
+--- 33% more DMG
+-- Slap ^3[CS2]
+ 
+^5Force Powers:
+- Jump (2)
+- Push (3)
+- Sense (3)
+
+^8Attributes:
+- Force Block (1)
+- Force Focus (2)"
