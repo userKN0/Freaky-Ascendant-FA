@@ -9,7 +9,7 @@ ClassInfo
 	
 	weapons			WP_SABER|WP_MELEE
 	
-	attributes		MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_FORCEFOCUS,1|MB_ATT_FORCEBLOCK,1|MB_ATT_HEALING,2|MB_ATT_DEFLECT,1|MB_ATT_GUN_DEFENSE,1|
+	attributes		MB_ATT_FORCEFOCUS,1|MB_ATT_HEALING,2|MB_ATT_DEFLECT,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_WOOKIE_STRENGTH,3
 	
 	forcepowers		FP_LEVITATION,1|FP_PULL,2|FP_TEAM_FORCE,1|FP_SEE,2|FP_GRIP,3
 	
@@ -19,11 +19,8 @@ ClassInfo
 	forcepool 		110
 	forceregen   	0.9
 	damagetaken		0.8
+	asmultiplier	0.8
 
-	APmultiplier 		1.15
-	BPmultiplier 		1.2
-	ASmultiplier 		1.05
-	CSmultiplier 		1.05
 	saberstyle	SS_TAVION|SS_DESANN
 	model		"gorc"
 	skin			"default"
@@ -34,6 +31,7 @@ ClassInfo
 	damageGiven  	1.4
 	apmultiplier	1.8
 	rateoffire_melee	1.4
+	saberdamage			144
 	
 	gloatAnim BOTH_HEADSHAKE
 	
@@ -48,17 +46,18 @@ ClassInfo
 
 description	"Gorc [Jedi]
 
-An oversized Jedi with a Lightsaber to match, adept at high level psychic Force powers.
+An oversized Dark Jedi with a Lightsaber to match, moves slowly but hits hard.
 
 ^2Weaponry:
 - Melee
-- 40% Slow ROF
-- Lightsaber
+-- 40% Slow ROF
+- Lightsaber Club
 -- Purple / Cyan Styles
--- Saber/Blaster Defense (1)
+-- Blaster Defense (1)
 -- Saber Deflect (1)
 -- Very High Reach
 -- Slap ^3[CS2]
+-- 144 Fixed Damage
 
 ^5Force Powers:
 - Force Jump (1)
@@ -69,4 +68,5 @@ An oversized Jedi with a Lightsaber to match, adept at high level psychic Force 
 
 ^8Attributes:
 - Healing (2)
-- Force Block/Focus (1)"
+- Force Focus (1)
+- Strength (3)"

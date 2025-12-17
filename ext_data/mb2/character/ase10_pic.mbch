@@ -8,7 +8,7 @@ ClassInfo
 	sabercolor		1
 	saberstyle		SS_DESANN
 	forcepowers		FP_LEVITATION,3|FP_TEAM_HEAL,1|FP_SABER_OFFENSE,2|FP_SABER_DEFENSE,1|FP_TEAM_FORCE,1|FP_SEE,2|FP_TELEPATHY,1|FP_SPEED,2|FP_PUSH,2
-	attributes		MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_FORCEFOCUS,1|MB_ATT_FORCEBLOCK,2|MB_ATT_BUNNY_HOP|MB_ATT_DEFLECT,0|MB_ATT_FLIPKICK,1|MB_ATT_HEALING,2
+	attributes		MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_FORCEFOCUS,1|MB_ATT_FORCEBLOCK,2|MB_ATT_BUNNY_HOP|MB_ATT_DEFLECT,0|MB_ATT_FLIPKICK,1|MB_ATT_HEALING,2|MB_ATT_INAIR_FORCE_REGEN
 	maxhealth		60
 	forcepool		125
 	model			"pic"
@@ -56,5 +56,6 @@ Flipkick (1) ^3[Contact Jump]
 Heal (2)
 Bunny Hop
 Resistant to Melee
+In Air Force Regen
 
 It is a mystery why one would call Gorc and Pic twins. Even though one is a miniature version of the other, they look nothing alike. They also don't battle alike. Pic is the energy and Gorc, the counter. They are the clashing balance of opposites: one, the voice; the other, the body. This combination is deadly."
