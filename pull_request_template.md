@@ -23,8 +23,8 @@ if your PR contains visible in-game changes you can provide screenshots/videos o
 If you want the players to know about changes made in this PR, specify them using the template outside the comment (delete the <!---, check preview). keep it brief and informative.
 
 :cl: username here
-- add: Added
-- remove: Removed
-- tweak: Changed
-- fix:
+- add: added
+- remove: removed
+- tweak: changed
+- fix: fixed
 -->
