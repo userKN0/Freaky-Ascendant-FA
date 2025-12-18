@@ -1,10 +1,10 @@
-//Legends Mode character file - Created by Frenzy & Leos
+//Fuse
 
 ClassInfo
 {
 	name				"asg2_zeb"
-	weapons 			WP_E_22|WP_MELEE|WP_SABER|WP_CONC_NADE
-	attributes  		MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_E_22,3|MB_ATT_BLAST_ARMOUR|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_MICRO_GRENADES,6|MB_ATT_AMMO,3
+	weapons 			WP_M5|WP_MELEE|WP_SABER|WP_CONC_NADE
+	attributes  		MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_M5,2|MB_ATT_BLAST_ARMOUR|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_MICRO_GRENADES,6|MB_ATT_AMMO,3
 	maxhealth			300
 	maxarmor			100
 	modelscale  		1.15
@@ -34,7 +34,6 @@ ClassInfo
 	
 	WP_SaberFlags HELD_PULSE
 	WP_ConcNadeFlags	HELD_LOWDAMAGE
-	WP_E22Flags		HELD_ALTRELOAD
 	
 	respawncustomtime 75000
 	
@@ -80,8 +79,8 @@ WeaponInfo0
 }
 weaponinfo1
 {
-	WeaponToReplace WP_E_22
-	WeaponBasedOff WP_E_22
+	WeaponToReplace WP_M5
+	WeaponBasedOff WP_M5
 	NewWorldModel	"models/weapons2/e_22/e_22_w.glm"
 	NewViewModel	"models/weapons2/e_22/e_22.md3"
 	NewHandsModel	"models/weapons2/e_22/e_22_hand.md3"
@@ -108,11 +107,11 @@ A large but swift Wookiee / Melee / Gunner hybrid.
 - Wookiee-style Melee
 - 5% Faster Swings
 - E-22 Blaster
+-- Based on the M5
 -- 45% Increased Velocity
 -- 20% Slower ROF
 -- 30% Increased Damage
 -- 12% Increased FP Damage
--- Alt Reload
 - Electro Staff
 -- Staff Style Only
 -- Saber Defense (2)
