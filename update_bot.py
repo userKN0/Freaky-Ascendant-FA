@@ -8,9 +8,21 @@ import platform
 from datetime import datetime, timezone
 import time
 import asyncio
-from dotenv import load_dotenv
+import json
 
-load_dotenv(dotenv_path='config.env')
+# Load configuration from JSON
+def load_config():
+    """Load configuration from config.json file"""
+    config_path = 'config.json'
+    if not os.path.exists(config_path):
+        print(f"ERROR: {config_path} not found!")
+        print("Please copy config.json.example to config.json and fill in your values.")
+        exit(1)
+
+    with open(config_path, 'r') as f:
+        return json.load(f)
+
+_config = load_config()
 
 # Detect operating system
 IS_WINDOWS = platform.system() == 'Windows'
@@ -19,64 +31,45 @@ IS_UNIX = platform.system() in ('Linux', 'Darwin')  # Linux or macOS
 # ============= CONFIGURATION =============
 class Config:
     # Discord & GitHub
-    DISCORD_TOKEN = os.getenv('DISCORD_BOT_TOKEN')
-    GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
-    GITHUB_REPO = os.getenv('GITHUB_REPO')
-    BRANCH = "main"
-    
+    DISCORD_TOKEN = _config['discord']['bot_token']
+    GITHUB_TOKEN = _config['github']['token']
+    GITHUB_REPO = _config['github']['repo']
+    BRANCH = _config['github'].get('branch', 'main')
+
     # Local paths
     # If USE_RWD is truthy, the bot will run against the current working directory
-    # (or the path in LOCAL_REPO_PATH env var) instead of cloning into ./repo_clone.
-    USE_RWD = os.getenv('USE_RWD', '0').lower() in ('1', 'true', 'yes')
+    # (or the path in LOCAL_REPO_PATH) instead of cloning
+    USE_RWD = _config['repository'].get('use_rwd', False)
 
     if USE_RWD:
-        LOCAL_REPO_PATH = os.getenv('LOCAL_REPO_PATH') or os.getcwd()
+        LOCAL_REPO_PATH = _config['repository'].get('local_repo_path') or os.getcwd()
         MOD_SOURCE_FOLDER = LOCAL_REPO_PATH
     else:
-        LOCAL_REPO_PATH = os.getenv('LOCAL_REPO_PATH') or "./repo_clone"
-        MOD_SOURCE_FOLDER = os.getenv('MOD_SOURCE_FOLDER') or "./repo_clone"
-    
-    # Static file names (never change)
-    PK3_NAME = os.getenv('PK3_NAME')
+        LOCAL_REPO_PATH = _config['repository'].get('local_repo_path', './repo_clone')
+        MOD_SOURCE_FOLDER = _config['repository'].get('mod_source_folder') or LOCAL_REPO_PATH
+
+    # Static file names
+    PK3_NAME = _config['build']['pk3_name']
     RELEASE_ZIP_NAME = "release.zip"
 
-    # Optional: restrict deploy command to one or more role IDs (comma-separated)
-    # Example: DEPLOY_ROLE_ID=123456789012345678 or DEPLOY_ROLE_ID=123,456
-    DEPLOY_ROLE_ID = os.getenv('DEPLOY_ROLE_ID')
+    # Optional: restrict deploy command to role IDs (list)
+    DEPLOY_ROLE_ID = _config['deploy'].get('role_ids', [])
 
     # Optional commands to run locally to stop/start the game server process
-    # Stop command runs from the bot's current directory.
-    # Examples:
-    # SERVER_STOP_CMD=taskkill /IM mbiided.x86.exe /F
-    # SERVER_START_CMD=start_server.bat
-    SERVER_STOP_CMD = os.getenv('SERVER_STOP_CMD')
-    SERVER_START_CMD = os.getenv('SERVER_START_CMD')
+    SERVER_STOP_CMD = _config['server'].get('stop_cmd', '')
+    SERVER_START_CMD = _config['server'].get('start_cmd', '')
+    START_CMD_DIR = _config['server'].get('start_cmd_dir', '')
 
-    # Optional: working directory for start command (where start_server.bat is located)
-    # This is useful when batch files reference other files with relative paths
-    # Example: START_CMD_DIR=C:\\GC\\steamcmd\\jka\\GameData\\MBII
-    START_CMD_DIR = os.getenv('START_CMD_DIR')
+    # Server verification commands
+    SERVER_STOP_VERIFY_CMD = _config['server'].get('stop_verify_cmd', '')
+    SERVER_START_VERIFY_CMD = _config['server'].get('start_verify_cmd', '')
 
-    # Optional: verify that the server has stopped. This command should exit with 0 when the server is stopped.
-    # Example (PowerShell):
-    # SERVER_STOP_VERIFY_CMD=powershell -Command "if (Get-Process -Name mbiided -ErrorAction SilentlyContinue) { exit 1 } else { exit 0 }"
-    SERVER_STOP_VERIFY_CMD = os.getenv('SERVER_STOP_VERIFY_CMD')
-
-    # Optional: verify that the server has started. This command should exit with 0 when the server is running.
-    # Example (PowerShell):
-    # SERVER_START_VERIFY_CMD=powershell -Command "if (Get-Process -Name mbiided -ErrorAction SilentlyContinue) { exit 0 } else { exit 1 }"
-    SERVER_START_VERIFY_CMD = os.getenv('SERVER_START_VERIFY_CMD')
-
-    # Optional delay (seconds) to wait between stop and start or as the timeout for verification polling
-    # Example: SERVER_START_DELAY=5
-    try:
-        SERVER_START_DELAY = int(os.getenv('SERVER_START_DELAY', '0'))
-    except ValueError:
-        SERVER_START_DELAY = 0
+    # Start delay (for verification timeout)
+    SERVER_START_DELAY = int(_config['server'].get('start_delay', 0))
 
     # Local MBII installation path (optional)
     # If set, the PK3 will be copied to this directory after stopping the server
-    MBII_DIR = os.getenv('MBII_DIR')
+    MBII_DIR = _config['mbii'].get('dir', '')
 
 # ============= BOT SETUP =============
 
@@ -89,14 +82,15 @@ def _member_has_deploy_role(member):
 
     role_cfg = Config.DEPLOY_ROLE_ID
     if not role_cfg:
-        print(f"✗ {member.name} denied: No DEPLOY_ROLE_ID configured")
-        return False, "Deployment restricted to server administrators (no DEPLOY_ROLE_ID configured)."
+        print(f"✗ {member.name} denied: No deploy role IDs configured")
+        return False, "Deployment restricted to server administrators (no deploy role IDs configured)."
 
+    # Convert string IDs to integers
     try:
-        allowed_ids = {int(r.strip()) for r in str(role_cfg).split(',') if r.strip()}
-    except ValueError:
-        print(f"✗ Invalid DEPLOY_ROLE_ID: {role_cfg}")
-        return False, "Invalid DEPLOY_ROLE_ID configured (must be integer role IDs)."
+        allowed_ids = {int(role_id) for role_id in role_cfg if role_id}
+    except (ValueError, TypeError):
+        print(f"✗ Invalid deploy role IDs: {role_cfg}")
+        return False, "Invalid deploy role IDs configured (must be integers)."
 
     print(f"Checking {member.name}'s roles against allowed IDs: {allowed_ids}")
     print(f"User has roles: {[f'{r.name} (ID: {r.id})' for r in member.roles]}")
@@ -533,6 +527,8 @@ async def deploy(ctx, tag: str):
 
                 cwd = Config.START_CMD_DIR if Config.START_CMD_DIR else None
                 if cwd:
+                    # Normalize path to handle forward slashes on Windows
+                    cwd = os.path.normpath(cwd)
                     print(f"Running start command in directory: {cwd}")
 
                 try:
@@ -540,11 +536,14 @@ async def deploy(ctx, tag: str):
                         # Windows: Use 'start' command to open in new console window
                         # This ensures the batch file and any Python scripts it runs get their own window
                         if cwd:
-                            # If we have a working directory, use /D flag
+                            # If we have a working directory, use /D flag with quoted path
+                            # DO NOT pass cwd to Popen when using start /D - it causes conflicts with spaces
                             cmd = f'start /D "{cwd}" "" {Config.SERVER_START_CMD}'
+                            popen_cwd = None  # Let start /D handle the directory
                         else:
                             # Otherwise just use start with empty title
                             cmd = f'start "" {Config.SERVER_START_CMD}'
+                            popen_cwd = None
 
                         # Create minimal clean environment with only essential system variables
                         # This prevents bot's DISCORD_BOT_TOKEN from leaking but keeps system functional
@@ -561,7 +560,7 @@ async def deploy(ctx, tag: str):
                         subprocess.Popen(
                             cmd,
                             shell=True,
-                            cwd=cwd if cwd else None,
+                            cwd=popen_cwd,
                             env=clean_env  # Clean environment without bot credentials
                         )
                         print(f"✓ Started server process in new console window with clean environment")

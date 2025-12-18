@@ -1,6 +1,7 @@
 # Ignore environment files with secrets
 *.env
 *.env.local
+*.json
 
 # Python cache
 __pycache__/
