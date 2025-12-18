@@ -90,7 +90,6 @@ c_att_skill_18 MB_ATT_E_22
 c_att_names_18 "Repeater Pistol"
 c_att_ranks_18 1
 c_att_descs_18 "15% less dmg,10% more velocity"
-c_att_descs_18 "10% more FP DMG,30% less DMG,100% slower mag reload"
 c_att_skill_19 MB_ATT_HEALTH
 c_att_names_19 "Health (120)"
 c_att_ranks_19 1
@@ -98,8 +97,7 @@ c_att_skill_20 MB_ATT_WHISTLINGBIRD
 c_att_names_20 "Whistling Bird ^3[CS4]"
 c_att_ranks_20 1
 }
-
-WeaponInfo0 {
+WeaponInfo0{
 WeaponToReplace WP_DLT20A
 WeaponBasedOff WP_DLT20A
 NewWorldModel "models/weapons2/kotor_brifle1/kotor_brifle1_w.glm"
@@ -116,8 +114,9 @@ customammo 1000
 clipsize 60
 FPMult 1.15
 velocityMod 1.2
-reloadTimeModifier 1.4 }
-WeaponInfo1 {
+reloadTimeModifier 1.4
+}
+WeaponInfo1{
 WeaponToReplace WP_BLASTER_PISTOL
 WeaponBasedOff WP_CLONE_PISTOL
 NewWorldModel "models/weapons2/bp_dt29/dt29.glm"
@@ -140,8 +139,9 @@ FPMult 1.6
 rateMod 1.3
 damageMod 1.6
 velocityMod 1.3
-altfireenabled 0 }
-WeaponInfo2 {
+altfireenabled 0
+}
+WeaponInfo2{
 WeaponToReplace WP_CLONE_RIFLE
 WeaponBasedOff WP_CLONE_RIFLE
 NewWorldModel "models/weapons2/mandoAR/mandoAR.glm"
@@ -155,8 +155,9 @@ FPMult 1.1
 ReloadTimeModifier 51
 rateMod 0.5
 velocityMod 1.1
-damageMod 1.2 }
-WeaponInfo3 {
+damageMod 1.2
+}
+WeaponInfo3{
 WeaponToReplace WP_PROJ
 WeaponBasedOff WP_PROJ
 NewWorldModel "models/weapons2/me3-widow/disruptor_w.glm"
@@ -171,18 +172,17 @@ FlashSound3 "sound/weapons/halo_beamrifle/fire3.mp3"
 CustomAmmo 30
 clipsize 2
 damageMod 0.70
-ReloadTimeModifier 2 }
-WeaponInfo4 
-{
+ReloadTimeModifier 2
+}
+WeaponInfo4{
 WeaponToReplace WP_SABER
 WeaponBasedOff WP_SABER
 NewWorldModel "models/weapons2/vibroknife/model.glm"
 NewViewModel "models/weapons2/dummy/dummy.md3"
 Icon "gfx/hud/w_icon_prisonknife"
-WeaponName "Vibroknife" 
+WeaponName "Vibroknife"
 }
-WeaponInfo5 
-{
+WeaponInfo5{
 WeaponToReplace WP_E_22
 WeaponBasedOff WP_E_22
 NewWorldModel "models/weapons2/a180/a180_w.glm"
@@ -201,8 +201,7 @@ animAttackWalk BOTH_PISTOL_ATTACK
 animReadyRun BOTH_PISTOL_IDLE2
 animAttackRun BOTH_PISTOL_ATTACK
 }
-WeaponInfo6 
-{
+WeaponInfo6{
 WeaponToReplace WP_BLASTER
 WeaponBasedOff WP_BLASTER
 NewWorldModel "models/weapons2/Kunai/saber_w.glm"
@@ -227,10 +226,9 @@ clipSize 6
 customAmmo 60
 rateMod 2
 damageMod 1.5
-primGore 1 
+primGore 1
 }
-WeaponInfo7 
-{
+WeaponInfo7{
 WeaponToReplace WP_THROWER
 WeaponBasedOff WP_THROWER
 NewWorldModel "models/weapons2/dummyblaster/model.glm"
@@ -247,9 +245,9 @@ animStand BOTH_FORCE_2HANDEDLIGHTNING_START
 animAttack BOTH_MAND_FLAME_READY
 animAttackWalk BOTH_MAND_FLAME_READY
 animReadyRun BOTH_FORCE_2HANDEDLIGHTNING_START
-animAttackRun BOTH_MAND_FLAME_READY }
-WeaponInfo8 
-{
+animAttackRun BOTH_MAND_FLAME_READY
+}
+WeaponInfo8{
 WeaponToReplace WP_TRAD_BOWCASTER
 WeaponBasedOff WP_BOWCASTER
 NewWorldModel "models\weapons2\kotor_bowcaster1\kotor_bowcaster1_w.glm"
@@ -258,22 +256,17 @@ Icon "gfx/hud/w_icon_kotor_bowcaster1"
 WeaponName "Kryze Echo-Bolter"
 damageMod 0.8
 rateMod 0.6
-primfireenabled 0 
+primfireenabled 0
 }
-
 description "Nite Owl Mandalorian [Mandalorian]
 
 Eagle-eyed sharpshooters with Jetpacks.
 ^2Weaponry:
-- Vibroknife (Cyan Saber)
+- Knife (Cyan Saber)
 -- No Saber/Blaster Block
--- 25% less DMG
--- 60% less reach
--- Slap ^3[GB]
 ^8Attributes:
-- Stamina (0)
--- Extra Resource Regen: 1/5s
-- Dexterity (3)
+- Resource Regen: 1/5s
+- Dex (3)
 - Beskar (2)
 - Tracking Beacon
 ^3Abilities:
