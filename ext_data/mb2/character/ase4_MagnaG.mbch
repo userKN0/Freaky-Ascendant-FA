@@ -6,8 +6,8 @@ ClassInfo
 	classNumberLimit	2
 	extralives	1
 	
-	weapons		WP_MELEE|WP_SABER|WP_BLASTER_PISTOL
-	attributes	MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_MAGNETIC_PLATING,1|MB_ATT_FORCEBLOCK,3|MB_ATT_PISTOL,3|MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,3|MB_ATT_SHIELD_RECHARGE,1|MB_ATT_ANTI_MT,2|MB_ATT_SABER_COMBO,1|MB_ATT_DEFLECT,0|MB_ATT_DASH,1
+	weapons		WP_MELEE|WP_SABER|WP_EE3
+	attributes	MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_MAGNETIC_PLATING,1|MB_ATT_FORCEBLOCK,3|MB_ATT_EE3,3|MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,3|MB_ATT_SHIELD_RECHARGE,1|MB_ATT_ANTI_MT,2|MB_ATT_SABER_COMBO,1|MB_ATT_DEFLECT,0|MB_ATT_DASH,1
 	
 	forcepowers	FP_LEVITATION,3
 	
@@ -17,7 +17,7 @@ ClassInfo
 	damageTaken  1
 	saberDamage 60
 	forcepool	80
-	skilltimermod 		2
+	skilltimermod 		1.5
 
 	saber1		electrostaff_legends
 	sabercolor	5
@@ -77,27 +77,21 @@ WeaponInfo0
 
 WeaponInfo1
 {
-	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponToReplace		WP_EE3
 	WeaponBasedOff		WP_BLASTER
 	NewWorldModel			"models/weapons2/e5/e5_w.glm"
 	NewViewModel			"models/weapons2/e5/e5.md3"
 	Icon					"gfx/hud/w_icon_e5.tga"
-	WeaponName			"Droid Pistol"
-	FlashSound0			"sound/weapons/lvl3pistol/fire.mp3" 			
-	AltFlashSound0		"sound/weapons/lvl3pistol/fire.mp3"
-	ChargeSound			"sound/weapons/leia_pistol/altcharge.mp3"
+	WeaponName			"E-5 Blaster"
 	customAmmo 900
-	primFireEnabled 0
-	rateMod 0.7
+	rateMod 0.9
 	DamageMod 1.1
 	FPMult 1.1
-	FPChargeMult 1.5
-	clipSize 32
 }
 
 description 	"IG-100 MagnaGuard [Sith]
 
-Mobile saberist with high dueling stats and armor regen.
+Mobile hybrid with high dueling stats and armor regen.
 Uses its staff to disable and disarm opponents, finishing them with its blaster.
 
 ^2Weaponry:
@@ -105,13 +99,12 @@ Uses its staff to disable and disarm opponents, finishing them with its blaster.
 - MagnaGuard Electrostaff (Staff Saber)
 -- Saber/Blaster Defense (1)
 -- Saber Deflect (0)
--- EX Saber Training (2)
+-- EX Saber Training (1)
 -- 75% less DMG
 -- Slap ^3[CS2]
-- Droid Pistol (Pistol 3)
--- 30% faster RoF
--- Alt Fire Only
--- Increased charged shot FP damage.
+- E-5 Blaster (EE-3 Level 3)
+-- 10% faster RoF
+-- 10% increased damage.
 
 ^5Powers:
 - Energized Jump (3)
@@ -124,11 +117,7 @@ Uses its staff to disable and disarm opponents, finishing them with its blaster.
 - Force Block (3)
 - Anti-Mind Trick (2)
 - Assemble (3)
-- 100% slower skill CD
+- 50% slower skill CD
 
 ^3Abilities:
 - Dash (1) ^3[CS3]"
-
-
-
-
