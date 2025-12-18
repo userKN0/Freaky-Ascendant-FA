@@ -41,7 +41,7 @@ ClassInfo
 	gloatAnim BOTH_SHOWOFF_STAFF
 	saberstanceAnim BOTH_SPEAR_STANCE
 	
-	special3 EAS_FP_GRIP
+	special3 EAS_FP_REPULSE
 	special4 EAS_FP_LIGHTNING
 
 isCustomBuild	1
@@ -128,5 +128,6 @@ Highly mobile saberists that can choose between a versatile one-life or speciali
 - Dexterity (3)
 - Healing (1)
 - Force Block/Focus (2)"
+
 
 

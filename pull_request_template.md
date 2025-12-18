@@ -17,7 +17,6 @@ replace the space in the brackets with X to place a checkmark-->
 
 - [ ] I require assistance to complete the PR
 - [ ] Before posting/requesting review of a PR, I have verified that the changes work
-- [ ] I have added screenshots/videos of the changes, or this PR does not change in-game visible mechanics
 
 **Changelog**
 <!--
