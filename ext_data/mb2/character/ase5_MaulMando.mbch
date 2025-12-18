@@ -208,7 +208,7 @@ MissileEffect "Blaster/Shot02Y"
 Missile3Effect "Blaster/Shot03Y"
 PowerupShotEffect "Blaster/Shot04Y"
 AltMissileEffect "Blaster/Shot04Y"
-customAmmo 1000
+customAmmo 800
 clipsize 32
 ReloadTimeModifier 1.4
 rateMod 0.8

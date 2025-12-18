@@ -138,11 +138,7 @@ WeaponInfo2
 	NewViewModel		"models/weapons2/dc-15s/dc-15s.md3"
 	NewHandsModel		"models/weapons2/dc-15s/dc-15s_hand.md3"
 	MuzzleEffect		"Blaster/MuzzleFlash01B"
-	AltMuzzleEffect		"Blaster/MuzzleFlash01B"
 	MissileEffect		"Blaster/Shot02B"
-	AltMissileEffect	"Blaster/Shot02B"
-	FlashSound0			"sound/weapons/repeater/fire.mp3"
-	AltFlashSound0		"sound/weapons/repeater/fire.mp3"
 	Icon				"gfx/hud/w_icon_dc-15s"
 	WeaponName			"DC-15s Clone Rifle"
 }

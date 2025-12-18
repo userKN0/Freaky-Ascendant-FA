@@ -1,0 +1,7 @@
+# Required Python packages for update_bot.py
+discord.py>=2.1.0
+PyGithub>=1.55
+
+# Notes:
+# - Versions are minimum recommended; pin to exact versions (==) if you need reproducible installs.
+# - Install with: python -m pip install -r requirements.txt (or pip3 on Unix/Linux)

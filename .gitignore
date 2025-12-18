@@ -1,0 +1,15 @@
+# Ignore environment files with secrets
+*.env
+*.env.local
+*.json
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Build artifacts
+zzz_FreakyAscendantFA.pk3
+release.zip
+
+# Optional local repo clone
+repo_clone/

@@ -43,10 +43,10 @@ ClassInfo
 	//WP_SaberFlags HELD_HEAL
 	//WP_MeleeFlags HELD_HEAL
 	
-	APmultiplier		0.85
-	ASmultiplier 		0.95
-	BPmultiplier		0.8
-	rankBPmultiplier	1,1.2
+	APmultiplier		1
+	ASmultiplier 		1
+	BPmultiplier		1
+	rankBPmultiplier	1.1,1.2
 	
 	uioverlay_r "gfx/icons/support"
 	uioverlay_l "gfx/icons/medic"
@@ -171,5 +171,5 @@ A defensive support class that can use AOE powers to supply teammates with healt
 -- 120, 140
 - Force Regen (1)
 -- 1.1, 1.2
-- Saber Block Power (.8)
--- 1, 1.2"
+- Saber Block Power (1)
+-- 1.1, 1.2"

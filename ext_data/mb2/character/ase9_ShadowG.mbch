@@ -10,13 +10,12 @@ ClassInfo
 	
 	attributes	MB_ATT_FORCEBLOCK,2|MB_ATT_HEALING,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_FORCEFOCUS,2|MB_ATT_DEFLECT,1|MB_ATT_DEXTERITY,3|MB_ATT_PISTOL,1|MB_ATT_REPULSE
 
-	forcepowers	FP_SABER_OFFENSE,3|FP_SPEED,2|FP_LEVITATION,3
+	forcepowers	FP_SABER_OFFENSE,3|FP_SPEED,2|FP_LEVITATION,3|FP_PUSH,2
 	resource RESOURCE_FORCE
 	forcepool	100
 	forceregen 1.05
 	
-	maxhealth	80
- rankHealth 100
+	maxhealth	100
 	maxarmor	40
  rankArmor 80
  	basespeed 	230
@@ -42,43 +41,35 @@ ClassInfo
 	gloatAnim BOTH_SHOWOFF_STAFF
 	saberstanceAnim BOTH_SPEAR_STANCE
 	
-	special3 EAS_FP_GRIP
+	special3 EAS_FP_REPULSE
 	special4 EAS_FP_LIGHTNING
 
 isCustomBuild	1
-mbPoints	7
+mbPoints	5
 
 	c_att_skill_0	MB_ATT_RESPAWNS
 	c_att_names_0	"Reinforcement"
-	c_att_ranks_0	5
+	c_att_ranks_0	3
 
-	c_att_skill_1	MB_ATT_FP_PULL
-	c_att_names_1	"Force Pull"
+	c_att_skill_1	MB_ATT_FP_LIGHTNING
+	c_att_names_1	"Force Lightning ^3[CS4]"
 	c_att_ranks_1	1,0
 
-	c_att_skill_2	MB_ATT_FP_LIGHTNING
-	c_att_names_2	"Force Lightning ^3[CS4]"
+	c_att_skill_2	MB_ATT_FP_GRIP
+	c_att_names_2	"Force Grip"
 	c_att_ranks_2	1,0
-
-	c_att_skill_3	MB_ATT_FP_GRIP
-	c_att_names_3	"Force Grip"
-	c_att_ranks_3	1,0
 	
-	c_att_skill_4	MB_ATT_FP_SABER_DEFENSE
-	c_att_names_4	"Saber Defense"
-	c_att_ranks_4	0,1
+	c_att_skill_3	MB_ATT_FP_SABER_DEFENSE
+	c_att_names_3	"Saber Defense"
+	c_att_ranks_3	0,1
 	
-	c_att_skill_5	MB_ATT_GUN_DEFENSE
-	c_att_names_5	"Blaster Defense"
-	c_att_ranks_5	0,1	
+	c_att_skill_4	MB_ATT_GUN_DEFENSE
+	c_att_names_4	"Blaster Defense"
+	c_att_ranks_4	0,1	
 	
-	c_att_skill_6	MB_ATT_HEALTH
-	c_att_names_6	"Health (100)"
-	c_att_ranks_6	1
-	
-	c_att_skill_7	MB_ATT_ARMOUR
-	c_att_names_7	"Armor (80)"
-	c_att_ranks_7	1
+	c_att_skill_5	MB_ATT_ARMOUR
+	c_att_names_5	"Armor (80)"
+	c_att_ranks_5	1
 }
 
 WeaponInfo0
@@ -125,15 +116,18 @@ Highly mobile saberists that can choose between a versatile one-life or speciali
 -- Slap ^3[CS2]
 - Heavy Guardsmen Blaster Pistol (1)
 -- Mag reload
+-- 25% increased damage.
+-- 25% reduced firerate.
 ^5Force Powers:
 - Jump (3)
 - Speed (2)
+- Push (2)
+- Repulse
 
 ^8Attributes:
 - Dexterity (3)
 - Healing (1)
 - Force Block/Focus (2)"
-
 
 
 

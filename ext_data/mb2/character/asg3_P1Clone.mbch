@@ -20,7 +20,7 @@ ClassInfo
 	extralives		    1
 
 	maxhealth		    60
-	maxArmor			100
+	maxArmor			80
 	knockbacktaken      0.8
 	
 	special1			EAS_HI_SPRINT

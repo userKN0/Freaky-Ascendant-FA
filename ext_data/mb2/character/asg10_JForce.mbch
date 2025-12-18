@@ -4,7 +4,7 @@ name "asg10_JForce"
 MBClass MB_CLASS_JEDI
 weapons WP_MELEE|WP_SABER
 forcepowers FP_LEVITATION,3|FP_SEE,3|FP_PUSH,2|FP_PULL,3|FP_PROTECT,2|FP_ABSORB,1|FP_SPEED,3
-attributes MB_ATT_FORCEBLOCK,3|MB_ATT_FORCEFOCUS,3|MB_ATT_FP_REPULSE,1|MB_ATT_FLIPKICK,1|MB_ATT_SPY_DISGUISE,2|MB_ATT_FP_SABER_DEFENSE,0|MB_ATT_DASH_JUMP|MB_ATT_DASH,1|MB_ATT_DEXTERITY,3|MB_ATT_THROWER_ICE
+attributes MB_ATT_FORCEBLOCK,3|MB_ATT_FORCEFOCUS,3|MB_ATT_FP_REPULSE,1|MB_ATT_FLIPKICK,1|MB_ATT_SPY_DISGUISE,2|MB_ATT_FP_SABER_DEFENSE,0|MB_ATT_DASH_JUMP|MB_ATT_DASH,1|MB_ATT_DEXTERITY,3|MB_ATT_THROWER_ICE|MB_ATT_RECHARGE,3|MB_ATT_HEALING,3
 forcepool 110
 resource resource_battery
 resourceRegenAmount 4
@@ -70,24 +70,21 @@ c_att_ranks_2 0,4
 c_att_skill_3 MB_ATT_CORTOSIS
 c_att_names_3 "Cortosis:"
 c_att_ranks_3 3
-c_att_skill_4 MB_ATT_FP_DRAIN
-c_att_names_4 "Drain:"
+c_att_skill_4 MB_ATT_WOOKIE_STRENGTH
+c_att_names_4 "Strength:"
 c_att_ranks_4 3
-c_att_skill_5 MB_ATT_WOOKIE_STRENGTH
-c_att_names_5 "Strength:"
-c_att_ranks_5 3
-c_att_skill_6 MB_ATT_FP_SABER_DEFENSE
-c_att_names_6 "Saber Defense:"
-c_att_ranks_6 2,2,3
-c_att_skill_7 MB_ATT_AP_MULTIPLIER
-c_att_names_7 "Saber AP (1.1,1.15,1.2):"
+c_att_skill_5 MB_ATT_FP_SABER_DEFENSE
+c_att_names_5 "Saber Defense:"
+c_att_ranks_5 2,2,3
+c_att_skill_6 MB_ATT_AP_MULTIPLIER
+c_att_names_6 "Saber AP (1.1,1.15,1.2):"
+c_att_ranks_6 1,2,3
+c_att_skill_7 MB_ATT_AS_MULTIPLIER
+c_att_names_7 "Saber AS (1.02,1.08,1.14):"
 c_att_ranks_7 1,2,3
-c_att_skill_8 MB_ATT_AS_MULTIPLIER
-c_att_names_8 "Saber AS (1.02,1.08,1.14):"
-c_att_ranks_8 1,2,3
-c_att_skill_9 MB_ATT_DEFLECT
-c_att_names_9 "Saber Deflect:"
-c_att_ranks_9 5
+c_att_skill_8 MB_ATT_DEFLECT
+c_att_names_8 "Saber Deflect:"
+c_att_ranks_8 5
 
 c_att_skill_15 MB_ATT_RESPAWNS
 c_att_names_15 "Reinforcement:"
@@ -183,8 +180,8 @@ animStand BOTH_MELEE_STAND1
 Icon "gfx/marvel/vamp"
 WeaponName "Force Blasts"
 clipSize 1
-CustomAmmo 12
-velocityMod 0.5
+CustomAmmo 14
+velocityMod 0.8
 ReloadTimeModifier 2 }
 WeaponInfo2
 {
