@@ -140,19 +140,26 @@ def ensure_repo_on_main():
         if not os.path.exists(os.path.join(path, '.git')):
             raise Exception(f"Configured to run from RWD at {path}, but .git directory not found. Ensure this is a git repo or disable RWD mode.")
 
-        print(f"Using existing repo at {path}, pulling latest from {Config.BRANCH}...")
+        print(f"Using existing repo at {path}, force updating from {Config.BRANCH}...")
         original_dir = os.getcwd()
         os.chdir(path)
-        subprocess.run(['git', 'checkout', Config.BRANCH])
+
+        # Checkout the branch
+        subprocess.run(['git', 'checkout', Config.BRANCH], capture_output=True)
+
+        # Fetch latest changes
+        subprocess.run(['git', 'fetch', 'origin', Config.BRANCH], capture_output=True)
+
+        # Hard reset to remote branch (discards all local changes)
         result = subprocess.run(
-            ['git', 'pull', 'origin', Config.BRANCH],
+            ['git', 'reset', '--hard', f'origin/{Config.BRANCH}'],
             capture_output=True,
             text=True
         )
         os.chdir(original_dir)
 
         if result.returncode != 0:
-            raise Exception(f"Git pull failed: {result.stderr}")
+            raise Exception(f"Git reset failed: {result.stderr}")
     else:
         if not os.path.exists(Config.LOCAL_REPO_PATH):
             print(f"Cloning {repo_url}...")
@@ -164,13 +171,19 @@ def ensure_repo_on_main():
             if result.returncode != 0:
                 raise Exception(f"Git clone failed: {result.stderr}")
         else:
-            print(f"Pulling latest from {Config.BRANCH} into {Config.LOCAL_REPO_PATH}...")
+            print(f"Force updating from {Config.BRANCH} into {Config.LOCAL_REPO_PATH}...")
             original_dir = os.getcwd()
             os.chdir(Config.LOCAL_REPO_PATH)
 
-            subprocess.run(['git', 'checkout', Config.BRANCH])
+            # Checkout the branch
+            subprocess.run(['git', 'checkout', Config.BRANCH], capture_output=True)
+
+            # Fetch latest changes
+            subprocess.run(['git', 'fetch', 'origin', Config.BRANCH], capture_output=True)
+
+            # Hard reset to remote branch (discards all local changes)
             result = subprocess.run(
-                ['git', 'pull', 'origin', Config.BRANCH],
+                ['git', 'reset', '--hard', f'origin/{Config.BRANCH}'],
                 capture_output=True,
                 text=True
             )
@@ -178,7 +191,7 @@ def ensure_repo_on_main():
             os.chdir(original_dir)
 
             if result.returncode != 0:
-                raise Exception(f"Git pull failed: {result.stderr}")
+                raise Exception(f"Git reset failed: {result.stderr}")
     
     print(f"✓ Repository updated from {Config.BRANCH}")
 

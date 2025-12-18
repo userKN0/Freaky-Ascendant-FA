@@ -28,23 +28,5 @@
   },
   "mbii": {
     "dir": ""
-  },
-  "_comments": {
-    "discord.bot_token": "Your Discord bot token. Keep it secret!",
-    "github.token": "Personal access token with repo permissions to create releases and upload assets",
-    "github.repo": "Repository to operate on (owner/repo format)",
-    "github.branch": "Branch to deploy from (usually 'main' or 'master')",
-    "repository.use_rwd": "If true (1/true/yes), the bot will use an existing checkout instead of cloning. If using RWD and local_repo_path is empty, the bot will use the current working directory.",
-    "repository.local_repo_path": "Path to local repository clone. If use_rwd is false, this is where the repo will be cloned. If use_rwd is true and this is empty, uses current directory.",
-    "repository.mod_source_folder": "Optional: override the folder inside the repo that contains the files to package. Leave blank to use the repo root.",
-    "build.pk3_name": "Name of the PK3 file to create (e.g., 'example.pk3')",
-    "deploy.role_ids": "Optional: restrict deploy access to specific Discord role ID(s). Array of role IDs. If empty, only server administrators may run !deploy. How to get a role ID: enable 'Developer Mode' in Discord, then right-click the role and choose 'Copy ID'.",
-    "server.stop_cmd": "Optional: command to stop the local server process. Windows examples: 'stop_server.cmd' or 'stop_server.bat'. Unix examples: './stop_server.sh'",
-    "server.start_cmd": "Optional: command to start the local server process. Windows examples: 'start_server.cmd' or 'start_server.bat'. Unix examples: './start_server.sh'",
-    "server.stop_verify_cmd": "Optional: verify that the server has stopped. This command should exit with 0 when the server is stopped.",
-    "server.start_verify_cmd": "Optional: verify that the server has started. This command should exit with 0 when the server is running.",
-    "server.start_cmd_dir": "Optional: working directory for the start command (where start_server script is located). This is important if your script uses relative paths to reference other files. Use forward slashes (/) for all paths, even on Windows. Windows example: C:/Program Files/Game Server. Unix example: /home/user/gameserver. Leave blank to run from the bot's current directory.",
-    "server.start_delay": "Optional delay (seconds) to wait between stop and start or as the timeout for verification polling. Also used as timeout for server start verification (minimum 15 seconds). Example: 5",
-    "mbii.dir": "Optional: Path to your local MBII directory where the PK3 should be copied. This will copy the built PK3 to your MBII folder between stopping and starting the server. Use forward slashes (/) for all paths. Windows example: C:/Program Files/MBII/MBII. Unix example: /home/user/mbii. Leave blank to skip local copy."
   }
 }
