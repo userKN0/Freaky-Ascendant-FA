@@ -76,23 +76,24 @@ WeaponInfo2
 
 description	"Bao-Dur - The Technician [Mandalorian]
 
-Weaponry:
-
+^2Weaponry:
 Blaster Carbine (3)
+-- Based off E11 (3)
 Ion Rifle (1)
+-- Based off Bowcaster
 -- Causes Shock
 -- Low Damage
--- Slow Movement
+-- 15% slower movement
 -- Alt Reload
 Bao-Dur's Power Fist
 -- Causes Shock
 -- Increased Knockback
 
-Equipment: 
-Medpack
-Bao-Dur's Personal Remote
+^6Inventory:
+- Medpack
+- Bao-Dur's Personal Remote (Sentry Droid)
 
-Attributes:
-40% Faster Hacking
+^8Attributes:
+- 40% Faster Hacking
 
 Bao-Dur was a Zabrak engineer from Iridonia. He served under the Exile during the Mandalorian Wars, and again toward the end of the Dark Wars."
