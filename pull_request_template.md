@@ -1,5 +1,16 @@
 <!--if you want these changes in official legends, make a PR in the mbii/textassets repo -->
 
+**Changelog**
+<!--
+If you want the players to know about changes made in this PR, specify them using the template outside the comment (delete the <!---, check preview). keep it brief and informative.
+
+:cl: username here
+- add: added
+- remove: removed
+- tweak: changed
+- fix: fixed
+-->
+
 ## Short description
 <!-- what is being changed/added/removed/etc with your PR? factual statements go here, describe what it does -->
 
@@ -18,13 +29,3 @@ replace the space in the brackets with X to place a checkmark-->
 - [ ] changes were tested before posting
 - [ ] file structure, naming, and formatting follow project conventions
 
-**Changelog**
-<!--
-If you want the players to know about changes made in this PR, specify them using the template outside the comment (delete the <!---, check preview). keep it brief and informative.
-
-:cl: username here
-- add: added
-- remove: removed
-- tweak: changed
-- fix: fixed
--->
