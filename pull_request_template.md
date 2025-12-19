@@ -11,11 +11,8 @@ If you want the players to know about changes made in this PR, specify them usin
 - fix: fixed
 -->
 
-## Short description
-<!-- what is being changed/added/removed/etc with your PR? factual statements go here, describe what it does -->
-
-## What is your vision for this? 
-<!-- what is the reason for adding these changes? feel free to link/mention discussions. describe how this will change the game balance. -->
+## What is your vision/description for this? 
+<!-- what is the reason for adding these changes? what is being changed/added/removed/etc with your PR? feel free to link/mention discussions. describe how this will change the game balance. -->
 
 ## Media (Video/Screenshots/OPTIONAL)
 <!--
@@ -28,4 +25,5 @@ replace the space in the brackets with X to place a checkmark-->
 
 - [ ] changes were tested before posting
 - [ ] file structure, naming, and formatting follow project conventions
+- [ ] (not applicable for small changes/edits) would this character/rework fit into legends?
 
