@@ -1,8 +1,6 @@
-//Legends Mode character file - Created by Frenzy & Leos
-
 ClassInfo
 {
-	name				"h5_BoKatan"
+	name				"ase5_BoKatan"
 	MBClass			MB_CLASS_BOUNTY_HUNTER
 	classNumberLimit	1
 	
