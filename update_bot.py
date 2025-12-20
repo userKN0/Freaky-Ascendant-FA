@@ -219,7 +219,7 @@ def create_pk3(source_folder):
                 # Skip unwanted files by extension
                 if file.startswith('.') or file.endswith((
                     '.py', '.pyc', '.log', '.tmp', '.bak',  # Original exclusions
-                    '.env', '.bat', '.txt', '.cmd', '.vbs', '.md', '.pk3'  # New exclusions
+                    '.sh', '.example', '.vbs', '.json', '.env', '.bat', '.txt', '.cmd', '.md', '.pk3'  # New exclusions
                 )):
                     continue
 
