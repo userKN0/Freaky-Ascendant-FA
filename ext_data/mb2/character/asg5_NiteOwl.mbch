@@ -171,7 +171,6 @@ FlashSound2 "sound/weapons/halo_beamrifle/fire2.mp3"
 FlashSound3 "sound/weapons/halo_beamrifle/fire3.mp3"
 CustomAmmo 30
 clipsize 2
-damageMod 0.70
 ReloadTimeModifier 2
 }
 WeaponInfo4{
