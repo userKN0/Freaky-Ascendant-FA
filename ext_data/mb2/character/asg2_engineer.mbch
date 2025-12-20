@@ -1,4 +1,4 @@
-//Siege class def file.
+//Fuse
 
 ClassInfo
 {
@@ -81,22 +81,22 @@ WeaponInfo2
 }
 description	"Rebel Engineer [Soldier]
 
-Weaponry:
-DL-44 Pistol (1)
-Flechette Launcher (1)
+^2Weaponry:
+- DL-44 Pistol (1)
+- Flechette Launcher (1)
 -- 15% More Damage
 -- Primary Fire Only
-3 Det Packs
-F-187 Fusion Cutter (Stun Baton)
+- 3 Det Packs
+- F-187 Fusion Cutter (Stun Baton)
 -- High ROF
 -- Ignites Target
 -- 20% Decreased Damage
 
-Attributes:
-Reinforcements (2)
-Assemble (2)
-Heal (1)
-Ammo Dispenser (Hold use on Allies)
-18% Faster Hacking
+^8Attributes:
+- Reinforcements (2)
+- Assemble (2)
+- Heal (1)
+- Ammo Dispenser (Hold use on Allies)
+- 18% Faster Hacking
 
 A Pilot/Engineer equipped with a shotgun, det packs, dispenser and a Fusion Cutter."

@@ -1,10 +1,10 @@
-//Siege class def file
+//Fuse
 
 ClassInfo
 {
 	name		"asg10_Jaden"
 	weapons		WP_MELEE|WP_SABER|WP_BLASTER_PISTOL
-	attributes	MB_ATT_FORCEFOCUS,2|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_GUN_DEFENSE,3|MB_ATT_DEFLECT,3|MB_ATT_PISTOL,3|MB_ATT_FORCEBLOCK,3|MB_ATT_AMMO,3
+	attributes	MB_ATT_FORCEFOCUS,1|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_GUN_DEFENSE,3|MB_ATT_DEFLECT,2|MB_ATT_PISTOL,3|MB_ATT_FORCEBLOCK,2|MB_ATT_AMMO,3
 
 	speed		1
 	modelscale	1
@@ -13,10 +13,8 @@ ClassInfo
 
 	MBClass		MB_CLASS_JEDI
 	
-	forcepowers	FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_SEE,3|FP_PUSH,3|FP_PULL,3|FP_SPEED,3
+	forcepowers	FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_SEE,2|FP_PUSH,2|FP_PULL,3|FP_SPEED,2
 	special2 EAS_MELEE
-	
-	healthregencap	100
 		
 	forcepool	100
 	
@@ -136,44 +134,40 @@ ClassInfo
 	classNumberLimit	1
 	
 	isCustomBuild		1
-	mbPoints			12
+	mbPoints			15
 	
 	c_att_skill_0	MB_ATT_FP_PROTECT
 	c_att_names_0	"Force Protect"
-	c_att_ranks_0	1,1,1
+	c_att_ranks_0	4,2
 	
 	c_att_skill_1	MB_ATT_FP_ABSORB
 	c_att_names_1	"Force Absorb"
-	c_att_ranks_1	1,1,1
+	c_att_ranks_1	3,2
 
 	c_att_skill_2	MB_ATT_HEALING
 	c_att_names_2	"Force Heal"
-	c_att_ranks_2	1,1,1
-	c_att_descs_2	"Uncapped Hero Heal 2HP/4HP/8HP per Second per level"
+	c_att_ranks_2	2,2,2
+	c_att_descs_2	"Hero Heal 2hp/s > 20HP | 4hp/s > 25HP | 8hp/2 > 33HP"
 	
 	c_att_skill_3	MB_ATT_FP_TELEPATHY
 	c_att_names_3	"Force Mind Trick"
-	c_att_ranks_3	1,1,1
+	c_att_ranks_3	1,3
 	
 	c_att_skill_4	MB_ATT_FP_GRIP
 	c_att_names_4	"Force Grip"
-	c_att_ranks_4	1,1,1
+	c_att_ranks_4	1,1,3
 	
 	c_att_skill_5	MB_ATT_FP_LIGHTNING
 	c_att_names_5	"Force Lightning"
-	c_att_ranks_5	1,1,1
+	c_att_ranks_5	1,2,3
 	
 	c_att_skill_6	MB_ATT_FP_RAGE
 	c_att_names_6	"Force Rage"
-	c_att_ranks_6	1,1,1
-		
-	c_att_skill_7	MB_ATT_FP_DRAIN
-	c_att_names_7	"Force Drain"
-	c_att_ranks_7	1,1,1
+	c_att_ranks_6	1,1,2
 	
-	c_att_skill_8	MB_ATT_FP_SABERTHROW
-	c_att_names_8	"Saber Throw ^3[CS1]"
-	c_att_ranks_8	0,0,0
+	c_att_skill_7	MB_ATT_FP_SABERTHROW
+	c_att_names_7	"Saber Throw ^3[CS1]"
+	c_att_ranks_7	0,0,0
 }
 
 description	"Jedi Knight Jaden Korr [Jedi]

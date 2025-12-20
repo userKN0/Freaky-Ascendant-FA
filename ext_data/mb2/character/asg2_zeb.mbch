@@ -4,21 +4,20 @@ ClassInfo
 {
 	name				"asg2_zeb"
 	weapons 			WP_M5|WP_MELEE|WP_SABER|WP_CONC_NADE
-	attributes  		MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_M5,2|MB_ATT_BLAST_ARMOUR|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_MICRO_GRENADES,6|MB_ATT_AMMO,3
+	attributes  		MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_M5,2|MB_ATT_BLAST_ARMOUR|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_MICRO_GRENADES,6|MB_ATT_AMMO,3
 	maxhealth			300
 	maxarmor			100
 	modelscale  		1.15
 	model 				"pZeb_pnbl"
 	skin  				"default"
 	uishader  			"models/players/pZeb_pnbl/mb2_icon_default"
-	MBClass 			MB_CLASS_WOOKIEE
+	MBClass 			MB_CLASS_WOOKIE
 	classNumberLimit	1
-	rageSoundOverride 	"sound/chars/BlackKrr/misc/BKrage.mp3"
-	bargeSoundOverride 	"sound/chars/BlackKrr/misc/Scream2BK.mp3"
+	rageSoundOverride 	"sound/chars/Bzeb/misc/death1.mp3"
+	bargeSoundOverride 	"sound/chars/zeb/misc/taunt2.mp3"
 	speed               1.05067
 	damageTaken         0.95
 	damageGiven         1.05
-	rateoffire          1.02
 	rateoffire_melee	1.05
 	skilltimermod 0.90
 	hackrate	0.95
@@ -27,7 +26,7 @@ ClassInfo
 	saber1		electrostaff_legends
 	sabercolor	5
 	saberstyle		SS_STAFF
-	saberdamage		33
+	saberdamage		60
 	
 	resource	resource_energy
 	forcepool 110
@@ -85,7 +84,7 @@ weaponinfo1
 	NewViewModel	"models/weapons2/e_22/e_22.md3"
 	NewHandsModel	"models/weapons2/e_22/e_22_hand.md3"
 	Icon	"gfx/hud/w_icon_e_22"
-	WeaponName	"Modified E-22"
+	WeaponName	"Zeb's Bo-Rifle"
 	MuzzleEffect	"Blaster/MuzzleFlash01R"
 	AltMuzzleEffect	"Blaster/MuzzleFlash01R"
 	MissileEffect	"Blaster/Shot09R"
@@ -94,7 +93,7 @@ weaponinfo1
 	altFlashSound0	"sound/weapons/e_22/alt_fire.mp3"
 	customammo	999
 	velocityMod	1.45
-	rateMod 1.2
+	rateMod 1.7
 	damageMod	1.3
 	FpMult	1.12
 	}
@@ -106,17 +105,17 @@ A large but swift Wookiee / Melee / Gunner hybrid.
 ^2Weaponry:
 - Wookiee-style Melee
 - 5% Faster Swings
-- E-22 Blaster
+- Zeb's Bo-Rifle
 -- Based on the M5
 -- 45% Increased Velocity
--- 20% Slower ROF
+-- 70% Slower ROF
 -- 30% Increased Damage
 -- 12% Increased FP Damage
 - Electro Staff
 -- Staff Style Only
 -- Saber Defense (2)
 -- Gun Defense (1)
--- 33 Saber Damage
+-- 60 Saber Damage
 -- 3 Chain Limit
 -- Pulse Stun on Hit
 - 6 Smoke Grenades
@@ -125,7 +124,7 @@ A large but swift Wookiee / Melee / Gunner hybrid.
 
 ^8Attributes:
 - 10% faster skill cooldown
-- Strength (2)
+- Strength (1)
 - Blast Armor
 
 

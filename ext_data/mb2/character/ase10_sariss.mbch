@@ -1,4 +1,4 @@
-//Siege class def file.
+//Fuse
 
 ClassInfo
 {
@@ -6,9 +6,9 @@ ClassInfo
 	weapons			WP_SABER|WP_MELEE
 	saber1			saber_sariss
 	sabercolor		4
-	saberstyle		SS_Fast|SS_Medium|SS_Tavion
+	saberstyle		SS_FAST|SS_MEDIUM|SS_TAVION
 	forcepowers		FP_LEVITATION,3|FP_GRIP,2|FP_SABER_OFFENSE,2|FP_SABER_DEFENSE,3|FP_DEADLYSIGHT,3|FP_SEE,2
-	attributes		MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_GUN_DEFENSE,2|MB_ATT_FORCEFOCUS,1|MB_ATT_FORCEBLOCK,2
+	attributes		MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_GUN_DEFENSE,2|MB_ATT_FORCEFOCUS,3|MB_ATT_FORCEBLOCK,2
 	maxhealth		100
 	forcepool		100
 	model			"gwethenea"
@@ -19,20 +19,22 @@ ClassInfo
 	saberStanceAnim         BOTH_S1_S1_BR
 }
 
-description	"Sariss
+description	"Sariss [Jedi]
 
-^7Weaponry:
-Sariss' Lightsaber
+A Fencing Class with Deadly Sight, able to damage enemies at range with ease by simply looking their way.
+
+^2Weaponry:
+- Sariss' Lightsaber
 -- Yellow/Blue/Cyan Styles
 -- Saber Defense (3)
 -- Blaster Defense (2)
 
 ^5Force Powers:
-Force Jump		(3)
-Force Grip	(2)
-Deadly Sight (3)
-Force Sense (2)
-Force Block		(2)
-Force Focus		(1)
+- Force Jump (3)
+- Force Grip (2)
+- Deadly Sight (3)
+- Force Sense (2)
+- Force Block (2)
+- Force Focus (3)
 
-Qu Rahn ~ Out of all the Dark Jedi I have met, Sariss is the one I can say... I fear. Powerful, strong in both the physical and mental arenas of the Force, she is a master, a perfectionist, quiet and reserved. This makes her a very dangerous foe."
+Qu Rahn - Out of all the Dark Jedi I have met, Sariss is the one I can say... I fear. Powerful, strong in both the physical and mental arenas of the Force, she is a master, a perfectionist, quiet and reserved. This makes her a very dangerous foe."

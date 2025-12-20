@@ -55,11 +55,10 @@ SubclassesForClass2
 	Subclass15	"h4_Finn"
 	Subclass16	"h4_MrB"
 	Subclass17 	"h4_KirKanos"
-	Subclass18	"asg3_handmaiden"
-	Subclass19	"asg3_baodur"
-	subclass20	"asg3_itsatrap"
-	Subclass21 "asg3_P1Clone"
-	Subclass22 "asg3_ReconClone"
+	Subclass18	"asg3_baodur"
+	subclass19	"asg3_itsatrap"
+	Subclass20 "asg3_P1Clone"
+	Subclass21 "asg3_ReconClone"
 }
 
 SubclassesForClass3

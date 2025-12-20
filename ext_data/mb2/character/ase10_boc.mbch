@@ -1,4 +1,4 @@
-//Siege class def file.
+//Fuse
 
 ClassInfo
 {
@@ -9,7 +9,7 @@ ClassInfo
 	sabercolor		5
 	saber2color		5
 	saberstyle		SS_Dual|SS_Staff
-	forcepowers		FP_LEVITATION,3|FP_SABER_OFFENSE,3|FP_SABER_DEFENSE,2|FP_DESTRUCTION,3|FP_TELEPATHY,1|FP_SEE,1|FP_RAGE,2
+	forcepowers		FP_LEVITATION,3|FP_SABER_OFFENSE,3|FP_SABER_DEFENSE,2|FP_DESTRUCTION,1|FP_TELEPATHY,1|FP_SEE,1|FP_RAGE,2
 	attributes		MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_FORCEFOCUS,1|MB_ATT_FORCEBLOCK,3|MB_ATT_DEXTERITY,3|MB_ATT_FLIPKICK,3
 	maxhealth		100
 	forcepool		100
@@ -23,25 +23,25 @@ ClassInfo
 	resource		resource_force
 }
 
-description	"Boc
+description	"Boc Aseca
 
-Weaponry:
-Boc's Dual Lightsabers
+^2Weaponry:
+- Boc's Dual Lightsabers
 -- Dual/Staff Styles
 -- Saber Defense (2)
 -- Blaster Defense (2)
 
-Force Powers:
-Force Jump		(3)
-Force Destruction (3) ^3[CS3]
-Mind Trick (1)
-Force Sense (1)
-Dark Rage (2)
-Force Block		(3)
-Force Focus 	(1)
+^5Force Powers:
+- Force Jump		(3)
+- Force Destruction (1) ^3[CS3]
+- Mind Trick (1)
+- Force Sense (1)
+- Dark Rage (2)
+- Force Block		(3)
+- Force Focus 	(1)
 
-Attributes:
-Dexterity ^3[CS1]
-Flipkick (3) ^3[Contact Jump]
+^8Attributes:
+- Dexterity ^3[CS1]
+- Flipkick (3) ^3[Contact Jump]
 
 Qu Rahn ~ I can�t abide this creature named Boc. He is one of the few that actually uses two lightsabers in battle. He is a crude individual that lacks both tact and teeth. Only a Dark Jedi can he be."
