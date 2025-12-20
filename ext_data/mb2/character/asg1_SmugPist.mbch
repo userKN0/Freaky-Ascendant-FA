@@ -15,7 +15,7 @@ ClassInfo
 	skin			"default"
 	uishader		"models/players/MercCowboy/mb2_icon_default"
 	MBClass			"MB_CLASS_BOUNTY_HUNTER"
-	speed			0.9
+	speed			0.8
 
 	uioverlay "gfx/icons/spec_infantry"
 
