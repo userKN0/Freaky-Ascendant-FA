@@ -7,8 +7,8 @@ weapons WP_MELEE|WP_SABER|WP_FIRE_NADE
 WP_EE3Flags HELD_ALTRELOAD
 WP_MandoPistolFlags HELD_ALTRELOAD
 WP_A280Flags HELD_ALTRELOAD
-WP_MinigunFlags HELD_FLAME|HELD_DISRUPTIFY|HELD_ALTRELOAD|HELD_KNOCKBACK|HELD_STUN|HELD_EXPLOSIVE|HELD_SLOW
-attributes MB_ATT_JETPACK|MB_ATT_GUN_DEFENSE,3|MB_ATT_FP_SABER_DEFENSE,0|MB_ATT_WRISTLASER|MB_ATT_THROWER_LIGHTNING|MB_ATT_WOOKIEE_FURY,2|MB_ATT_ROCKET,1|MB_ATT_AMMO,3|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_DEXTERITY,3|MB_ATT_FUEL,3|MB_ATT_BESKAR,2|MB_ATT_TRACKING_BEACON|MB_ATT_FIRE_GRENADES,1
+WP_MinigunFlags HELD_FLAME|HELD_DISRUPTIFY|HELD_ALTRELOAD|HELD_KNOCKBACK|HELD_STUN
+attributes MB_ATT_JETPACK|MB_ATT_GUN_DEFENSE,3|MB_ATT_FP_SABER_DEFENSE,0|MB_ATT_WRISTLASER|MB_ATT_THROWER_LIGHTNING|MB_ATT_WOOKIEE_FURY,2|MB_ATT_ROCKET,1|MB_ATT_AMMO,3|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_DEXTERITY,1|MB_ATT_FUEL,3|MB_ATT_BESKAR,2|MB_ATT_TRACKING_BEACON|MB_ATT_FIRE_GRENADES,1
 forcepowers FP_RAGE,3
 maxhealth 100
 rankhealth 120
@@ -77,7 +77,8 @@ c_att_ranks_5 2
 c_att_skill_15 MB_ATT_MINIGUN
 c_att_names_15 "Vornax Siege Cannon"
 c_att_ranks_15 0
-c_att_descs_15 "Ignites/staggers/pushes on direct hit,300% more DMG/FP DMG,200% slower RoF,100% slower mag reload"
+c_att_descs_15 "Ignites/staggers/pushes on direct hit, 300% more DMG/FP DMG,
+200% slower RoF, 60% more velocity"
 c_att_skill_16 MB_ATT_A280
 c_att_names_16 "Concordian Rifle (A280)"
 c_att_ranks_16 2
@@ -161,12 +162,13 @@ FlashSound0 "sound/weapons/MWC-35c/fire.wav"
 isMinigun 1
 Icon "gfx/hud/w_icon_rotary_cannon"
 WeaponName "Vornax Rotary Siege Cannon"
-FPMult 3
-RateMod 9
+FPMult	4
+rateMod 2
+damageMod 4
+velocityMod	1.6
 ReloadTimeModifier 2
-velocityMod 1.2
-clipsize 6
-customammo 100
+clipsize	12
+customAmmo	350
 }
 WeaponInfo3
 {
