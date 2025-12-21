@@ -121,7 +121,7 @@ c_att_ranks_31 1,2
 c_att_skill_32 MB_ATT_LIGHTS_BEACON
 c_att_names_32 "Light's Beacon:"
 c_att_ranks_32 1
-c_att_skill_33 WP_ROCKET_LAUNCHER
+c_att_skill_33 MB_ATT_ROCKET_LAUNCHER
 c_att_names_33 "Healing Burst (Sec. Fire):"
 c_att_ranks_33 3
 c_att_skill_34 MB_ATT_PLX1
@@ -174,9 +174,11 @@ altMissileEffect "Force/inv_wave"
 hasAnimOverrides 1
 animReady BOTH_MELEE_STAND1
 animReadyWalk BOTH_MELEE_STAND1
+animReadyRun BOTH_MELEE_STAND1
 animReadyNoAmmo BOTH_MELEE_STAND1
 animAttack BOTH_SUPERPUSH
 animAttackWalk BOTH_SUPERPUSH
+animAttackRun BOTH_SUPERPUSH
 animStand BOTH_MELEE_STAND1
 Icon "gfx/marvel/vamp"
 WeaponName "Force Blasts"
@@ -209,6 +211,7 @@ ReloadTimeModifier 2
 hasAnimOverrides 1
 animReady BOTH_MELEE_BLOCK_BLASTER_L
 animReadyWalk BOTH_SABER_OBIWAN_STANCE 
+animReadyRun BOTH_SABER_OBIWAN_STANCE 
 animStand BOTH_MELEE_BLOCK_BLASTER_R
 animRunAttackR BOTH_MELEE1
 animRunAttackL BOTH_MELEE2
@@ -225,8 +228,10 @@ WeaponName "Force Stasis"
 hasAnimOverrides 1
 animready BOTH_STAND9
 animReadyWalk BOTH_STAND9
+animReadyRun BOTH_STAND9
 animReadyNoAmmo BOTH_JET_FORWARD
 animAttack BOTH_FORCE_2HANDEDLIGHTNING_HOLD
+animAttackRun BOTH_FORCE_2HANDEDLIGHTNING_HOLD
 animAttackWalk BOTH_FORCE_2HANDEDLIGHTNING_HOLD
 animStand BOTH_STAND9
 ReloadTimeModifier 2 }
@@ -252,11 +257,12 @@ CustomAmmo 50
 primFireEnabled 0
 hasAnimOverrides 1
 animReady BOTH_FORCE_2HANDEDLIGHTNING_START
+animReadyRun BOTH_FORCE_2HANDEDLIGHTNING_START
 animReadyWalk BOTH_FORCE_2HANDEDLIGHTNING_START
-animReadyNoAmmo BOTH_MAND_FLAME_IDLE
 animAttack BOTH_SUPERPUSH
 animAttackWalk BOTH_SUPERPUSH
-animStand BOTH_SABER_OBIWAN_STANCE
+animAttackRun BOTH_SUPERPUSH
+animStand BOTH_STAND1
 ReloadTimeModifier 2 }
 
 description "Jedi Forcemaster [Jedi]
