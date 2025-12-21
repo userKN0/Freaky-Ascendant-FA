@@ -94,19 +94,22 @@ uishader_6  "models/players/clonetrooper_p1/mb2_icon_ordinance"
     c_att_skill_4   MB_ATT_EE3
     c_att_names_4   "DC-15A Burst Configuration:"
     c_att_ranks_4   5,0
-	c_att_descs_4	"10% less DMG,20% faster ROF"
+	c_att_descs_4	"10% less DMG,20% faster ROF/Based on EE3"
 
     c_att_skill_5   MB_ATT_T21
     c_att_names_5   "DC-15LE Heavy Repeater:"
     c_att_ranks_5   5,0,0
-	c_att_descs_5 	"20% faster ROF,10% faster velocity"
+	c_att_descs_5 	"10% faster ROF,10% faster velocity/Based on T21"
+
     c_att_skill_6   MB_ATT_PULSE_GRENADES
     c_att_names_6   "Pulse Grenades:"
-    c_att_ranks_6   1,1,1
+    c_att_ranks_6   2,2
+	c_att_descs_6	"Quickthrow granted by default ^3[CS3]"
 
-    c_att_skill_7   MB_ATT_QUICKTHROW 
-    c_att_names_7   "Quickthrow ^3[CS3]:"
-    c_att_ranks_7   0
+    c_att_skill_7	MB_ATT_STAMINA
+	c_att_names_7	"Stamina ^3[CS1]:"
+	c_att_ranks_7	0,1,1
+	c_att_descs_7 	"Level 1 granted by default"
 
     c_att_skill_8	MB_ATT_RESPAWNS
 	c_att_names_8	"Reinforcements:"
@@ -141,16 +144,13 @@ WeaponInfo1
 	NewHandsModel        "models/weapons2/dc-15a/dc-15a_hand.md3"
 	MuzzleEffect		"Blaster/MuzzleFlash01B"
 	AltMuzzleEffect		"Blaster/MuzzleFlash01B"
-	MissileEffect		"Blaster/Shot02B"
+	MissileEffect		"Blaster/Shot04B"
 	AltMissileEffect	"Blaster/Shot03B"
-	FlashSound0			"sound/weapsup/sup/wpn_rep_blaster_fire.wav"
-	FlashSound1		"sound/weapsup/sup/wpn_rep_blaster_fire.wav"
-	FlashSound2			"sound/weapsup/sup/wpn_rep_blaster_fire.wav"
-	FlashSound3			"sound/weapsup/sup/wpn_rep_blaster_fire.wav"
-    AltFlashSound0      "sound/weapons/repeater/alt_fire_old.mp3"
+	FlashSound0			"sound/weapons/repeater/alt_fire_old.mp3"
+    AltFlashSound0      "sound/weapsup/sup/wpn_rep_blaster_fire.wav"
 	Icon				"gfx/hud/w_icon_clonerifle"
 	WeaponName			"DC-15LE Heavy Repeater"
-    rateMod             0.8
+    rateMod             0.9
     velocityMod         0.9
 }
 WeaponInfo2
@@ -165,13 +165,26 @@ WeaponInfo2
 	AltMissileEffect	"Blaster/Shot02B"
 	MissileEffect	    "Blaster/Shot02B"
 	FlashSound0			"sound/weapsup/sup/wpn_rep_blaster_fire.wav"
+	FlashSound1			"sound/weapsup/sup/wpn_rep_blaster_fire.wav"
+	FlashSound2			"sound/weapsup/sup/wpn_rep_blaster_fire.wav"
+	FlashSound3			"sound/weapsup/sup/wpn_rep_blaster_fire.wav"
     AltFlashSound0      "sound/weapons/repeater/alt_fire_old.mp3"
+    AltFlashSound1      "sound/weapons/repeater/alt_fire_old.mp3"
+    AltFlashSound2      "sound/weapons/repeater/alt_fire_old.mp3"
 	Icon				"gfx/hud/w_icon_clonerifle"
 	WeaponName			"DC-15A Burst Config"
 	rateMod				0.8
 	damageMod			0.9
 }
-
+{
+	WeaponToReplace	WP_CLONE_PISTOL
+	WeaponBasedOff	WP_CLONE_PISTOL
+	NewWorldModel    "models/weapons2/dc-17/dc-17_w.glm"
+	NewViewModel     "models/weapons2/dc-17/dc-17.md3"
+	NewHandsModel   "models/weapons2/dc-17/dc-17_hand.md3"
+	Icon            "gfx/hud/w_icon_dc-17"
+	WeaponName	"DC-17 Blaster Pistol"
+}
 description	"Clone Trooper (Phase I)
 
 Class: Heavy Infantry
