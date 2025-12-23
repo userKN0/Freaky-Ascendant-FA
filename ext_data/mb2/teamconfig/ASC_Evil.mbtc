@@ -16,7 +16,7 @@ Classes
 
 SubclassesForClass1
 {
-	Subclass1	"ase1_ImpComm"
+	Subclass1	"v1_ImpComm"
 	Subclass2 	"v1_NTroop"
 	Subclass3 	"v1_Undead"
 	Subclass4	"v1_B1"
@@ -29,7 +29,7 @@ SubclassesForClass1
 	Subclass11	"v2_Hondo"
 	Subclass12	"v2_Greedo" 
 	Subclass13	"v2_Calo"
-	Subclass14	"ase3_HeavyStorm"
+	Subclass14	"v3_HeavyStorm"
 	Subclass15 	"v3_Trando"
 	Subclass16	"v3_DeathTr"
 	Subclass17	"v3_Bossk"
@@ -48,13 +48,13 @@ SubclassesForClass2
 	Subclass6	"v4_Mara"
 	Subclass7	"v5_ImpArmCom"
 	Subclass8	"v5_Geonos"
-	Subclass9 	"ase5_MaulMando"
+	Subclass9 	"v5_MaulMando"
 	Subclass10	"v5_JumpTr"
 	Subclass11	"v5_DarkTr"
-	Subclass12	"ase5_Jango"
+	Subclass12	"v5_Jango"
 	Subclass13	"v5_Durge"
 	Subclass14	"v5_Cad"
-	Subclass15	"ase5_Boba"
+	Subclass15	"v5_Boba"
 	Subclass16	"v5_Watto"
 }
 
@@ -95,7 +95,7 @@ SubclassesForClass4
 SubclassesForClass5
 {
 	Subclass1	"ase9_ShadowG"
-	Subclass2	"ase9_Maul"
+	Subclass2	"v9_Maul"
 	Subclass3	"v9_SDuel"
 	Subclass4	"v9_Ventres"
 	Subclass5	"v9_Grievous"
@@ -122,17 +122,16 @@ SubclassesForClass6
 	Subclass7	"v10_Malak"
 	Subclass8	"v10_Nihilus"
 	Subclass9	"ase10_TrayaTrio"
-	Subclass10	"v10_Traya"
-	Subclass11	"ase10_Abeloth"
-	Subclass12	"ase10_Nadd"
-	Subclass13	"ase10_SForce"
-	Subclass14	"ase10_yun"
-	Subclass15	"ase10_Sariss"
-	Subclass16	"ase10_boc"
-	Subclass17	"ase10_x1"
-	subclass18	"ase10_pic"
-	Subclass19	"ase10_gorc"
-	Subclass20	"ase10_kallig"
+	Subclass10	"ase10_Abeloth"
+	Subclass11	"ase10_Nadd"
+	Subclass12	"v10_SForce"
+	Subclass13	"ase10_yun"
+	Subclass14	"ase10_Sariss"
+	Subclass15	"ase10_boc"
+	Subclass16	"ase10_x1"
+	subclass17	"ase10_pic"
+	Subclass18	"ase10_gorc"
+	Subclass19	"ase10_kallig"
 }
 
 
