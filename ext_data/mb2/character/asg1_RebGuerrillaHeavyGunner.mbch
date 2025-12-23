@@ -1,7 +1,7 @@
 //Air 
 ClassInfo
 {
-	name				"asg3_RebGuerrillaHeavyGunner"
+	name				"asg1_RebGuerrillaHeavyGunner"
 	weapons			WP_MELEE|WP_BLASTER_PISTOL|WP_MINIGUN|WP_THERMAL
 	WP_MinigunFlags	HELD_ALTRELOAD|HELD_SLOW
 	WP_BlasterPistolFlags HELD_FLAME|HELD_ALTRELOAD
@@ -135,4 +135,5 @@ Slow frontliner utilizing limited heavy/ignition/explosive weaponry alongside go
 
 ^3Abilities:
 - Sprint ^3[CS1]"
+
 
