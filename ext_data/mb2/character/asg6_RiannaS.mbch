@@ -1,7 +1,7 @@
 //Nezumi
 ClassInfo
 {
-	name	"asg6_RiannaS"
+	name	"asg6_RiannaS1"
 	MBClass		MB_CLASS_BOUNTY_HUNTER
 	classNumberLimit	1
 	weapons			WP_MELEE|WP_SABER|WP_MANDO_PISTOL
@@ -41,7 +41,7 @@ ClassInfo
 	saberMaxChain 	1
 	saberSpecialDamage 2
 
-	rateOfFire_Melee 99
+	rateOfFire_Melee 4
 	meleeMoves M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_RLKICK|M_PUNCH|M_UPPERCUT
 	
 	modelscale 		0.933
@@ -118,8 +118,8 @@ WeaponInfo2
 	Icon	"gfx/hud/w_icon_blaster_pistol_2"
 	ChargeSound	"sound/weapons/mando_rifle/charge.wav"
 	WeaponName	"Modified DL-44 Blaster Pistol"
-	FlashSound0	"sound/weapons/blasterMB/fire.mp3"
-	altFlashSound0	"sound/weapons/blasterMB/alt_fire.mp3"
+	FlashSound0	"sound/weapons/bryar/fire.mp3"
+	altFlashSound0	"sound/weapons/bryar/alt_fire.mp3"
 	MuzzleEffect	"concussion/muzzle_flash"
 	AltMuzzleEffect	"concussion/muzzle_flash"
 	MissileEffect		"acp_array/shot"
@@ -273,4 +273,3 @@ High DMG melee specials along with droid support and high volume, low DMG weapon
 - Gunkick (Hammer of Ryloth) ^3(CS2)
 - Dash (2) ^3(CS3)
 - Dex Roll ^3(CS4)"
-
