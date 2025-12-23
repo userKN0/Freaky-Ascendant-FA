@@ -1,0 +1,274 @@
+//Nezumi
+ClassInfo
+{
+	name	"asg6_RiannaS"
+	MBClass		MB_CLASS_BOUNTY_HUNTER
+	classNumberLimit	1
+	weapons			WP_MELEE|WP_SABER|WP_MANDO_PISTOL
+	
+	maxhealth	130
+	maxarmor	15
+	
+	ArmourRegenCap 15
+	ArmourRegenAmount 15
+	ArmourRegenRate	10000
+	
+	forcepool		70
+	forceregen	0.001
+	forcepowers		FP_SABER_OFFENSE,3
+	resource		RESOURCE_BATTERY
+	resourceRegenCap 70
+	resourceRegenAmount 1
+	resourceRegenRate 250 //25% slower than energy, maybe goes even slower
+	
+	classflags		CFL_SEEING_STEALTH
+	holdables		HI_MEDPAC|HI_MEDPAC_BIG|HI_SEEKER|HI_BINOCULARS
+	
+	attributes	MB_ATT_TRACKING_BEACON|MB_ATT_AMMO,3|MB_ATT_MANDO_PISTOL,2|MB_ATT_DASH,2|MB_ATT_FLIPKICK,1|MB_ATT_FLOAT_HOP|MB_ATT_BUNNY_HOP,2|MB_ATT_WATERBREATHING|MB_ATT_SPY_DISGUISE,2|MB_ATT_GETUPS,4|MB_ATT_RECHARGE,3|MB_ATT_DEXTERITY,1|MB_ATT_DODGE,3
+	
+	skilltimermod 1.3
+	knockbackTaken	1.2
+	
+	saber1	Rianna_Thorn_R
+	saber2	Rianna_Thorn
+	saberstyle	SS_DUAL|SS_TAVION
+	
+	BPmultiplier		0
+	APmultiplier		1.15
+	ASmultiplier		1.2
+	
+	saberDamage 100
+	saberMaxChain 	1
+	saberSpecialDamage 2
+	
+	meleeMoves M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_RLKICK
+	
+	modelscale 		0.933
+	model	"rianna"
+	skin		"default"
+	uishader	"models/players/rianna/icon_default"
+		
+	WP_MeleeFlags HELD_KNOCKBACK|HELD_STUN|HELD_PULSE
+	WP_MandoPistolFlags HELD_AMMOREGEN
+	WP_EE3Flags	HELD_AMMOREGEN
+	WP_RocketLauncherFlags HELD_KNOCKDOWN
+	
+	uioverlay_r "gfx/icons/scout"
+	uioverlay_l "gfx/icons/tactician"
+	
+	special1		EAS_HI_DODGE
+	special2		EAS_HI_KICK
+	special3		EAS_HI_DASH
+	special4		EAS_HI_DEX
+
+	//respawnCustomTime  50000
+
+	hasAnimOverrides	1
+	jumpAnim	BOTH_FLIP_LEFT
+	gunbashAnim	BOTH_MELEE5
+	getupAnim	BOTH_FORCE_GETUP_B6
+	
+	isCustomBuild	1
+	mbPoints	2
+	c_att_skill_0	MB_ATT_EE3
+	c_att_names_0	"Alliance Op. Carbine(EE3)"
+	c_att_ranks_0	1,0,0
+	c_att_descs_0 "24% less DMG, 10% faster RoF, 15% more velocity, 50% faster reload"
+	c_att_skill_2	MB_ATT_PROJECTILE_RIFLE
+	c_att_names_2	"Alliance Op. Sniper(Proj)"
+	c_att_ranks_2	1
+	c_att_descs_2 "3 clip size, hitscan, 56.25% less DMG, 50% slower RoF,
+	50% faster reload"
+	c_att_skill_4	MB_ATT_ROCKET_LAUNCHER
+	c_att_names_4	"Security Droid Z-58-0 'Zeeo'"
+	c_att_ranks_4	1,0,0
+	c_att_descs_4 "Sec. only Mini PLX, knocksdown on hit, 15% slower movement,
+	80% less DMG, 40% slower projectile, 50% slower mag reload"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace WP_MELEE
+	WeaponBasedOff  WP_MELEE
+	NewWorldModel	"models/weapons2/dummyblaster/model.glm"
+	NewViewModel	"models/weapons2/dummy/dummy.md3"
+	Icon			"models/weapons2/halo_melee/icon.png"
+	WeaponName		"Hammer of Ryloth"
+	damageMod 2
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_vibroknuckler"
+	WeaponName			"Thorn of Ryloth"
+	SelectSound "sound/weapons/blade/slash2.mp3"	
+}
+
+WeaponInfo2
+{
+	WeaponToReplace	WP_MANDO_PISTOL
+	WeaponBasedOff	WP_MANDO_PISTOL
+	NewWorldModel	"models/weapons2/blaster_two/blaster_pistol_w.glm"
+	NewViewModel	"models/weapons2/blaster_two/blaster_pistol.md3"
+	Icon	"gfx/hud/w_icon_blaster_pistol_2"
+	ChargeSound	"sound/weapons/mando_rifle/charge.wav"
+	WeaponName	"Modified DL-44 Blaster Pistol"
+	FlashSound0			"sound/weapons/blaster/fire.mp3"
+	MuzzleEffect	"concussion/muzzle_flash"
+	AltMuzzleEffect	"concussion/muzzle_flash"
+	MissileEffect		"acp_array/shot"
+	AltMissileEffect	"acp_array/shot"
+	PowerupShotEffect	"acp_array/shot"
+	ChargeEffect		"gfx/effects/beamr_frontflash"
+	clipSize	24
+	customAmmo 			200
+	hasAnimOverrides 1
+	animReadyRun BOTH_PISTOL_IDLE
+	animReady BOTH_PISTOL_IDLE
+	animReadyWalk BOTH_PISTOL_READY
+	animAttackRun BOTH_PISTOL_ATTACK
+	animAttack BOTH_PISTOL_ATTACK
+	animAttackWalk BOTH_PISTOL_ATTACK
+	animCharge BOTH_PISTOL_ATTACK
+	VelocityMod 		1.15
+	rateMod 0.55
+	damageMod .7 //25 dmg per shot
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_EE3 			
+	WeaponBasedOff		WP_EE3    			
+	NewWorldModel		"models/weapons2/kotor_brifle1/kotor_brifle1_w.glm"
+	NewViewModel		"models/weapons2/kotor_brifle1/kotor_brifle1.md3"
+	Icon				"gfx/hud/w_icon_kotor_brifle1"
+	WeaponName			"Alliance Operative Blaster Carbine"
+	//FlashSound0			"sound/weapons/kotor_carbine/fire.wav"
+	MuzzleEffect	"concussion/muzzle_flash"
+	MissileEffect	"acp_array/shot"
+	altMuzzleEffect	"concussion/muzzle_flash"
+	altMissileEffect	"acp_array/shot"
+	clipSize	40
+	customAmmo 			200
+	damageMod	.76 //25 dmg per shot
+	velocityMod 1.15
+	reloadTimeModifier	.5
+	rateMod	.9
+	hasAnimOverrides 1
+	animReadyRun 		BOTH_WESTARM5_IDLE
+	animReady 		BOTH_DC15_IDLE
+	animReadyWalk 	BOTH_WESTARM5_READY
+	animReadyNoAmmo BOTH_WESTARM5_READY
+	animAttackRun 		BOTH_WESTARM5_ATTACK
+	animAttack 		BOTH_WESTARM5_ATTACK
+	animAttackWalk 	BOTH_WESTARM5_ATTACK	
+}
+
+WeaponInfo4
+{
+	WeaponToReplace		WP_PROJ
+	WeaponBasedOff		WP_AMBAN
+	NewWorldModel 		"models/weapons2/droid_assassin_rifle/model.glm"
+	NewViewModel 		"models/weapons2/droid_assassin_rifle/model.md3"
+	Icon 				"gfx/hud/w_icon_droidassassin"
+	FlashSound0			"sound/SSB/raygun.wav"
+	WeaponName			"Alliance Operative Sniper Rifle"
+	PrimHitscanShot 	1
+	PrimHitscanTracer	10
+	disruptorBeam1 "gfx/effects/disrupt_beam_blue" //is green??
+	MuzzleEffect		"Blaster/MuzzleFlash01G" 
+	selectSound "sound/weapons/dc17m/select.mp3"
+	rateMod 1.5
+	reloadTimeModifier .5
+	damageMod .4375 //70 dmg per shot
+	clipSize			3
+	customAmmo 			30
+	hasAnimOverrides 1
+	animReadyRun BOTH_WESTARM5_SCOPED_READY
+	animReady TORSO_WEAPONREADY4
+	animReadyWalk BOTH_WESTARM5_SCOPED_READY
+	animAttack 		BOTH_WESTARM5_SCOPED_ATTACK
+	animReadyNoAmmo BOTH_DC15_ATTACK
+}
+
+WeaponInfo5
+{
+	WeaponToReplace	WP_ROCKET_LAUNCHER 
+	WeaponBasedOff	WP_ROCKET_LAUNCHER   
+	NewWorldModel 	"models/weapons2/thermal/thermal_w.glm"
+	NewViewModel 		"models/map_objects/halo/assault_bomb.md3"
+	altMissileModel	"models/map_objects/halo/assault_bomb.md3"
+	altMissileEffect 	null
+	altMissileMissEffect	"wat_leg/decimator/hit"
+	altMissileHitHumanEffect "wat_leg/decimator/hit"
+    altMissileHitDroidEffect "wat_leg/decimator/hit"
+	Icon		"gfx/hud/w_thermal_grenade"
+	WeaponName	"Arakyd Industries Security Droid Z-58-0 'Zeeo'"
+	CustomAmmo 2
+	clipsize 1
+	reloadTimeModifier 2
+	velocityMod	.6
+	damageMod .2
+	AltFlashSound0 "sound/chars/sentry/misc/sentry_hover_1_lp.wav"
+	AltFlashSound1 "sound/chars/sentry/misc/sentry_hover_2_1p.wav"
+	primFireEnabled 0
+	hasAnimOverrides 1
+	animReadyRun BOTH_GESTURE1
+	animReady BOTH_WALK6
+	animReadyWalk BOTH_WALK6
+	animReadyNoAmmo BOTH_STAND5TURNLEFTSTART
+	animAttackRun BOTH_FORCEGRIP3
+	animAttack BOTH_FORCEGRIP3
+	animAttackWalk BOTH_FORCEGRIP3
+	animCharge BOTH_GESTURE1
+}
+
+description	"Rianna Saren [Bounty Hunter]
+
+High DMG melee moves along with droid support and high volume, low DMG weaponry.
+
+^2Weaponry:
+- Hammer of Ryloth (Melee)
+-- Electrifies/Staggers on hit
+-- No Punches
+-- 100% more DMG
+- Thorn of Ryloth (Duals) or (Cyan)
+-- No Saber/Blaster Block
+-- Chain Limit: 1
+-- 100 damage
+-- Slap (Hammer of Ryloth) ^3[Gunbash/CS2]
+- Modified DL-44 Blaster Pistol (Mando P2)
+-- 45% faster RoF
+-- 15% less DMG
+-- 15% more velocity
+
+^6Inventory:
+- Kolto (50 HP over time)
+- Bacta (Instant 50 HP)
+- Electrobinoculars
+- Seeker Droid
+
+^5Attributes:
+- 30% slower skill CD
+- 20% more KB taken
+- Bunny Hop (2)
+- Getups (4)
+- Flipkick (1)
+-- Electrifies/Staggers on hit
+-- 100% more DMG
+- Z-58-0 ''Zeeo'' Support
+-- Armor regen 15/10s
+-- Slow Fall
+-- Water Breathing
+-- Database Sharing (Tracking Beacon)
+
+^8Abilities:
+- Holoprojector (Disguise 2) ^3[Toggle Melee]
+- Dodge (3) ^3(CS1)
+- Gunkick (Hammer of Ryloth) ^3(CS2)
+- Dash (2) ^3(CS3)
+- Dex Roll ^3(CS4)"

@@ -1,0 +1,104 @@
+Rianna_Thorn
+{
+	name		"Thorn of Ryloth"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/vibroknuckler/saber_vk.glm"
+	numBlades	1
+	saberLength	18
+	saberRadius 6
+	blasterblocking		0
+	noWallMarks	1
+	noDlight	1
+	noBlade		1
+	noClashFlare	1
+	trailStyle	2
+	noManualDeactivate	0
+	disarmable	0
+	boltToWrist	0
+	onInWater	1
+	bounceOnWalls		0
+	g2MarksShader		"gfx/damage/burnmark1"
+	g2WeaponMarkShader	"gfx/damage/burnmark1"
+	blockEffect	"melee_weap/block.efx"
+	hitPersonEffect "melee_weap/attack.efx"
+	hitOtherEffect		"electrostaff/other.efx"
+	soundOn		"sound/weapons/electrostaff/spin.mp3"
+	soundLoop	"sound/weapons/force_deflection/electricity_lp.wav"
+	soundOff	"sound/weapons/electrostaff/spin.mp3"
+	spinSound	"sound/weapons/knife/knifespin.mp3"	
+	swingSound1	"sound/weapons/knife/knifeswing1.mp3"
+	swingSound2	"sound/weapons/knife/knifeswing2.mp3"
+	swingSound3	"sound/weapons/knife/knifeswing1.mp3"
+	hitSound1	"sound/weapons/force/lightninghit1.mp3"
+	hitSound2	"sound/weapons/force/lightninghit2.mp3"
+	hitSound3	"sound/weapons/force/lightninghit3.mp3"
+	block2Sound1	"sound/weapons/electrostaff/block4.mp3"
+	block2Sound2	"sound/weapons/electrostaff/block5.mp3"
+	block2Sound3	"sound/weapons/electrostaff/block6.mp3"
+	bounceSound1	"sound/weapons/knife/knifebounce1.mp3"
+	bounceSound2	"sound/weapons/knife/knifebounce1.mp3"
+	bounceSound3	"sound/weapons/knife/knifebounce1.mp3"
+	readyAnim		BOTH_MELEE1
+	flourishAnim	BOTH_STAND1_TALK3
+	tauntAnim		BOTH_COME_ON1
+	gloatAnim		BOTH_VICTORY_FAST
+	lungeAtkMove		LS_A_LUNGE
+	drawAnim BOTH_A5_BR_TL
+	jumpAtkLeftMove LS_JUMPATTACK_CART_LEFT
+	jumpAtkRightMove LS_JUMPATTACK_CART_RIGHT
+}
+
+Rianna_Thorn_R
+{
+	name		"Hammer of Ryloth"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/noweap/noweap.glm"
+	soundOn		"sound/weapons/melee/swing1.mp3"
+	soundLoop	null
+	soundOff	"sound/weapons/melee/swing1.mp3"
+	numBlades		1
+	saberLength		18
+	saberRadius		4
+	blasterblocking		0
+	noWallMarks	1
+	noDlight	1
+	noBlade		1
+	noClashFlare	1
+	trailStyle	2
+	noManualDeactivate	0
+	disarmable	0
+	boltToWrist	0
+	onInWater	1
+	g2MarksShader	"gfx/damage/bodyburnmark1"
+	spinSound	"sound/weapons/melee/swing4.mp3"	
+	swingSound1	"sound/weapons/melee/swing1.mp3"
+	swingSound2	"sound/weapons/melee/swing2.mp3"
+	swingSound3	"sound/weapons/melee/swing3.mp3"
+	fallSound1	null
+	fallSound2	null
+	fallSound3	null
+	hitSound1	"sound/weapons/melee/punch3.mp3"
+	hitSound2	"sound/weapons/melee/punch2.mp3"
+	hitSound3	"sound/weapons/melee/punch1.mp3"
+	blockSound1	"sound/weapons/melee/kick3.mp3"
+	blockSound2	"sound/weapons/melee/kick4.mp3"
+	blockSound3	"sound/weapons/melee/kick5.mp3"
+	bounceSound1	"sound/weapons/melee/punch1.mp3"
+	bounceSound2	"sound/weapons/melee/punch2.mp3"
+	bounceSound3	"sound/weapons/melee/punch3.mp3"
+	blockEffect	"sparks/spark.efx"
+	hitPersonEffect none
+	hitOtherEffect	"sparks/spark.efx"
+	bladeEffect	none
+	noIdleEffect		1
+	bounceOnWalls		0
+	knockbackScale		1
+	readyAnim		BOTH_MELEE1
+	flourishAnim	BOTH_STAND1_TALK3
+	tauntAnim		BOTH_COME_ON1
+	gloatAnim		BOTH_VICTORY_FAST
+	lungeAtkMove		LS_A_LUNGE
+	drawAnim BOTH_A5_BR_TL
+	jumpAtkLeftMove LS_JUMPATTACK_CART_LEFT
+	jumpAtkRightMove LS_JUMPATTACK_CART_RIGHT
+}
