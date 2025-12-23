@@ -1,0 +1,113 @@
+//Air
+ClassInfo 
+{
+	name				"asg1_RebGuerrillaMechanic"
+	weapons				WP_MELEE|WP_SABER|WP_STUN_BATON
+	attributes			MB_ATT_DISP_ARMOR,1
+	WP_StunBatonFlags HELD_PULSE
+	maxhealth			60
+	maxarmor			60
+	
+	saber1		RebGWrench
+	sabercolor	0
+	saberstyle	SS_TAVION
+	saberMaxChain 1
+	saberDamage 60
+	APmultiplier    0
+	BPmultiplier	0
+	ASmultiplier	.85
+	saberSpecialDamage 2
+	hackRate 0.90
+	
+	MBClass				MB_CLASS_SOLDIER
+	
+	model			"renegade_male3"
+	skin             "alt"
+	uishader          "models/players/renegade_male3/mb2_icon_alt"
+	
+	model_1				"renegade_male3"
+	skin_1				"default"
+	uishader_1			"models/players/renegade_male3/mb2_icon_default"
+	special1 EAS_HI_SPRINT
+	
+	classNumberLimit	1
+	holdables 		  	CFL_STATVIEWER
+	basespeed			205
+	modelscale         	1
+	rateOfFire         	1
+	rateOfFire_Melee	1
+	forceregen			1
+	forcepool			15
+	classflags			
+	extralives		1
+	RESOURCE			RESOURCE_STAMINA
+	classNumberLimit	1
+    extralives		1
+	knockbackgiven .8
+	uioverlay_l "gfx/icons/infantry"
+	uioverlay_r "gfx/2d/hud/hlp_defend"
+	saberStanceAnim	 BOTH_TALKCOMM1
+	bowAnim BOTH_KNOCKDOWN5
+	tauntAnim BOTH_FORCE_GETUP_B6
+	flourishAnim BOTH_BUTTON1
+}
+WeaponInfo0
+{
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_mwrench"
+	WeaponName			"Old Spanner Wrench" 
+}
+WeaponInfo1
+{
+WeaponToReplace WP_STUN_BATON
+WeaponBasedOff WP_STUN_BATON
+NewWorldModel "models/weapons2/fc_f187/f187.glm"
+NewViewModel "models/weapons2/fc_f187/f187.md3"
+NewHandsModel "models/weapons2/fc_f187/f187_hand.md3"
+Icon "gfx/hud/w_icon_fc_f187_all"
+WeaponName "Jury-Rigged Plasma Torch"
+hasAnimOverrides 1
+animReady TORSO_WEAPONREADY0
+animReadyWalk TORSO_WEAPONREADY0
+animReadyNoAmmo BOTH_ATTACK2
+animAttack BOTH_ATTACK2
+animAttackWalk BOTH_ATTACK2
+FlashSound0 "sound/weapons/fusioncutter/cutter_hit.mp3"
+MissileMissEffect "effects/sparks/spark_exp_nosnd"
+MissileHitHumanEffect "effects/sparks/spark_exp_nosnd"
+MissileHitDroidEffect "effects/sparks/spark_exp_nosnd"
+rateMod 3
+damageMod 1
+}
+description "(Rebel Guerrilla) Mechanic [Soldier]
+
+Air
+
+A former civilian turned guerrilla mechanic after finding and repairing an old assassin droid on an Empire occupied Corellia.
+
+Backliner with the ability to repair armor, low survivability and little combat potential.
+
+^2Weaponry:
+- Melee
+- Old Spanner Wrench (Cyan Saber)
+-- No Saber/Blaster Block
+-- Chain Limit: 1
+-- 50% less damage (60)
+-- 50% less special damage
+- Jury-Rigged Plasma Torch (Stun Baton)
+-- 300% slower RoF
+-- Electrifies on hit
+
+^8Attributes:
+- 20% less KB given
+- Reinforcement (1)
+- 10% faster Hacking
+- Assemble (1)
+
+^3Abilities:
+- Sprint ^3[CS1]"
+
+

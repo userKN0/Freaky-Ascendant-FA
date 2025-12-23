@@ -1,0 +1,139 @@
+//Air 
+ClassInfo
+{
+	name				"asg1_RebGuerrillaHeavyGunner"
+	weapons			WP_MELEE|WP_BLASTER_PISTOL|WP_MINIGUN|WP_THERMAL
+	WP_MinigunFlags	HELD_ALTRELOAD|HELD_SLOW
+	WP_BlasterPistolFlags HELD_FLAME|HELD_ALTRELOAD
+	WP_MeleeFlags	HELD_SPEED
+	attributes		MB_ATT_ASSEMBLE,1|MB_ATT_MINIGUN,1|MB_ATT_PISTOL,2|MB_ATT_BASE_TD,2|MB_ATT_STAMINA,1|MB_ATT_TRACKING_BEACON|MB_ATT_BESKAR,1
+	classflags	CFL_STRONGAGAINSTPHYSICAL
+	MBClass			MB_CLASS_SOLDIER
+	modelscale      	1
+	classNumberLimit	1
+	rateOfFire_Melee	1.4
+	basespeed	195
+	extralives		1
+	maxhealth		80
+	maxArmor 		80
+	damageTaken	.85
+	resource RESOURCE_STAMINA
+	forcepool 15
+	flourishAnim 	BOTH_STAND5TOAIM
+	knockbacktaken 0.9
+	knockbackgiven .9
+	tauntAnim	BOTH_TUSKENTAUNT1
+	meditateAnim BOTH_SIT6
+	flourishAnim BOTH_FORCEHEAL_START
+	extralives		1
+	special1 EAS_HI_SPRINT
+	classNumberLimit	2
+	uioverlay_r "gfx/icons/heavy"
+	uioverlay_l "gfx/icons/infantry"
+	model		"Rodian_Hvy"
+	skin		"default"
+	uishader	"models/players/Rodian_Hvy/icon_default"
+}
+	WeaponInfo0
+{
+	WeaponToReplace WP_MINIGUN
+	WeaponBasedOff  WP_MINIGUN
+	NewWorldModel "models/weapons2/heavy_repeater/heavy_repeater_w.glm"
+	NewViewModel  "models/weapons2/heavy_repeater/heavy_repeater_w.md3"
+	Icon  "gfx/hud/w_icon_repeater"
+	WeaponName  "Stolen Heavy Repeater"
+	FlashSound0	"sound/weapons/repeater/fire.wav"
+	MuzzleEffect  "Blaster/MuzzleFlash01R"
+	AltFlashSound0		"sound/weapons/repeater/fire.wav"
+	altMuzzleEffect  		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot01R"
+	customAmmo         600
+	damageMod 1.1
+	clipsize 35
+	reloadTimeModifier 1.5
+	rateMod 1.6
+	hasAnimOverrides 	1
+	AltFireEnabled 		1
+	PrimFireEnabled		1
+	animReadyRun BOTH_MINIGUN_READY
+	animReady BOTH_MINIGUN_READY
+	animReadyWalk BOTH_MINIGUN_READY
+	animReadyNoAmmo BOTH_MINIGUN_ATTACK
+	animAttackRun BOTH_MINIGUN_ATTACK
+	animAttack BOTH_MINIGUN_ATTACK
+	animAttackWalk BOTH_MINIGUN_ATTACK
+}
+	WeaponInfo1
+{
+	WeaponToReplace WP_BLASTER_PISTOL
+	WeaponBasedOff  WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/briar_pistol/briar_pistol_w.glm"
+	NewViewModel		"models/weapons2/briar_pistol/briar_pistol.md3"
+	ChargeSound "sound/weapons/leia_pistol/altcharge.mp3"
+	Icon				"gfx/hud/w_icon_briar"
+	WeaponName  "Overcharged Junk Pistol"
+	MissileEffect		"effects/flechette/alt_shot.efx"
+	AltMissileEffect	"effects/flechette/alt_shot.efx"
+	PowerupShotEffect	"effects/flechette/alt_shot.efx"
+	velocityMod .7
+	damageMod 1.1
+	rateMod 1.4
+	clipsize 1
+	customAmmo         3
+	reloadTimeModifier 3.5
+	FPChargeMult	2
+	AltFireEnabled 		1
+	PrimFireEnabled		0
+	hasAnimOverrides 1
+	animReadyRun TORSO_WEAPONIDLE2
+	animReady TORSO_WEAPONIDLE2
+	animReadyWalk TORSO_WEAPONIDLE2
+	animReadyNoAmmo BOTH_ATTACK2 
+	animAttackRun BOTH_ATTACK2 
+	animAttack BOTH_ATTACK2 
+	animAttackWalk BOTH_ATTACK2
+}
+description "(Rebel Guerrilla) Heavy Gunner [Soldier]
+
+Air
+
+A former civilian turned guerrilla heavy gunner after stealing a heavy repeater amidst civil unrest on an Empire occupied Rodia.
+
+Slow frontliner utilizing limited heavy/ignition/explosive weaponry alongside good lightsaber and middling blaster resistance.
+
+^2Weaponry:
+- Melee
+-- 15% faster movement
+-- 40% slower RoF
+- Stolen Heavy Repeater (Minigun 1)
+-- 15% slower movement
+-- 60% slower RoF
+-- 10% more damage
+-- 30% less velocity
+-- 50% slower reload
+-- Reduced Clipsize (35)
+- Overcharged Junk Pistol (Pistol 1)
+-- 10% more damage
+-- 30% less velocity
+-- 40% slower RoF
+-- 250% slower reload
+-- 100% more FP damage
+-- Ignites targets
+-- Alt-fire only
+-- Reduced Clipsize (1)
+- Hand Thermal Grenades (2)
+
+^8Attributes:
+- Reinforcement (1)
+- 10% less KB taken
+- 10% less KB given
+- Physical Resistance
+- Beskar (1)
+- Stamina (1)
+- Assemble (1)
+- Scanner Goggles (Homing Beacon)
+
+^3Abilities:
+- Sprint ^3[CS1]"
+
+

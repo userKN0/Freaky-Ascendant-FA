@@ -1,0 +1,105 @@
+//Air
+ClassInfo
+{
+	name					"asg2_RebGuerrillaSalvagedDroid"
+	weapons					WP_MELEE|WP_T21|WP_FRAG_NADE
+	attributes				MB_ATT_RECHARGE,1|MB_ATT_MAGNETIC_PLATING,1|MB_ATT_BLAST_ARMOUR|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_ANTI_MT,1|MB_ATT_FRAGS,1|MB_ATT_ASSEMBLE,1|MB_ATT_TRACKING_BEACON
+	WP_T21Flags HELD_ALTRELOAD|HELD_KNOCKBACK
+	maxhealth					40
+	maxarmor					40
+	MBClass					MB_CLASS_WOOKIE
+	classNumberLimit		1
+	modelscale  			1
+	classflags			CFL_STRONGAGAINSTPHYSICAL|CFL_SEEING_STEALTH
+	extralives		1		
+	forcepool			50
+	basespeed 	185
+	knockbacktaken 1.4
+	rateOfFire_Melee 1.3
+	meleeMoves M_UPPERCUT|M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_PUNCH|M_RLKICK
+	
+	uioverlay_l "gfx/icons/infantry"
+	uioverlay_r "gfx/icons/heavy"
+	
+	model		"rogue_ass_droid"
+	skin		"default"
+	uishader	"models/players/rogue_ass_droid/icon_default"
+}
+WeaponInfo0
+{
+	WeaponToReplace		WP_T21
+	WeaponBasedOff 		WP_MGL
+	NewWorldModel		"models/weapons2/lc/c_rifle_w.glm" 
+	NewViewModel		"models/weapons2/lc/c_rifle_w.MD3"
+	Icon				"gfx/hud/w_icon_LC.png" 
+	WeaponName			"Pneumatic Junk Cannon" 
+	FlashSound0			"sound/weapons/mgun/alt_fire.wav"
+	AltFlashSound0	 	"sound/weapons/mgun/alt_fire.wav"
+	MuzzleEffect		"effects/flechettealt/shot.efx"
+	AltMuzzleEffect	 "effects/flechettealt/shot.efx"
+	MissileEffect         "effects/chunks/r5headsmall_chunks.efx"
+	AltMissileEffect	"effects/chunks/r5headsmall_chunks.efx"
+	PowerupShotEffect	"effects/chunks/r5headsmall_chunks.efx"
+	MissileModel	"models/map_objects/deathstar/junk5.MD3"
+	AltMissileModel	"models/map_objects/deathstar/junk5.MD3"
+	ChargeEffect		"gfx/effects/alpha_smoke"
+	MissileMissEffect 	"effects/flechette/wall_impact.efx"
+	altMissileMissEffect 	"effects/flechette/wall_impact.efx"
+	altfireenabled 0
+	customAmmo 			500
+	VelocityMod .4
+	rateMod 1.1
+	damageMod 1.1
+	clipsize 8
+	FPMult 2.4
+	reloadTimeModifier 1.5
+}
+WeaponInfo1
+{
+WeaponToReplace	WP_FRAG_NADE
+WeaponBasedOff	WP_THERMAL
+NewWorldModel	"models/weapons/oldfraggrenade/thermal_w.glm"
+NewViewModel	"models/weapons/oldfraggrenade/thermal.md3"
+Icon	"gfx/hud/w_icon_oldfraggrenade"
+WeaponName	"Archaic Dioxis Canister"
+MissileModel	"models/weapons2/oldfraggrenade/thermal_proj.md3"
+MissileEffect	"effects/Grenades/GlowGasB"
+AltMissileEffect	"effects/Grenades/GlowGasB"
+MissileMissEffect	"effects/Grenades/EXP_Gas"
+altMissileMissEffect	"effects/Grenades/EXP_Gas"
+ //Thank you 2c for the weaponinfo
+}
+description "(Rebel Guerrilla) Salvaged Droid [Wookie]
+
+Air
+
+An archaic assassin droid, dug up from an ancient galactic junkyard on Corellia and jury-rigged together to serve a rebel cell.
+
+A mid range gunner utilizing a heavy scrap-thrower alongside an explosive gas canister and robust blaster survivability, very low battery and movement speed.
+
+^2Weaponry:
+- Melee
+-- 30% slower RoF
+- Pneumatic Junk Cannon (T-21 1)
+-- 10% slower RoF
+-- 10% more damage
+-- 60% slower velocity
+-- 140% more FP damage
+-- 60% slower reload
+-- Reduced clipsize (8)
+-- Pushes on hit
+-- Primary fire only
+- Archaic Dioxis Canister (Frag Grenade)
+
+^8Attributes:
+- Assemble (1)
+- 40% more KB taken
+- Strength (1)
+- Magnetic Plating
+- Blast Armor
+- Physical Resistance
+- Anti Mindtrick (1)
+- Targeting System (Homing Beacon)
+- Sense Immunity
+- Battery (1)"
+

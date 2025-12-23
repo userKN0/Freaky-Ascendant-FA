@@ -1,0 +1,110 @@
+//Air
+ClassInfo 
+{
+	name				"asg1_RebGuerrillaSpotter"
+	weapons				WP_MELEE|WP_BLASTER_PISTOL
+	attributes			MB_ATT_PISTOL,1|MB_ATT_TRACKING_DART,3|MB_ATT_GETUPS,2|MB_ATT_ASSEMBLE,1
+	WP_BlasterPistolFlags HELD_ALTRELOAD
+	maxhealth			80
+	maxarmor			60
+	
+	MBClass				MB_CLASS_SOLDIER
+	
+	model				"renegade_female2"
+	skin				"default"
+	uishader			"models/players/renegade_female2/mb2_icon_default"
+	
+	classNumberLimit	1
+	holdables 		  	HI_SEEKER|HI_MEDPAC|HI_BINOCULARS
+	basespeed	215
+	modelscale         	0.98
+	rateOfFire         	1
+	rateOfFire_Melee 0.9
+	forceregen			1
+	forcepool			20
+	flourishAnim	TORSO_HANDSIGNAL1
+	tauntAnim	BOTH_TALKCOMM1
+	bowAnim	BOTH_GETUP_FROLL_L
+	classflags			
+	extralives		1
+	RESOURCE			RESOURCE_STAMINA
+	classNumberLimit	2
+    extralives		1
+	knockbackgiven .8
+	uioverlay_r "gfx/icons/tactician"
+	uioverlay_l "gfx/icons/infantry"
+	special1	EAS_HI_SPRINT
+	special2	EAS_HI_MEDPAC
+	special3	EAS_HI_TRACKER
+	special4	EAS_HI_KICK
+}
+WeaponInfo0
+{
+	WeaponToReplace			WP_BLASTER_PISTOL
+	WeaponBasedOff 		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/Glie-44/Glie-44_w.glm" 
+	NewViewModel		"models/weapons2/Glie-44/Glie-44.md3"
+	Icon				"gfx/hud/w_icon_glie-44" 
+	WeaponName			"Smuggled Glie-44" 
+	FlashSound0			"sound/weapons/Glie-44/fire.wav"
+	AltFlashSound0	 	"sound/weapons/Glie-44/alt_fire.wav"
+	ChargeSound "sound/weapons/leia_pistol/altcharge.mp3"
+	MuzzleEffect		null
+	AltMuzzleEffect	 null
+	MissileEffect		"Blaster/Shot02r"
+	AltMissileEffect	"Blaster/Shot04r"
+	PowerupShotEffect	"Blaster/Shot04r"
+	ChargeEffect		"gfx/effects/bryarfrontflash"
+	MissileMissEffect 	"effects/blaster/Impact_Wall01R"
+	altMissileMissEffect 	"effects/blaster/Impact_Wall01R"
+	customAmmo 			700
+	hasAnimOverrides 1
+	animReadyRun BOTH_PISTOL_IDLE
+	animReady BOTH_PISTOL_IDLE
+	animReadyWalk BOTH_PISTOL_IDLE2
+	animAttackRun BOTH_PISTOL_ATTACK
+	animAttack BOTH_PISTOL_ATTACK
+	animAttackWalk BOTH_PISTOL_ATTACK
+	animCharge BOTH_PISTOL_ATTACK
+	VelocityMod 1
+	rateMod .2
+	damageMod .35
+	clipsize 6
+	FPMult .75
+	reloadTimeModifier .80
+}
+description "(Rebel Guerrilla) Spotter [Soldier]
+
+Air
+
+A former civilian turned guerrilla spotter after smuggling and modifying a pistol from the factory they were forced to work in on an Empire occupied Ryloth.
+
+Backliner utilizing a weak automatic pistol alongside good mobility and tracking darts.
+
+^2Weaponry:
+- Melee
+-- 10% faster RoF
+- Smuggled Glie-44 (Pistol 1)
+-- 80% faster RoF
+-- 65% less damage
+-- 25% less FP damage
+-- 20% faster reload
+-- Reduced clipsize (6)
+
+^6Inventory:
+- Seeker Drone 
+- Small Medpac ^3[CS2]
+- Electrobinoculars
+
+^8Attributes:
+- 20% less KB given
+- Reinforcement (1)
+- Getups (2)
+- Assemble (1)
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Tracking Darts (6) ^3[CS3 Melee]
+- Gun Kick ^3[CS4]"
+
+

@@ -6,7 +6,7 @@ ClassInfo
 	weapons 			WP_BOWCASTER|WP_MELEE|WP_FRAG_NADE|WP_CONC_NADE|WP_AMBAN
 	attributes  		MB_ATT_WOOKIE_HEALTH,3|MB_ATT_WOOKIE_STRENGTH,3|MB_ATT_WOOKIEE_FURY,1|MB_ATT_FRAGS,1|MB_ATT_BLAST_ARMOUR,1|MB_ATT_BOWCASTER,2|MB_ATT_MICRO_GRENADES,3|MB_ATT_AMBAN,1
 	maxhealth			400
-	maxarmor			100
+	maxarmor			125
 	modelscale  		1.15
 	model 				"krrsantan2"
 	skin  				"default"
@@ -15,15 +15,17 @@ ClassInfo
 	classNumberLimit	1
 	rageSoundOverride 	"sound/chars/BlackKrr/misc/BKrage.mp3"
 	bargeSoundOverride 	"sound/chars/BlackKrr/misc/Scream2BK.mp3"
-	speed               1.05067
+	speed               1.035
 	damageTaken         0.95
-	damageGiven         1.05
-	rateoffire          0.90
-	rateoffire_melee	1.05
-	skilltimermod 0.90
+	damageGiven         1.0
+	rateoffire          0.95
+	rateoffire_melee	1.40
+	skilltimermod 0.85
+	hackRate 0.85
 	
 	resource	resource_rage
 	forcepool 110
+	forceregen 1.5
 	
 	WP_MeleeFlags HELD_PULSE
 	
@@ -53,7 +55,8 @@ WeaponInfo0
     ChargeSound            "sound/weapons/leia_pistol/altcharge.mp3"
     Icon                "gfx/hud/w_icon_bowcaster"
     WeaponName            "Bowcaster"
-    customammo 700
+	damageMod 1.05
+    customammo 750
 }
 WeaponInfo1 
 {
@@ -94,22 +97,22 @@ WeaponInfo2
     Icon  "gfx/hud/w_icon_mandorifle"
     WeaponName  "Amban Phase-Pulse Blaster"
     velocityMod 1.05
-    damageMod .75
+    damageMod 1.0
 }
 
-description	"Black Krrsantan aka 'BK' [Wookiee]
+description	"Black Krrsantan aka 'BK' [Wookie] -^1Valor
 
 A large but swift Wookiee / Gunner hybrid with Smoke Grenades, a Bowcaster, and the ability to shock enemies upon punches.
 
 ^2Weaponry:
 - Wookiee-style Melee
-- 5% Faster Swings
+- 40% Slower Swings
 - BK's Bowcaster
 -- Based on Bowcaster (2)
+-- 5% More Damage
 - Amban Phase-Pulse Blaster
 -- Based on Amban (1)
--- 5% faster projectiles
--- 25% less damage
+-- 5% Higher Velocity
 - Frag Grenades (1)
 - Smoke Grenades (3)
 -- Based on Concussion Grenades
@@ -117,10 +120,11 @@ A large but swift Wookiee / Gunner hybrid with Smoke Grenades, a Bowcaster, and 
 -- 99.9% less damage
 
 ^8Attributes:
-- 10% faster skill cooldown
+- 15% faster skill cooldown
 - Strength (3)
 - Fury (1)
 - Blast Armor
+- 15% Faster Hacking Speed
 
 
 ^3Abilities:

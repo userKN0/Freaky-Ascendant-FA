@@ -4,10 +4,10 @@ ClassInfo
 	MBClass 			MB_CLASS_JEDI
 	classNumberLimit	1
 	weapons			WP_SABER|WP_MELEE
- 	attributes		MB_ATT_DEFLECT,2|MB_ATT_FORCEFOCUS,3|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_FP_REPULSE,1|MB_ATT_FORCEBLOCK,3|MB_ATT_LIGHTS_BEACON
- 	forcepowers 	FP_LEVITATION,3|FP_SEE,3|FP_SABERTHROW,3|FP_SABER_OFFENSE,3|FP_LIGHTNING,3|FP_PUSH,3|FP_PULL,2|FP_GRIP,3|FP_ABSORB,2|FP_RAGE,1
- 	maxhealth		105
-	maxarmor		0
+ 	attributes		MB_ATT_DEFLECT,2|MB_ATT_FORCEFOCUS,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_FP_REPULSE,1|MB_ATT_FORCEBLOCK,3|MB_ATT_LIGHTS_BEACON
+ 	forcepowers 	FP_LEVITATION,3|FP_SEE,3|FP_SABERTHROW,3|FP_SABER_OFFENSE,3|FP_LIGHTNING,3|FP_PUSH,2|FP_PULL,2|FP_GRIP,3|FP_ABSORB,2|FP_RAGE,1
+ 	maxhealth		100
+	maxarmor		25
  	forcepool		135
 	forceregen      1.35
 	
@@ -39,13 +39,13 @@ ClassInfo
 	saber1_1	naga_sadow_sword_v2
 	saberstyle_1	SS_DESANN
 	
- 	APmultiplier    1
+ 	APmultiplier    1.2
  	CSmultiplier	1.05
 	ASmultiplier	1.05
  	basespeed    245
  	damageGiven    	1
 	damageTaken		1
- 	classflags		CFL_NOPICKUPS|CFL_SEEING_STEALTH
+ 	classflags		CFL_NOPICKUPS|CFL_SEEING_STEALTH|CFL_STATVIEWER
 	WP_SaberFlags   HELD_POISON
 	special1	EAS_FP_SABERTHROW
 	special2 	EAS_MELEE
@@ -67,7 +67,7 @@ WeaponInfo0
 	Icon				""gfx/hud/w_icon_ragnos_Weapons""
 	WeaponName			"Sadow's Sword and Nadd's Shoto"
 }
-description "Freedon Nadd [Sith]
+description "Freedon Nadd [Sith] -^1Valor
 
 An attack/support-oriented Sith sporting a unique Sith Sword and/or Shoto, and the ability to share Force Absorb with allies.
 
@@ -103,5 +103,6 @@ An attack/support-oriented Sith sporting a unique Sith Sword and/or Shoto, and t
 ^7- ^3*^7Light's Beacon
 -- Shares Force Powers with a targeted/nearby ally
 - Force Block (2)
-- Force Focus (3)
+- Force Focus (2)
+- Ally Stat Viewer
 - Force Sense Immunity"
