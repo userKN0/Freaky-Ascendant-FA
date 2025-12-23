@@ -73,7 +73,7 @@ WeaponInfo0
 	FPMult .75
 	reloadTimeModifier .80
 }
-description "(Rebel Guerrilla) Spotter
+description "(Rebel Guerrilla) Spotter [Soldier]
 
 Air
 
@@ -106,3 +106,4 @@ Backliner utilizing a weak automatic pistol alongside good mobility and tracking
 - Sprint ^3[CS1]
 - Tracking Darts (6) ^3[CS3 Melee]
 - Gun Kick ^3[CS4]"
+
