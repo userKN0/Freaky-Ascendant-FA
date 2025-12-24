@@ -3,10 +3,10 @@ ClassInfo
 {
 	name				"asg1_RebGuerrillaSpotter"
 	weapons				WP_MELEE|WP_BLASTER_PISTOL
-	attributes			MB_ATT_PISTOL,1|MB_ATT_TRACKING_DART,3|MB_ATT_GETUPS,2|MB_ATT_ASSEMBLE,1
+	attributes			MB_ATT_PISTOL,1|MB_ATT_TRACKING_DART,3|MB_ATT_GETUPS,2|MB_ATT_ASSEMBLE,1|MB_ATT_STAMINA,2
 	WP_BlasterPistolFlags HELD_ALTRELOAD
 	maxhealth			80
-	maxarmor			60
+	maxarmor			80
 	
 	MBClass				MB_CLASS_SOLDIER
 	
@@ -21,7 +21,7 @@ ClassInfo
 	rateOfFire         	1
 	rateOfFire_Melee 0.9
 	forceregen			1
-	forcepool			20
+	forcepool			30
 	flourishAnim	TORSO_HANDSIGNAL1
 	tauntAnim	BOTH_TALKCOMM1
 	bowAnim	BOTH_GETUP_FROLL_L
@@ -30,7 +30,7 @@ ClassInfo
 	RESOURCE			RESOURCE_STAMINA
 	classNumberLimit	2
     extralives		1
-	knockbackgiven .8
+	knockbackgiven .2
 	uioverlay_r "gfx/icons/tactician"
 	uioverlay_l "gfx/icons/infantry"
 	special1	EAS_HI_SPRINT
@@ -68,10 +68,10 @@ WeaponInfo0
 	animCharge BOTH_PISTOL_ATTACK
 	VelocityMod 1
 	rateMod .2
-	damageMod .35
-	clipsize 6
-	FPMult .75
-	reloadTimeModifier .80
+	damageMod .6
+	clipsize 8
+	FPMult .85
+	reloadTimeModifier .90
 }
 description "(Rebel Guerrilla) Spotter [Soldier]
 
@@ -86,10 +86,10 @@ Backliner utilizing a weak automatic pistol alongside good mobility and tracking
 -- 10% faster RoF
 - Smuggled Glie-44 (Pistol 1)
 -- 80% faster RoF
--- 65% less damage
+-- 40% less damage
 -- 25% less FP damage
--- 20% faster reload
--- Reduced clipsize (6)
+-- 10% faster reload
+-- Reduced clipsize (8)
 
 ^6Inventory:
 - Seeker Drone 
@@ -97,10 +97,11 @@ Backliner utilizing a weak automatic pistol alongside good mobility and tracking
 - Electrobinoculars
 
 ^8Attributes:
-- 20% less KB given
+- 80% less KB given
 - Reinforcement (1)
 - Getups (2)
 - Assemble (1)
+- Stamina (2)
 
 ^3Abilities:
 - Sprint ^3[CS1]

@@ -9,13 +9,13 @@ ClassInfo
 	attributes		MB_ATT_ASSEMBLE,1|MB_ATT_MINIGUN,1|MB_ATT_PISTOL,2|MB_ATT_BASE_TD,2|MB_ATT_STAMINA,1|MB_ATT_TRACKING_BEACON|MB_ATT_BESKAR,1
 	classflags	CFL_STRONGAGAINSTPHYSICAL
 	MBClass			MB_CLASS_SOLDIER
-	modelscale      	1
+	modelscale      	1.1
 	classNumberLimit	1
-	rateOfFire_Melee	1.4
-	basespeed	195
+	rateOfFire_Melee	1
+	basespeed	180
 	extralives		1
-	maxhealth		80
-	maxArmor 		80
+	maxhealth		100
+	maxArmor 		120
 	damageTaken	.85
 	resource RESOURCE_STAMINA
 	forcepool 15
@@ -48,10 +48,10 @@ ClassInfo
 	altMuzzleEffect  		"Blaster/MuzzleFlash01R"
 	MissileEffect		"Blaster/Shot01R"
 	customAmmo         600
-	damageMod 1.1
-	clipsize 35
-	reloadTimeModifier 1.5
-	rateMod 1.6
+	damageMod 1
+	clipsize 100
+	reloadTimeModifier 4
+	rateMod .9
 	hasAnimOverrides 	1
 	AltFireEnabled 		1
 	PrimFireEnabled		1
@@ -79,8 +79,8 @@ ClassInfo
 	damageMod 1.1
 	rateMod 1.4
 	clipsize 1
-	customAmmo         3
-	reloadTimeModifier 3.5
+	customAmmo         5
+	reloadTimeModifier 2.8
 	FPChargeMult	2
 	AltFireEnabled 		1
 	PrimFireEnabled		0
@@ -104,23 +104,20 @@ Slow frontliner utilizing limited heavy/ignition/explosive weaponry alongside go
 ^2Weaponry:
 - Melee
 -- 15% faster movement
--- 40% slower RoF
 - Stolen Heavy Repeater (Minigun 1)
 -- 15% slower movement
--- 60% slower RoF
--- 10% more damage
--- 30% less velocity
--- 50% slower reload
--- Reduced Clipsize (35)
+-- 10% faster RoF
+-- 300% slower reload
+-- Clipsize (100)
 - Overcharged Junk Pistol (Pistol 1)
 -- 10% more damage
 -- 30% less velocity
 -- 40% slower RoF
--- 250% slower reload
+-- 180% slower reload
 -- 100% more FP damage
 -- Ignites targets
 -- Alt-fire only
--- Reduced Clipsize (1)
+-- Clipsize (1)
 - Hand Thermal Grenades (2)
 
 ^8Attributes:

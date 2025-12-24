@@ -5,8 +5,9 @@ ClassInfo
 	weapons				WP_MELEE|WP_SABER|WP_STUN_BATON
 	attributes			MB_ATT_DISP_ARMOR,1
 	WP_StunBatonFlags HELD_PULSE
-	maxhealth			60
-	maxarmor			60
+	WP_SaberFlags	HELD_STUN
+	maxhealth			80
+	maxarmor			80
 	
 	saber1		RebGWrench
 	sabercolor	0
@@ -32,18 +33,19 @@ ClassInfo
 	
 	classNumberLimit	1
 	holdables 		  	CFL_STATVIEWER
-	basespeed			205
+	basespeed			210
 	modelscale         	1
 	rateOfFire         	1
 	rateOfFire_Melee	1
 	forceregen			1
-	forcepool			15
-	classflags			
+	forcepool			30
+	classflags	CFL_STATVIEWER		
 	extralives		1
 	RESOURCE			RESOURCE_STAMINA
 	classNumberLimit	1
     extralives		1
 	knockbackgiven .8
+	knockbacktaken .6
 	uioverlay_l "gfx/icons/infantry"
 	uioverlay_r "gfx/2d/hud/hlp_defend"
 	saberStanceAnim	 BOTH_TALKCOMM1
@@ -79,7 +81,7 @@ FlashSound0 "sound/weapons/fusioncutter/cutter_hit.mp3"
 MissileMissEffect "effects/sparks/spark_exp_nosnd"
 MissileHitHumanEffect "effects/sparks/spark_exp_nosnd"
 MissileHitDroidEffect "effects/sparks/spark_exp_nosnd"
-rateMod 3
+rateMod 1.20
 damageMod 1
 }
 description "(Rebel Guerrilla) Mechanic [Soldier]
@@ -95,19 +97,23 @@ Backliner with the ability to repair armor, low survivability and little combat 
 - Old Spanner Wrench (Cyan Saber)
 -- No Saber/Blaster Block
 -- Chain Limit: 1
+-- Staggers on hit
 -- 50% less damage (60)
 -- 50% less special damage
 - Jury-Rigged Plasma Torch (Stun Baton)
--- 300% slower RoF
+-- 20% slower RoF
 -- Electrifies on hit
 
 ^8Attributes:
 - 20% less KB given
+- 40% less KB taken
 - Reinforcement (1)
 - 10% faster Hacking
 - Assemble (1)
+- Ally Stat Viewer
 
 ^3Abilities:
-- Sprint ^3[CS1]"
+- Sprint ^3[CS1]
+- Armor Dispenser (1) ^3['Use' on ^3allies]"
 
 

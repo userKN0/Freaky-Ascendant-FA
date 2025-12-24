@@ -5,16 +5,16 @@ ClassInfo
 	weapons					WP_MELEE|WP_T21|WP_FRAG_NADE
 	attributes				MB_ATT_RECHARGE,1|MB_ATT_MAGNETIC_PLATING,1|MB_ATT_BLAST_ARMOUR|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_ANTI_MT,1|MB_ATT_FRAGS,1|MB_ATT_ASSEMBLE,1|MB_ATT_TRACKING_BEACON
 	WP_T21Flags HELD_ALTRELOAD|HELD_KNOCKBACK
-	maxhealth					40
-	maxarmor					40
+	maxhealth					50
+	maxarmor					50
 	MBClass					MB_CLASS_WOOKIE
 	classNumberLimit		1
 	modelscale  			1
 	classflags			CFL_STRONGAGAINSTPHYSICAL|CFL_SEEING_STEALTH
 	extralives		1		
-	forcepool			50
-	basespeed 	185
-	knockbacktaken 1.4
+	forcepool			70
+	basespeed 	190
+	knockbacktaken 1.75
 	rateOfFire_Melee 1.3
 	meleeMoves M_UPPERCUT|M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_PUNCH|M_RLKICK
 	
@@ -47,12 +47,12 @@ WeaponInfo0
 	altMissileMissEffect 	"effects/flechette/wall_impact.efx"
 	altfireenabled 0
 	customAmmo 			500
-	VelocityMod .4
+	VelocityMod .45
 	rateMod 1.1
-	damageMod 1.1
+	damageMod 1.6
 	clipsize 8
-	FPMult 2.4
-	reloadTimeModifier 1.5
+	FPMult 2.7
+	reloadTimeModifier 1.55
 }
 WeaponInfo1
 {
@@ -82,10 +82,10 @@ A mid range gunner utilizing a heavy scrap-thrower alongside an explosive gas ca
 -- 30% slower RoF
 - Pneumatic Junk Cannon (T-21 1)
 -- 10% slower RoF
--- 10% more damage
--- 60% slower velocity
--- 140% more FP damage
--- 60% slower reload
+-- 60% more damage
+-- 55% slower velocity
+-- 170% more FP damage
+-- 55% slower reload
 -- Reduced clipsize (8)
 -- Pushes on hit
 -- Primary fire only
@@ -93,7 +93,7 @@ A mid range gunner utilizing a heavy scrap-thrower alongside an explosive gas ca
 
 ^8Attributes:
 - Assemble (1)
-- 40% more KB taken
+- 75% more KB taken
 - Strength (1)
 - Magnetic Plating
 - Blast Armor
