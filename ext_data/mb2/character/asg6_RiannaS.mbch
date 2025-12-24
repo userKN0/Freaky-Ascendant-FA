@@ -40,8 +40,9 @@ ClassInfo
 	saberDamage 100
 	saberMaxChain 	1
 	saberSpecialDamage 2
-	
-	meleeMoves M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_RLKICK
+
+	rateOfFire_Melee 4
+	meleeMoves M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_RLKICK|M_PUNCH|M_UPPERCUT
 	
 	modelscale 		0.933
 	model	"rianna"
@@ -117,7 +118,8 @@ WeaponInfo2
 	Icon	"gfx/hud/w_icon_blaster_pistol_2"
 	ChargeSound	"sound/weapons/mando_rifle/charge.wav"
 	WeaponName	"Modified DL-44 Blaster Pistol"
-	FlashSound0			"sound/weapons/blaster/fire.mp3"
+	FlashSound0	"sound/weapons/bryar/fire.mp3"
+	altFlashSound0	"sound/weapons/bryar/alt_fire.mp3"
 	MuzzleEffect	"concussion/muzzle_flash"
 	AltMuzzleEffect	"concussion/muzzle_flash"
 	MissileEffect		"acp_array/shot"
@@ -191,7 +193,6 @@ WeaponInfo4
 	animReadyRun BOTH_WESTARM5_SCOPED_READY
 	animReady TORSO_WEAPONREADY4
 	animReadyWalk BOTH_WESTARM5_SCOPED_READY
-	animAttack 		BOTH_WESTARM5_SCOPED_ATTACK
 	animReadyNoAmmo BOTH_DC15_ATTACK
 }
 
@@ -229,12 +230,12 @@ WeaponInfo5
 
 description	"Rianna Saren [Bounty Hunter]
 
-High DMG melee moves along with droid support and high volume, low DMG weaponry.
+High DMG melee specials along with droid support and high volume, low DMG weaponry.
 
 ^2Weaponry:
 - Hammer of Ryloth (Melee)
 -- Electrifies/Staggers on hit
--- No Punches
+-- 300% slower punches
 -- 100% more DMG
 - Thorn of Ryloth (Duals) or (Cyan)
 -- No Saber/Blaster Block
@@ -272,3 +273,5 @@ High DMG melee moves along with droid support and high volume, low DMG weaponry.
 - Gunkick (Hammer of Ryloth) ^3(CS2)
 - Dash (2) ^3(CS3)
 - Dex Roll ^3(CS4)"
+
+

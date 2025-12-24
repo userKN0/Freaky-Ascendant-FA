@@ -38,12 +38,12 @@ Rianna_Thorn
 	bounceSound1	"sound/weapons/knife/knifebounce1.mp3"
 	bounceSound2	"sound/weapons/knife/knifebounce1.mp3"
 	bounceSound3	"sound/weapons/knife/knifebounce1.mp3"
-	readyAnim		BOTH_MELEE1
+	readyAnim		BOTH_MELEE_BLOCK_TL
 	flourishAnim	BOTH_STAND1_TALK3
 	tauntAnim		BOTH_COME_ON1
 	gloatAnim		BOTH_VICTORY_FAST
 	lungeAtkMove		LS_A_LUNGE
-	drawAnim BOTH_A5_BR_TL
+	drawAnim BOTH_MELEE1
 	jumpAtkLeftMove LS_JUMPATTACK_CART_LEFT
 	jumpAtkRightMove LS_JUMPATTACK_CART_RIGHT
 }
@@ -93,12 +93,13 @@ Rianna_Thorn_R
 	noIdleEffect		1
 	bounceOnWalls		0
 	knockbackScale		1
-	readyAnim		BOTH_MELEE1
+	readyAnim		BOTH_MELEE_BLOCK_TL
 	flourishAnim	BOTH_STAND1_TALK3
 	tauntAnim		BOTH_COME_ON1
 	gloatAnim		BOTH_VICTORY_FAST
 	lungeAtkMove		LS_A_LUNGE
-	drawAnim BOTH_A5_BR_TL
+	drawAnim BOTH_MELEE1
 	jumpAtkLeftMove LS_JUMPATTACK_CART_LEFT
 	jumpAtkRightMove LS_JUMPATTACK_CART_RIGHT
 }
+
