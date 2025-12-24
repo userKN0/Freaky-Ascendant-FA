@@ -84,9 +84,6 @@ WeaponInfo1
 	Icon					"gfx/hud/w_icon_e5.tga"
 	WeaponName			"E-5 Blaster"
 	customAmmo 900
-	rateMod 0.9
-	DamageMod 1.1
-	FPMult 1.1
 }
 
 description 	"IG-100 MagnaGuard [Sith]
@@ -103,8 +100,6 @@ Uses its staff to disable and disarm opponents, finishing them with its blaster.
 -- 75% less DMG
 -- Slap ^3[CS2]
 - E-5 Blaster (EE-3 Level 3)
--- 10% faster RoF
--- 10% increased damage.
 
 ^5Powers:
 - Energized Jump (3)
@@ -124,5 +119,6 @@ Uses its staff to disable and disarm opponents, finishing them with its blaster.
 - Gunkick ^3[CS2]
 - Dash (1) ^3[CS3]
 - Grappling Hook ^3[CS4]"
+
 
 
