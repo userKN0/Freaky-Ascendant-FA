@@ -44,9 +44,10 @@ ClassInfo
 	special3 EAS_HI_KICK
 	special4 EAS_HI_DODGE
 	
-	WP_BlasterPistolFlags	HELD_PULSE|HELD_ALTRELOAD
+	
 	WP_BowcasterFlags	HELD_SONIC|HELD_ALTRELOAD
 	WP_MandoPistolFlags	HELD_STUN|HELD_ALTRELOAD
+	WP_BlasterFlags	HELD_FLAME|HELD_DISRUPTIFY
 	
 	modelScale 1
 	
@@ -294,7 +295,7 @@ A Rally commander that can spec into a support gunner, gadget saberist, or flyin
 ^6Default Inventory:
 - Assault Sentry
 - Forcefield
-- Portable E-Web Cannon 
+- Heavy E-Web Cannon (Ignites on hit)
 
 ^8Default Attributes:
 - Rally
@@ -305,12 +306,11 @@ A Rally commander that can spec into a support gunner, gadget saberist, or flyin
 
 ^9Point Buy Info:
 - Blaster Pistol
--- Electrifies Target
 - Sonic Gauntlet (Bowcaster)
 -- Stuns target
 -- 25% more FP damage
 -- 20% slower projectiles
 -- Fixed-length reload
--- Primary fire only"
+-- Primary fire only
 - Wrist Blaster (Westar)
 -- Staggers target"
