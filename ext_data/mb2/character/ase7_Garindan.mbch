@@ -5,7 +5,7 @@ ClassInfo
 	classNumberLimit	1
 	weapons			WP_SABER|WP_MGL|WP_STUN_BATON|WP_BLASTER_PISTOL|WP_DET_PACK
 
-	attributes		MB_ATT_AMMO,3|MB_ATT_SPAWNER,2|MB_ATT_PISTOL,3|MB_ATT_MGL,3|MB_ATT_STICKY_BOMBS,3|MB_ATT_DET_PACK,5|MB_ATT_STUN_BATON,3|MB_ATT_DEXTERITY,1|MB_ATT_BLAST_ARMOUR|MB_ATT_FRAGS,4|MB_ATT_QUICKTHROW,3|MB_ATT_DASH,2|MB_ATT_TRACKING_DART,6|MB_ATT_ANTI_MT,1|MB_ATT_ROSHTAUNT
+	attributes		MB_ATT_AMMO,3|MB_ATT_SPAWNER,2|MB_ATT_PISTOL,3|MB_ATT_MGL,3|MB_ATT_STICKY_BOMBS,3|MB_ATT_DET_PACK,5|MB_ATT_STUN_BATON,3|MB_ATT_DEXTERITY,1|MB_ATT_BLAST_ARMOUR|MB_ATT_FRAGS,4|MB_ATT_QUICKTHROW,3|MB_ATT_DASH,2|MB_ATT_TRACKING_DART,6|MB_ATT_ROSHTAUNT
 	
 	WP_StunBatonFlags HELD_STUN|HELD_FLAME
 	
@@ -20,6 +20,7 @@ ClassInfo
 	
 	resource	RESOURCE_ENERGY
 	forcepool 100
+	forcepowers	FP_PUSH,1
 	
 	ASmultiplier	1.15
 	APmultiplier	1.2
@@ -32,7 +33,7 @@ ClassInfo
 	saberThrowDamage 80
 	saberMaxChain 2
 
-	//classflags		CFL_SEEING_STEALTH
+	classflags		CFL_SEEING_STEALTH
 	holdables		HI_CLOAK|HI_SPAWNER|HI_STIMPACK
 
 	special1	EAS_FP_SABERTHROW
@@ -132,7 +133,7 @@ WeaponInfo3
 	altFireAnim BOTH_AMBAN_IDLE
 	clipSize 3
 	customAmmo 60
-	damageMod .2 //16 dmg direct, 20 splash
+	damageMod .4 //32 dmg direct, 40 splash
 	rateMod .8 //allows more easy airbursts
 	velocityMod .8
 	reloadTimeModifier 10
@@ -163,6 +164,16 @@ WeaponInfo4
 	customammo	4
 }
 
+ForceInfo0
+{
+	ForceToReplace	FP_PUSH
+	Icon		"gfx/hud/Alpha/HUD_RadarCone"
+	ForcePowerName	"Steam Projector"
+	ConeEffect	"effects/volumetric/smoke_white_leg.efx"
+	StartSound 		null
+	LoopSound 	null
+}
+
 description	"Garindan ezz Zavor [Commander]
 
 The greatest spy in Mos Eisley spaceport, and very far from home
@@ -184,7 +195,7 @@ The greatest spy in Mos Eisley spaceport, and very far from home
 - Overcharged DL-44 Heavy Blaster Pistol
 -- 40% more charged FP dmg/30% faster velocity
 - VRL-29 Air Burst Grenade Launcher
--- 80% less DMG/1000% slower reload
+-- 70% less DMG/1000% slower reload
 -- 20% faster RoF/slower velocity
 - Smoke Pellets (4) (Frags)
 -- Quick-Throw only
@@ -193,13 +204,13 @@ The greatest spy in Mos Eisley spaceport, and very far from home
 ^6Inventory:
 - Stimpack
 - Sentry Droid
-- Cloaking Device
+- Smoke Projector (Push 1)
 
 ^8Attributes:
 - Dexterity (1)
 - Blast Armor
 - Armor Regen: 15/10s up to 30
-- Strong-Willed (Anti-Mind Trick 1)
+- Force Sense Immunity
 
 ^3Abilities:
 - Dash (2) ^3[CS2]
